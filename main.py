@@ -7430,7 +7430,7 @@ console.log(square(4)); // 16
 
     elif query.data == "heteroex":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="mindalnoe")],
-                    [InlineKeyboardButton("son bölüm", callback_data="asdasdad")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="asdasdadssss")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Python Koşullu İfadeler: if, elif, else*\n\n"
@@ -7460,7 +7460,7 @@ console.log(square(4)); // 16
             parse_mode="Markdown",
             reply_markup=reply_markup
         )
-    elif query.data == "asdasdad":
+    elif query.data == "asdasdadssss":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="heteroex")],
                     [InlineKeyboardButton("son bölüm", callback_data="dameungrr")]]
         reply_markup = InlineKeyboardMarkup(keyboard)

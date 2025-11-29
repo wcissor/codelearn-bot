@@ -25,7 +25,8 @@ async def zero(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("русский", callback_data="russian")],
             [InlineKeyboardButton("english", callback_data="english")],
             [InlineKeyboardButton("中國人", callback_data="firstchinese")],
-            [InlineKeyboardButton("Türkçe", callback_data="tuk")]
+            [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
@@ -35,7 +36,7 @@ async def zero(update: Update, context: ContextTypes.DEFAULT_TYPE):
                                       "🇦🇿 Azərbaycan dili\n"
                                       "🇹🇷 Türkçe\n"
                                       "🇹🇼 繁體中文\n"
-                                      "➡️ Please tap your language / Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
+                                      "➡️ Please tap your langu/ Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
                                       reply_markup=reply_markup
                                       )
 
@@ -86,7 +87,8 @@ async def lang(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     elif query.data == "cyber":
         keyboard = [
-            [InlineKeyboardButton("следующая глава➡️", callback_data="next")]
+            [InlineKeyboardButton("следующая глава➡️", callback_data="next")],
+             [InlineKeyboardButton("вернуться в меню",callback_data = "backbackbackbacktomenununu")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -120,11 +122,32 @@ async def lang(update: Update, context: ContextTypes.DEFAULT_TYPE):
                                       "Первая глава уже здесь!!"
                                       ,
                                       reply_markup=reply_markup)
+    elif query.data == "backbackbackbacktomenununu":
+        if query.data == "start_learning":
+            keyboard = [
+                [InlineKeyboardButton("русский", callback_data="russian")],
+                [InlineKeyboardButton("english", callback_data="english")],
+                [InlineKeyboardButton("中國人", callback_data="firstchinese")],
+                [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
+                                          "🇬🇧 English\n"
+
+                                          "🇷🇺 Русский\n"
+                                          "🇦🇿 Azərbaycan dili\n"
+                                          "🇹🇷 Türkçe\n"
+                                          "🇹🇼 繁體中文\n"
+                                          "➡️ Please tap your langu/ Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
+                                          reply_markup=reply_markup
+                                          )
 
     elif query.data == "next":
         keyboard = [
             [InlineKeyboardButton("следующая глава➡️", callback_data="two")],
-            [InlineKeyboardButton("прошлая глава",callback_data = "creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb")]
+            [InlineKeyboardButton("прошлая глава",callback_data = "creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="backbackbackbacktomenununu")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -143,11 +166,30 @@ async def lang(update: Update, context: ContextTypes.DEFAULT_TYPE):
                                       "последняя глава здесь!!!"
                                       ,
                                       reply_markup=reply_markup)
+    elif query.data == "backbackbackbacktomenununu":
+        if query.data == "start_learning":
+            keyboard = [
+                [InlineKeyboardButton("русский", callback_data="russian")],
+                [InlineKeyboardButton("english", callback_data="english")],
+                [InlineKeyboardButton("中國人", callback_data="firstchinese")],
+                [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
+                                          "🇬🇧 English\n"
+
+                                          "🇷🇺 Русский\n"
+                                          "🇦🇿 Azərbaycan dili\n"
+                                          "🇹🇷 Türkçe\n"
+                                          "🇹🇼 繁體中文\n"
+                                          "➡️ Please tap your langu/ Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
+                                          reply_markup=reply_markup
+                                          )
     elif query.data == "creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb":
         keyboard = [
-            [InlineKeyboardButton("следующая глава➡️", callback_data="next")]
-
-        ]
+            [InlineKeyboardButton("следующая глава➡️", callback_data="next")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="backbackbackbacktomenununu")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔗 Сети — это просто связанные между собой объекты.\n"
                                       "Например, ваш круг друзей: вы связаны между собой благодаря общим интересам,\n"
@@ -180,11 +222,31 @@ async def lang(update: Update, context: ContextTypes.DEFAULT_TYPE):
                                       ,
                                       reply_markup=reply_markup)
 
+    elif query.data == "backbackbackbacktomenununu":
+        if query.data == "start_learning":
+            keyboard = [
+                [InlineKeyboardButton("русский", callback_data="russian")],
+                [InlineKeyboardButton("english", callback_data="english")],
+                [InlineKeyboardButton("中國人", callback_data="firstchinese")],
+                [InlineKeyboardButton("Türkçe", callback_data="tuk")],
 
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
+                                          "🇬🇧 English\n"
+
+                                          "🇷🇺 Русский\n"
+                                          "🇦🇿 Azərbaycan dili\n"
+                                          "🇹🇷 Türkçe\n"
+                                          "🇹🇼 繁體中文\n"
+                                          "➡️ Please tap your langu/ Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
+                                          reply_markup=reply_markup
+                                          )
     elif query.data == "two":
         keyboard = [
             [InlineKeyboardButton("следующая глава➡️", callback_data="three")],
-            [InlineKeyboardButton("прошлая глава", callback_data="creschemolecresclecreschemole")]
+            [InlineKeyboardButton("прошлая глава", callback_data="creschemolecresclecreschemole")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="backbackbackbacktomenununu")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -258,6 +320,27 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 последняя глава здесь!!!
 """,
                                       reply_markup=reply_markup)
+
+    elif query.data == "backbackbackbacktomenununu":
+        if query.data == "start_learning":
+            keyboard = [
+                [InlineKeyboardButton("русский", callback_data="russian")],
+                [InlineKeyboardButton("english", callback_data="english")],
+                [InlineKeyboardButton("中國人", callback_data="firstchinese")],
+                [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
+                                          "🇬🇧 English\n"
+
+                                          "🇷🇺 Русский\n"
+                                          "🇦🇿 Azərbaycan dili\n"
+                                          "🇹🇷 Türkçe\n"
+                                          "🇹🇼 繁體中文\n"
+                                          "➡️ Please tap your langu/ Пожалуйста, выберите язык / Zəhmət olmasa, dili seçin / 請選擇語言",
+                                          reply_markup=reply_markup
+                                          )
     elif query.data == "creschemolecresclecreschemole":
         keyboard = [
             [InlineKeyboardButton("следующая глава➡️", callback_data="two")],
@@ -376,6 +459,7 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         последняя глава здесь!!!
         """,
                                       reply_markup=reply_markup)
+
 
 
     elif query.data == "python":

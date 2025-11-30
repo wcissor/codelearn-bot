@@ -340,7 +340,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
     elif query.data == "creschemolecresclecreschemole":
         keyboard = [
             [InlineKeyboardButton("следующая глава➡️", callback_data="two")],
-            [InlineKeyboardButton("прошлая глава", callback_data="creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb")]
+            [InlineKeyboardButton("прошлая глава", callback_data="creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -361,7 +362,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
 
     elif query.data == "three":
-        keyboard = [[InlineKeyboardButton("прошлая глава",callback_data = "crmovefveiuorhoe")]]
+        keyboard = [[InlineKeyboardButton("прошлая глава",callback_data = "crmovefveiuorhoe")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "Ping — это базовый сетевой инструмент, позволяющий проверить наличие соединения между двумя устройствами.\n"
@@ -381,7 +383,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
     elif query.data == "crmovefveiuorhoe":
         keyboard = [
             [InlineKeyboardButton("следующая глава➡️", callback_data="three")],
-            [InlineKeyboardButton("прошлая глава", callback_data="creschemolecresclecreschemole")]
+            [InlineKeyboardButton("прошлая глава", callback_data="creschemolecresclecreschemole")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -488,7 +491,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         await query.edit_message_text("Давайте начнем!\nГлава 1:", reply_markup=reply_markup)
 
     elif query.data == "mcqueen":
-        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="fuckincarti")]]
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="fuckincarti")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Установка Python 64-bit и подключение к PyCharm Community*\n\n"
@@ -514,7 +518,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "fuckincarti":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="ifelifelse")],
-                    [InlineKeyboardButton("прошлая глава",callback_data = "nikogonebudetprostopodpishi")]]
+                    [InlineKeyboardButton("прошлая глава",callback_data = "nikogonebudetprostopodpishi")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Переменные и типы данных в Python*\n\n"
@@ -537,7 +542,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
             parse_mode="Markdown", reply_markup=reply_markup
         )
     elif query.data == "nikogonebudetprostopodpishi":
-        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="fuckincarti")]]
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="fuckincarti")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Установка Python 64-bit и подключение к PyCharm Community*\n\n"
@@ -564,7 +570,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "ifelifelse":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="sezer")],
-                    [InlineKeyboardButton("прошлая глава",callback_data = "egegeggeeggemeoreoy")]]
+                    [InlineKeyboardButton("прошлая глава",callback_data = "egegeggeeggemeoreoy")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Условия в Python: if, elif, else*\n\n"
@@ -583,7 +590,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         )
     elif query.data == "egegeggeeggemeoreoy":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="ifelifelse")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="nikogonebudetprostopodpishi")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="nikogonebudetprostopodpishi")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Переменные и типы данных в Python*\n\n"
@@ -608,7 +616,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "sezer":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="tututu")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zabiliibudemjitdalse")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zabiliibudemjitdalse")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: Циклы for и while*\n\n"
@@ -638,7 +647,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "zabiliibudemjitdalse":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="sezer")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="egegeggeeggemeoreoy")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="egegeggeeggemeoreoy")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Условия в Python: if, elif, else*\n\n"
@@ -658,7 +668,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "tututu":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="onyx")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="posletakoyjenshini")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="posletakoyjenshini")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Списки (list)*\n\n"
@@ -690,7 +701,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "posletakoyjenshini":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="tututu")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zabiliibudemjitdalse")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zabiliibudemjitdalse")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: Циклы for и while*\n\n"
@@ -720,7 +732,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
 
     elif query.data == "onyx":
-        keyboard = [[InlineKeyboardButton("прошлая глава",callback_data = "kilogramovitsteyke")]]
+        keyboard = [[InlineKeyboardButton("прошлая глава",callback_data = "kilogramovitsteyke")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🛠️ *Функции в Python*\n\n"
                                       "🔹 *Что такое функция?*\n"
@@ -752,7 +765,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "kilogramovitsteyke":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="onyx")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="posletakoyjenshini")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="posletakoyjenshini")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Списки (list)*\n\n"
@@ -789,7 +803,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         await query.edit_message_text("«Начнем!\nГлава 1:»", reply_markup=reply_markup)
 
     elif query.data == "rezer":
-        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="vezer")]]
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="vezer")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙*Установка и старт C++:*\n\n"
@@ -810,7 +825,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "vezer":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="cpp3")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="watisthisdokkwomwmamacoco")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="watisthisdokkwomwmamacoco")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
@@ -829,7 +845,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
             parse_mode="Markdown", reply_markup=reply_markup
         )
     elif query.data == "watisthisdokkwomwmamacoco":
-        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="vezer")]]
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="vezer")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙*Установка и старт C++:*\n\n"
@@ -850,7 +867,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "cpp3":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="bejing")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="vsevashipismafalyifotki")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="vsevashipismafalyifotki")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
@@ -870,7 +888,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         )
     elif query.data == "vsevashipismafalyifotki":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="cpp3")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="watisthisdokkwomwmamacoco")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="watisthisdokkwomwmamacoco")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
@@ -891,7 +910,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "bejing":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="venomous")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="soniceandsasyyilimeem")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="soniceandsasyyilimeem")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *C++: Циклы (for, while, do while)*\n\n"
@@ -925,7 +945,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "soniceandsasyyilimeem":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="bejing")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="vsevashipismafalyifotki")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="vsevashipismafalyifotki")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
@@ -946,7 +967,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "venomous":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="zerotrust")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zdravstvuytesergeyvladimirovic")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zdravstvuytesergeyvladimirovic")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Массивы (Arrays)*\n\n"
@@ -980,7 +1002,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "zdravstvuytesergeyvladimirovic":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="venomous")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="soniceandsasyyilimeem")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="soniceandsasyyilimeem")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *C++: Циклы (for, while, do while)*\n\n"
@@ -1015,7 +1038,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "zerotrust":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="amburanmall")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ueleonoriestdoci")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ueleonoriestdoci")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Строки (Strings)*\n\n"
@@ -1054,7 +1078,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "ueleonoriestdoci":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="zerotrust")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zdravstvuytesergeyvladimirovic")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zdravstvuytesergeyvladimirovic")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Массивы (Arrays)*\n\n"
@@ -1089,7 +1114,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "amburanmall":
         keyboard = [
-                    [InlineKeyboardButton("прошлая глава", callback_data="tvoyotecnaoralkatyue")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="tvoyotecnaoralkatyue")],
+                      [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C++: Функции*\n\n"
@@ -1121,7 +1147,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "tvoyotecnaoralkatyue":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="amburanmall")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ueleonoriestdoci")]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ueleonoriestdoci")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Строки (Strings)*\n\n"
@@ -1165,6 +1192,7 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         await query.edit_message_text("Давайте начнем!\nГлава 1:", reply_markup=reply_markup)
     elif query.data == "lexustural":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="lextural")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Установка и старт JavaScript:*\n\n"
@@ -1184,7 +1212,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "lextural":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="lexturalss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="drruuuororiridididir")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="drruuuororiridididir")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Переменные и типы данных*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -1199,6 +1228,7 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "drruuuororiridididir":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="lextural")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Установка и старт JavaScript:*\n\n"
@@ -1219,7 +1249,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "lexturalss":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="porschetunar")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="celuymenyanazlojidfienewjf")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="celuymenyanazlojidfienewjf")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *JavaScript: Условия и сравнения*\n\n"
@@ -1242,7 +1273,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         )
     elif query.data == "celuymenyanazlojidfienewjf":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="lexturalss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="drruuuororiridididir")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="drruuuororiridididir")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Переменные и типы данных*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -1257,7 +1289,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "porschetunar":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="ferraritunar")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="vprincipeyamogutebepomocye")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="vprincipeyamogutebepomocye")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Логические операторы*\n\n"
                                       "🔹 *Что это?*\n"
@@ -1275,7 +1308,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "vprincipeyamogutebepomocye":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="porschetunar")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="celuymenyanazlojidfienewjf")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="celuymenyanazlojidfienewjf")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *JavaScript: Условия и сравнения*\n\n"
@@ -1299,7 +1333,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "ferraritunar":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="dodgevaper")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zughtjfrhegjhfeuewfwefhwfhu")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zughtjfrhegjhfeuewfwefhwfhu")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript: Циклы*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -1332,7 +1367,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "zughtjfrhegjhfeuewfwefhwfhu":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="ferraritunar")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="vprincipeyamogutebepomocye")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="vprincipeyamogutebepomocye")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Логические операторы*\n\n"
                                       "🔹 *Что это?*\n"
@@ -1351,7 +1387,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "dodgevaper":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="xzero")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ppsdjoscdjfvojfsnojnsjosonj")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ppsdjoscdjfvojfsnojnsjosonj")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Функции подробно*\n\n"
                                       "🔹 *Что такое функция?*\n"
@@ -1379,7 +1416,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "ppsdjoscdjfvojfsnojnsjosonj":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="dodgevaper")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zughtjfrhegjhfeuewfwefhwfhu")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zughtjfrhegjhfeuewfwefhwfhu")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript: Циклы*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -1413,6 +1451,7 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "xzero":
         keyboard = [[InlineKeyboardButton("прошлая глава", callback_data="debroutroutroute")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]
                     ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *JavaScript: Объекты (Objects)*\n\n"
@@ -1451,7 +1490,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "debroutroutroute":
         keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="xzero")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ppsdjoscdjfvojfsnojnsjosonj")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ppsdjoscdjfvojfsnojnsjosonj")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Функции подробно*\n\n"
                                       "🔹 *Что такое функция?*\n"
@@ -1479,11 +1519,13 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown", reply_markup=reply_markup)
 
     elif query.data == "toomycash":
-        keyboard = [[InlineKeyboardButton("☕ Начните изучать Java", callback_data="officess")]]
+        keyboard = [[InlineKeyboardButton("☕ Начните изучать Java", callback_data="officess")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Java", reply_markup=reply_markup)
     elif query.data == "officess":
-        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirens")]]
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirens")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java: Установка и первый проект*\n\n"
                                       "🔹 *Шаг 1: Скачай и установи JDK*\n"
@@ -1511,7 +1553,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "sirens":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="styles")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="pozitivnoyevliyaniyeigr")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="pozitivnoyevliyaniyeigr")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Переменные и типы данных*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -1548,7 +1591,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       "💡 Попробуй сам объявить переменные и вывести их через `System.out.println()`!",
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "pozitivnoyevliyaniyeigr":
-        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirens")]]
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirens")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java: Установка и первый проект*\n\n"
                                       "🔹 *Шаг 1: Скачай и установи JDK*\n"
@@ -1577,7 +1621,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "styles":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="fors")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="nikadsidjiofsale")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="nikadsidjiofsale")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "📚 *Java: Условные операторы (if, else, else if)*\n\n"
@@ -1601,7 +1646,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
             parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "nikadsidjiofsale":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="styles")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="pozitivnoyevliyaniyeigr")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="pozitivnoyevliyaniyeigr")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Переменные и типы данных*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -1640,7 +1686,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "fors":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="mens")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: Циклы*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -1684,7 +1731,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="fors")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="nikadsidjiofsale")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="nikadsidjiofsale")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "📚 *Java: Условные операторы (if, else, else if)*\n\n"
@@ -1709,7 +1757,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "mens":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="brandss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zeoohyfrbn")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zeoohyfrbn")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Массивы*\n\n"
                                       "🔹 *Что такое массив?*\n"
@@ -1753,7 +1802,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "zeoohyfrbn":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="mens")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: Циклы*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -1798,7 +1848,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "brandss":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="itss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="porbugyy")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="porbugyy")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java: Методы (Функции)*\n\n"
                                       "🔹 *Что такое метод?*\n"
@@ -1850,7 +1901,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "porbugyy":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="brandss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="zeoohyfrbn")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="zeoohyfrbn")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Массивы*\n\n"
                                       "🔹 *Что такое массив?*\n"
@@ -1895,7 +1947,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "itss":
         keyboard = [
-                    [InlineKeyboardButton("прошлая глава", callback_data="sitiporosaaututjj")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="sitiporosaaututjj")],
+        [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🏗️ *Java: Классы и объекты*\n\n"
                                       "🔹 *Что такое класс?*\n"
@@ -1935,7 +1988,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "sitiporosaaututjj":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="itss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="porbugyy")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="porbugyy")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java: Методы (Функции)*\n\n"
                                       "🔹 *Что такое метод?*\n"
@@ -1991,7 +2045,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("<<>>", reply_markup=reply_markup)
     elif query.data == "yveskarl":
-        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="legs")]]
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="legs")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *Установка C и настройка в CLion IDE*\n\n"
                                       "🔹 *Шаг 1: Скачайте компилятор MinGW*\n"
@@ -2029,7 +2084,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "legs":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="armsss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="igogoogogogogogog")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="igogoogogogogogog")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Переменные и типы данных в C*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -2061,7 +2117,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
     elif query.data == "igogoogogogogogog":
-        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="legs")]]
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="legs")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *Установка C и настройка в CLion IDE*\n\n"
                                       "🔹 *Шаг 1: Скачайте компилятор MinGW*\n"
@@ -2100,7 +2157,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "armsss":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreature")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="tushdlyauveliceniyaobyema")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="tushdlyauveliceniyaobyema")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Операторы и выражения в C*\n\n"
                                       "🔹 *Что такое оператор?*\n"
@@ -2132,7 +2190,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "tushdlyauveliceniyaobyema":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="armsss")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="igogoogogogogogog")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="igogoogogogogogog")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Переменные и типы данных в C*\n\n"
                                       "🔹 *Что такое переменная?*\n"
@@ -2166,7 +2225,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "sirenseacreature":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreatur")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="nozamoyeobidniye")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="nozamoyeobidniye")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Условные операторы в C: if, else if, else*\n\n"
                                       "🔹 *Что такое условный оператор?*\n"
@@ -2197,7 +2257,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       )
     elif query.data == "nozamoyeobidniye":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreature")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="tushdlyauveliceniyaobyema")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="tushdlyauveliceniyaobyema")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Операторы и выражения в C*\n\n"
                                       "🔹 *Что такое оператор?*\n"
@@ -2230,7 +2291,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "sirenseacreatur":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreatu")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ututututututrejfjwoejfpjqwp")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ututututututrejfjwoejfpjqwp")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Циклы в C: for, while, do-while*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -2262,7 +2324,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "ututututututrejfjwoejfpjqwp":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreatur")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="nozamoyeobidniye")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="nozamoyeobidniye")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Условные операторы в C: if, else if, else*\n\n"
                                       "🔹 *Что такое условный оператор?*\n"
@@ -2294,7 +2357,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "sirenseacreatu":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="tentiics")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="isdippsjjaias")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="isdippsjjaias")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Функции в C*\n\n"
                                       "🔹 *Что такое функция?*\n"
@@ -2336,7 +2400,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "isdippsjjaias":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="sirenseacreatu")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="ututututututrejfjwoejfpjqwp")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="ututututututrejfjwoejfpjqwp")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Циклы в C: for, while, do-while*\n\n"
                                       "🔹 *Что такое цикл?*\n"
@@ -2368,7 +2433,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
 
     elif query.data == "tentiics":
-        keyboard = [[InlineKeyboardButton("прошлая глава", callback_data="diaaaadajgaa")]]
+        keyboard = [[InlineKeyboardButton("прошлая глава", callback_data="diaaaadajgaa")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📌 *Указатели в C*\n\n"
                                       "🔹 *Что такое указатель?*\n"
@@ -2409,7 +2475,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "diaaaadajgaa":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="tentiics")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="isdippsjjaias")]]
+                    [InlineKeyboardButton("прошлая глава", callback_data="isdippsjjaias")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *Функции в C*\n\n"
                                       "🔹 *Что такое функция?*\n"

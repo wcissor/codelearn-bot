@@ -1519,8 +1519,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       parse_mode="Markdown", reply_markup=reply_markup)
 
     elif query.data == "toomycash":
-        keyboard = [[InlineKeyboardButton("☕ Начните изучать Java", callback_data="officess")],
-                   [InlineKeyboardButton("вернуться в меню", callback_data="start_learning")]]
+        keyboard = [[InlineKeyboardButton("☕ Начните изучать Java", callback_data="officess")]
+            ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Java", reply_markup=reply_markup)
     elif query.data == "officess":

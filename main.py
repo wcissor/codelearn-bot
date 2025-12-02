@@ -2559,7 +2559,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
 
     elif query.data == "cyberx":
         keyboard = [
-            [InlineKeyboardButton("next chapter➡️", callback_data="nextx")]
+            [InlineKeyboardButton("next chapter➡️", callback_data="nextx"),
+            ("go back to menu", callback_data="start_learning")]]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2596,7 +2597,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
     elif query.data == "nextx":
         keyboard = [
             [InlineKeyboardButton("next chapter➡️", callback_data="twop")],
-            [InlineKeyboardButton("last chapter", callback_data="outofmymind")]
+            [InlineKeyboardButton("last chapter", callback_data="outofmymind")],
+            ("go back to menu", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2616,7 +2618,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
                                       reply_markup=reply_markup)
     elif query.data == "outofmymind":
         keyboard = [
-            [InlineKeyboardButton("next chapter➡️", callback_data="nextx")]
+            [InlineKeyboardButton("next chapter➡️", callback_data="nextx")],
+            ("go back to menu", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2654,7 +2657,8 @@ IPv4 = 4.29 миллиарда адресов (2^32). Но устройств в
     elif query.data == "twop":
         keyboard = [
             [InlineKeyboardButton("next chapter➡️", callback_data="threep")],
-            [InlineKeyboardButton("last chapter", callback_data="dvauksazactotisact")]
+            [InlineKeyboardButton("last chapter", callback_data="dvauksazactotisact")],
+            ("go back to menu", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2726,7 +2730,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "dvauksazactotisact":
         keyboard = [
             [InlineKeyboardButton("next chapter➡️", callback_data="twop")],
-            [InlineKeyboardButton("last chapter", callback_data="outofmymind")]
+            [InlineKeyboardButton("last chapter", callback_data="outofmymind")],
+            ("go back to menu", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2746,7 +2751,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
 
     elif query.data == "threep":
-        keyboard = [[InlineKeyboardButton("last chapter", callback_data="bablateperebatpizdec")]]
+        keyboard = [[InlineKeyboardButton("last chapter", callback_data="bablateperebatpizdec")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "Ping is a basic network tool used to check connectivity between two devices."
@@ -2766,7 +2772,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "bablateperebatpizdec":
         keyboard = [
             [InlineKeyboardButton("next chapter➡️", callback_data="threep")],
-            [InlineKeyboardButton("last chapter", callback_data="dvauksazactotisact")]
+            [InlineKeyboardButton("last chapter", callback_data="dvauksazactotisact")],
+            ("go back to menu", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -2867,7 +2874,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         await query.edit_message_text("Let's get started!\n"
                                       "*Chapter 1:*", reply_markup=reply_markup)
     elif query.data == "mcqueens":
-        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="f")]]
+        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="f")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Installing Python 64-bit and Connecting to PyCharm Community*\n\n"
@@ -2894,7 +2902,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "f":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="ifelif")],
-                    [InlineKeyboardButton("last chapter", callback_data="socsinyourmouthe")]]
+                    [InlineKeyboardButton("last chapter", callback_data="socsinyourmouthe")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Variables and Data Types in Python*\n\n"
@@ -2920,7 +2929,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
             parse_mode="Markdown", reply_markup=reply_markup
         )
     elif query.data == "socsinyourmouthe":
-        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="f")]]
+        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="f")],
+                 ("go back to menu", callback_data="start_learning")]  ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Installing Python 64-bit and Connecting to PyCharm Community*\n\n"
@@ -2948,7 +2958,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "ifelif":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="sezere")],
-                    [InlineKeyboardButton("last chapter", callback_data="ebatttttttttt")]]
+                    [InlineKeyboardButton("last chapter", callback_data="ebatttttttttt")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Conditions in Python: if, elif, else*\n\n"
@@ -2968,7 +2979,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         )
     elif query.data == "ebatttttttttt":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="ifelif")],
-                    [InlineKeyboardButton("last chapter", callback_data="socsinyourmouthe")]]
+                    [InlineKeyboardButton("last chapter", callback_data="socsinyourmouthe")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Variables and Data Types in Python*\n\n"
@@ -2996,7 +3008,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "sezere":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="tututut")],
-                    [InlineKeyboardButton("last chapter", callback_data="ebaniyzavozastviiii")]]
+                    [InlineKeyboardButton("last chapter", callback_data="ebaniyzavozastviiii")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: for and while Loops*\n\n"
                                       "🔹 *What is a loop?*\n"
@@ -3025,7 +3038,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "ebaniyzavozastviiii":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="sezere")],
-                    [InlineKeyboardButton("last chapter", callback_data="ebatttttttttt")]]
+                    [InlineKeyboardButton("last chapter", callback_data="ebatttttttttt")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Conditions in Python: if, elif, else*\n\n"
@@ -3046,7 +3060,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "tututut":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="onyxx")],
-                    [InlineKeyboardButton("last chapter", callback_data="pizdecebaniystozasmertvnishite")]]
+                    [InlineKeyboardButton("last chapter", callback_data="pizdecebaniystozasmertvnishite")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Lists*\n\n"
                                       "🔹 *What is a list?*\n"
@@ -3078,7 +3093,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "pizdecebaniystozasmertvnishite":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="tututut")],
-                    [InlineKeyboardButton("last chapter", callback_data="ebaniyzavozastviiii")]]
+                    [InlineKeyboardButton("last chapter", callback_data="ebaniyzavozastviiii")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: for and while Loops*\n\n"
                                       "🔹 *What is a loop?*\n"
@@ -3107,7 +3123,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
 
     elif query.data == "onyxx":
-        keyboard = [[InlineKeyboardButton("last chapter", callback_data="xoxoxooxooxoxeeetoyavovremayaprisel")]]
+        keyboard = [[InlineKeyboardButton("last chapter", callback_data="xoxoxooxooxoxeeetoyavovremayaprisel")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🛠️ *Functions in Python*\n\n"
                                       "🔹 *What is a function?*\n"
@@ -3140,7 +3157,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "xoxoxooxooxoxeeetoyavovremayaprisel":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="onyxx")],
-                    [InlineKeyboardButton("last chapter", callback_data="pizdecebaniystozasmertvnishite")]]
+                    [InlineKeyboardButton("last chapter", callback_data="pizdecebaniystozasmertvnishite")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Lists*\n\n"
                                       "🔹 *What is a list?*\n"
@@ -3177,7 +3195,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         await query.edit_message_text("«»", reply_markup=reply_markup)
 
     elif query.data == "rezere":
-        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="vezere")]]
+        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="vezere")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ Setup and Start:*\n\n"
@@ -3200,7 +3219,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "vezere":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="cpp4")],
-                    [InlineKeyboardButton("last chapter", callback_data="modaiskustvokulinariya")]]
+                    [InlineKeyboardButton("last chapter", callback_data="modaiskustvokulinariya")],
+                  ("go back to menu", callback_data="start_learning")] ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++: Variables and Data Types*\n\n"
@@ -3222,7 +3242,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
             parse_mode="Markdown", reply_markup=reply_markup
         )
     elif query.data == "modaiskustvokulinariya":
-        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="vezere")]]
+        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="vezere")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ Setup and Start:*\n\n"
@@ -3246,7 +3267,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "cpp4":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="bejingg")],
-                    [InlineKeyboardButton("last chapter", callback_data="soliiiiiiinaranuebalat")]]
+                    [InlineKeyboardButton("last chapter", callback_data="soliiiiiiinaranuebalat")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++: Conditions (if, else, else if)*\n\n"
@@ -3266,7 +3288,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         )
     elif query.data == "soliiiiiiinaranuebalat":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="cpp4")],
-                    [InlineKeyboardButton("last chapter", callback_data="modaiskustvokulinariya")]]
+                    [InlineKeyboardButton("last chapter", callback_data="modaiskustvokulinariya")],
+                 ("go back to menu", callback_data="start_learning")]  ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++: Variables and Data Types*\n\n"
@@ -3290,7 +3313,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "bejingg":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="venomouss")],
-                    [InlineKeyboardButton("last chapter", callback_data="owiworweuwruworwwe")]]
+                    [InlineKeyboardButton("last chapter", callback_data="owiworweuwruworwwe")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *C++: Loops (for, while, do while)*\n\n"
                                       "🔹 *What is a loop?*\n"
@@ -3322,7 +3346,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "owiworweuwruworwwe":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="bejingg")],
-                    [InlineKeyboardButton("last chapter", callback_data="soliiiiiiinaranuebalat")]]
+                    [InlineKeyboardButton("last chapter", callback_data="soliiiiiiinaranuebalat")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++: Conditions (if, else, else if)*\n\n"
@@ -3343,7 +3368,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "venomouss":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="zerotrusts")],
-                    [InlineKeyboardButton("last chapter", callback_data="izsamariamsimd")]]
+                    [InlineKeyboardButton("last chapter", callback_data="izsamariamsimd")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Arrays*\n\n"
                                       "🔹 *What is an array?*\n"
@@ -3376,7 +3402,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "izsamariamsimd":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="venomouss")],
-                    [InlineKeyboardButton("last chapter", callback_data="owiworweuwruworwwe")]]
+                    [InlineKeyboardButton("last chapter", callback_data="owiworweuwruworwwe")],
+                  ("go back to menu", callback_data="start_learning")] ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *C++: Loops (for, while, do while)*\n\n"
                                       "🔹 *What is a loop?*\n"
@@ -3409,7 +3436,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "zerotrusts":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="amburanmal")],
-                    [InlineKeyboardButton("last chapter", callback_data="zinanzinsnedeji")]]
+                    [InlineKeyboardButton("last chapter", callback_data="zinanzinsnedeji")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Strings*\n\n"
                                       "🔹 *What is a string?*\n"
@@ -3447,7 +3475,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "zinanzinsnedeji":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="zerotrusts")],
-                    [InlineKeyboardButton("last chapter", callback_data="izsamariamsimd")]]
+                    [InlineKeyboardButton("last chapter", callback_data="izsamariamsimd")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Arrays*\n\n"
                                       "🔹 *What is an array?*\n"
@@ -3480,7 +3509,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
 
     elif query.data == "amburanmal":
-        keyboard = [[InlineKeyboardButton("last chapter", callback_data="crchemole")]]
+        keyboard = [[InlineKeyboardButton("last chapter", callback_data="crchemole")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C++: Functions*\n\n"
                                       "🔹 *What is a function?*\n"
@@ -3511,7 +3541,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "crchemole":
         keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="amburanmal")],
-                    [InlineKeyboardButton("last chapter", callback_data="zinanzinsnedeji")]]
+                    [InlineKeyboardButton("last chapter", callback_data="zinanzinsnedeji")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Strings*\n\n"
                                       "🔹 *What is a string?*\n"
@@ -3553,7 +3584,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Let's start!\nChapter 1:", reply_markup=reply_markup)
     elif query.data == "lexust":
-        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="lex")]]
+        keyboard = [[InlineKeyboardButton("next chapter➡️", callback_data="lex")],
+                   ("go back to menu", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript Setup and Start:*\n\n"
                                       "🔹 *Step 1: Download an editor*\n"

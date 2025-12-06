@@ -26,6 +26,7 @@ async def zero(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("english", callback_data="english")],
             [InlineKeyboardButton("中國人", callback_data="firstchinese")],
             [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+            [InlineKeyboardButton("Azerbaycan dilli",callback_data = "azeriqaqa")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -9715,14 +9716,2428 @@ console.log(square(4)); // 16
                                       "✅ *Deneyin:* 1’den 10’a kadar sayıları yazdıran bir döngü yazın!\n",
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
+      if query.data == "az_078":
+        keyboard = [[InlineKeyboardButton("🔥 Təlimə başlayın", callback_data="az_001")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "Привет! Готов учиться программированию?\n"
+            ,
+            reply_markup=reply_markup
+        )
+    elif query.data == "az_001":
+        keyboard = [
+            [InlineKeyboardButton("Proqramlaşdırma dilləri", callback_data="az_002")],
+            [InlineKeyboardButton("Kibertəhlükəsizlik", callback_data="kyber_təhlükəsizliyi_az")]
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+          "🚀 Əla! İndi nəyi öyrənmək istədiyinizi seçin:",
+            reply_markup=reply_markup
+        )
+    elif query.data == "az_002":
+        keyboard = [
+            [InlineKeyboardButton("🐍 Python ", callback_data="python_az")],
+            [InlineKeyboardButton("⚙️ C++ ", callback_data="cpp_az")],
+            [InlineKeyboardButton("🟨 Javascript", callback_data="javascript_az")],
+            [InlineKeyboardButton("☕ Java ", callback_data="az_003")],
+            [InlineKeyboardButton("💻 C", callback_data="az_004")]
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+          "Yaxşı!! İndi öyrənmək istədiyiniz dili seçin:",
+            reply_markup=reply_markup
+        )
 
+    elif query.data == "kyber_təhlükəsizliyi_az":
+        keyboard = [
+            [InlineKeyboardButton("📡Şəbəkələr", callback_data="kyber_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "Давайте начнем!\nГлава 1",
+            reply_markup=reply_markup
+        )
+
+    elif query.data == "kyber_az":
+        keyboard = [
+            [InlineKeyboardButton("növbəti fəsil➡️", callback_data="sonrakı_bölüm_az")],
+             [InlineKeyboardButton("menyuya qayıt",callback_data="basla_az")]
+
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔗 Şəbəkələr — sadəcə bir-birinə bağlı obyektlərdir.\n"
+" Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
+"📡 Şəbəkələr hər yerdə mövcuddur:\n"
+" - 🚇 Şəhərdə ictimai nəqliyyat\n"
+" - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
+" - 🏘️ Qonşularla ünsiyyət\n"
+" - ✉️ Məktub və paket göndərmə sistemləri\n\n"
+"💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
+" Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
+"📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
+"🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
+" Bunlara daxildir:\n"
+" - 💻 Noutbuklar\n"
+" - 📱 Smartfonlar\n"
+" - 📷 Video nəzarət kameraları\n"
+" - 🚦 İşıqforlar\n"
+" - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
+"🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
+" - ⛅ Hava məlumatlarının toplanması\n"
+" - ⚡ Evlərə elektrik təminatı\n"
+" - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
+"🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
+"şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
+"👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
+"Biz buna sonra yenidən qayıdacağıq...\n"
+"The first chapter is here!!\n"
+"Birinci fəsil artıq burada!!"
+,
+reply_markup=reply_markup
+                                     )
+
+
+    elif query.data == "sonrakı_bölüm_az":
+        keyboard = [
+            [InlineKeyboardButton("Novbeti bolum ➡️", callback_data="iki_az")],
+            [InlineKeyboardButton("Son bolum",callback_data="az_005")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]
+
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🌐 *Fəsil 2: İnternetə dalış!*\n\n"
+                              "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
+                              "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
+                              "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
+                              "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
+                              "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
+                              "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
+                              "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
+                              " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
+                              " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
+                              "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n"
+                              "sonuncu fəsil burada!!!"
+                              ,
+                              reply_markup=reply_markup)
+
+    elif query.data == "az_005":
+        keyboard = [
+            [InlineKeyboardButton("Novbeti bolum ➡️", callback_data="sonrakı_bölüm_az")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔗 Şəbəkələr — sadəcə bir-birinə bağlı obyektlərdir.\n"
+" Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
+"📡 Şəbəkələr hər yerdə mövcuddur:\n"
+" - 🚇 Şəhərdə ictimai nəqliyyat\n"
+" - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
+" - 🏘️ Qonşularla ünsiyyət\n"
+" - ✉️ Məktub və paket göndərmə sistemləri\n\n"
+"💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
+" Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
+"📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
+"🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
+" Bunlara daxildir:\n"
+" - 💻 Noutbuklar\n"
+" - 📱 Smartfonlar\n"
+" - 📷 Video nəzarət kameraları\n"
+" - 🚦 İşıqforlar\n"
+" - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
+"🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
+" - ⛅ Hava məlumatlarının toplanması\n"
+" - ⚡ Evlərə elektrik təminatı\n"
+" - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
+"🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
+"şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
+"👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
+"Biz buna sonra yenidən qayıdacağıq...\n"
+"The first chapter is here!!\n"
+"Birinci fəsil artıq burada!!"
+,
+reply_markup=reply_markup
+)
+
+    elif query.data == "iki_az":
+        keyboard = [
+            [InlineKeyboardButton("Novbeti bolum ➡️", callback_data="uc_az")],
+            [InlineKeyboardButton("Son bolum", callback_data="az_006")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]
+
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("""
+📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
+— Özlərini tanısınlar\n
+— Başqaları tərəfindən tanınsınlar\n
+
+💡 Cihazlar insanlara bənzəyir:\n
+— Bizim adımız var (dəyişdirilə bilər)\n
+— Və barmaq izimiz (bəyan olunmaz, unikal)\n
+
+📱 Cihazların da iki növ "identifikasiyası" var:\n
+— IP ünvanı (📍dəyişdirilə bilər)\n
+— MAC ünvanı (🔒sabit, barmaq izi kimi)\n
+
+=====================\n
+🔹 IP ünvanları\n
+=====================\n
+IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
+O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
+Nümunə: `192.168.0.1`\n
+
+🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
+
+🌍 IP ünvanlarının iki növü var:\n
+— **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
+— **İctimai IP** — İnternetdə görünür\n
+
+🧾 Nümunə:\n
+| Cihaz           | Şəxsi IP       | İctimai IP        |\n
+|-----------------|----------------|------------------|\n
+| Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
+| Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
+
+🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
+
+=====================\n
+🌐 Problem: ünvanlar çatmır!\n
+=====================\n
+IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
+
+💡 Həll yolu:\n
+— IPv6 = 340+ trilyon ünvan (2^128)\n
+— Daha effektiv\n
+— Daha çox ünvan\n
+
+Nümunə:\n
+— IPv4: `192.168.1.1`\n
+— IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
+
+=====================\n
+🔹 MAC ünvanları\n
+=====================\n
+Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
+Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
+
+🛠 İlk 6 simvol — istehsalçı.\n
+📌 Son 6 — cihazın unikal nömrəsi.\n
+
+💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
+— Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
+— Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
+
+=====================\n
+📌 Nəticə:\n
+=====================\n
+🔹 IP — dəyişir, şəbəkədən asılıdır.\n
+🔹 MAC — sabit, unikal.\n
+🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
+sonuncu fəsil burada!!!
+""",
+reply_markup=reply_markup)
+
+  
+      
+    elif query.data == "az_006":
+        keyboard = [
+            [InlineKeyboardButton("Novbeti bolum➡️", callback_data="iki_az")],
+            [InlineKeyboardButton("Son bolum", callback_data="az_005")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]
+
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🌐 *Fəsil 2: İnternetə dalış!*\n\n"
+                              "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
+                              "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
+                              "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
+                              "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
+                              "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
+                              "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
+                              "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
+                              " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
+                              " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
+                              "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n\n"
+                              "sonuncu fəsil burada!!!"
+                              ,
+                              reply_markup=reply_markup)
+
+
+    elif query.data == "uc_az":
+        keyboard = [[InlineKeyboardButton("Son bolum",callback_data="az_007")],
+                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "Ping — əsas şəbəkə alətidir və iki cihaz arasında əlaqənin olub-olmadığını yoxlamağa imkan verir.\n"
+    "O, ICMP (Internet Control Message Protocol) protokolu əsasında işləyir,\n"
+    "xüsusi echo-sorğular göndərir və hədəf nöqtədən echo-cavablar gözləyir.\n\n"
+
+    "Ping vasitəsilə əlaqənin işləyib-işləmədiyini və onun nə qədər sabit olduğunu müəyyən etmək olar.\n"
+    "Həmçinin paketlərin bir cihazdan digərinə keçmə vaxtını millisekundlarla ölçmək mümkündür.\n\n"
+
+    "Bu alət artıq Linux və Windows da daxil olmaqla əksər əməliyyat sistemlərinə inteqrasiya olunub.\n"
+    "Ping etmək üçün kifayət edir ki, terminalda və ya əmr sətrində aşağıdakı komandadan istifadə edəsiniz:\n"
+    "`ping IP-ünvan` və ya `ping sayt_adı`.\n\n"
+
+    "Məsələn, `ping 192.168.1.254` komandası icra edildikdə,\n"
+    "göndərilmiş və alınmış paketlərin sayı görünəcək,\n"
+    "həmçinin orta cavab vaxtını öyrənmək olar (məsələn, 4.16 ms).",
+    reply_markup=reply_markup
+)
+
+    elif query.data == "az_007":
+        keyboard = [
+            [InlineKeyboardButton(" Novbeti bolum ➡️", callback_data="uc_az")],
+            [InlineKeyboardButton("Son bolum", callback_data="az_006")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]
+
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        awaiy query.edit_message_text("""
+📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
+— Özlərini tanısınlar\n
+— Başqaları tərəfindən tanınsınlar\n
+
+💡 Cihazlar insanlara bənzəyir:\n
+— Bizim adımız var (dəyişdirilə bilər)\n
+— Və barmaq izimiz (bəyan olunmaz, unikal)\n
+
+📱 Cihazların da iki növ "identifikasiyası" var:\n
+— IP ünvanı (📍dəyişdirilə bilər)\n
+— MAC ünvanı (🔒sabit, barmaq izi kimi)\n
+
+=====================\n
+🔹 IP ünvanları\n
+=====================\n
+IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
+O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
+Nümunə: `192.168.0.1`\n
+
+🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
+
+🌍 IP ünvanlarının iki növü var:\n
+— **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
+— **İctimai IP** — İnternetdə görünür\n
+
+🧾 Nümunə:\n
+| Cihaz           | Şəxsi IP       | İctimai IP        |\n
+|-----------------|----------------|------------------|\n
+| Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
+| Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
+
+🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
+
+=====================\n
+🌐 Problem: ünvanlar çatmır!\n
+=====================\n
+IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
+
+💡 Həll yolu:\n
+— IPv6 = 340+ trilyon ünvan (2^128)\n
+— Daha effektiv\n
+— Daha çox ünvan\n
+
+Nümunə:\n
+— IPv4: `192.168.1.1`\n
+— IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
+
+=====================\n
+🔹 MAC ünvanları\n
+=====================\n
+Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
+Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
+
+🛠 İlk 6 simvol — istehsalçı.\n
+📌 Son 6 — cihazın unikal nömrəsi.\n
+
+💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
+— Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
+— Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
+
+=====================\n
+📌 Nəticə:\n
+=====================\n
+🔹 IP — dəyişir, şəbəkədən asılıdır.\n
+🔹 MAC — sabit, unikal.\n
+🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
+sonuncu fəsil burada!!!
+""",
+reply_markup=reply_markup
+)
+
+
+
+    elif query.data == "python_az":
+        keyboard = [[
+            InlineKeyboardButton("gedək", callback_data="az_008")
+        ]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+           "«YAXŞI!! Gəlin Python 🐍 səyahətimizə başlayaq»"
+,
+            reply_markup=reply_markup)
+    elif query.data == "cpp_az":
+        keyboard = [[
+            InlineKeyboardButton("1 bolum", callback_data="az_009")
+        ]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+          "«YAXŞI!! Gəlin C++ ⚙️ səyahətimizə başlayaq»"
+,
+            reply_markup=reply_markup)
+    elif query.data == "javascript_az":
+        keyboard = [[
+            InlineKeyboardButton("1 bolum", callback_data="az_010")
+        ]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "«YAXŞI!! Gəlin 🟨 JavaScript səyahətimizə başlayaq»"
+,
+            reply_markup=reply_markup)
+    elif query.data == "az_008":
+        keyboard = [[InlineKeyboardButton("🐍 Bashla", callback_data="az_011")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("Gəlin başlayaq!\nFəsil 1:", reply_markup=reply_markup)
+
+    elif query.data == "az_011":
+        keyboard = [[InlineKeyboardButton("Novbeti bolum➡️", callback_data="az_012")],
+                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+"🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
+"🔹 *Addım 1: Python-u yüklə*\n"
+"[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
+"🔹 *Addım 2: Quraşdırma*\n"
+"— 'Add Python to PATH' qutusunu işarələ\n"
+"— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
+"🔹 *Addım 3: Yoxlama*\n"
+"`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
+"🔹 *Addım 4: PyCharm-i yüklə*\n"
+"[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
+"— Community versiyasını quraşdır\n\n"
+"🔹 *Addım 5: Python-u qoş*\n"
+"New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
+"`C:/Program Files/Python3X/python.exe`\n\n"
+"✅ *Yoxlama:*\n"
+"Yeni fayl yarat və kodu əlavə et:\n"
+"```python\nprint(\"Hello, world!\")\n```\n"
+"▶️ Run düyməsini kliklə",
+parse_mode="Markdown", reply_markup=reply_markup
+)
+
+
+    elif query.data == "az_012":
+        keyboard = [[InlineKeyboardButton(" Novbeti bolum➡️", callback_data="az_013")],
+                    [InlineKeyboardButton("Son bolum",callback_data="az_014")],
+                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+"🐍 *Python-da dəyişənlər və məlumat tipləri*\n\n"
+"🔹 *Dəyişən nədir?*\n"
+"— Məlumatları saxlamaq üçün ad. Tip avtomatik müəyyən olunur.\n\n"
+"🔹 *Dəyişənlərə nümunələr:*\n"
+"`x = 10` — tam ədəd (int)\n"
+"`name = \"Tom\"` — mətn sətiri (str)\n"
+"`pi = 3.14` — onluq ədəd (float)\n\n"
+"🔹 *Əsas məlumat tipləri:*\n"
+"- int — tam ədədlər\n"
+"- float — onluq ədədlər\n"
+"- str — mətn sətirləri\n"
+"- bool — True / False (loji)\n\n"
+"🔹 *Məlumatları necə çıxarmaq olar?*\n"
+"`print(x)`\n`print(name)`\n`print(pi)`\n\n"
+"✅ *Özün sınayaraq gör:*\n"
+"```python\nage = 15\ncity = \"Moskva\"\nis_student = True\n\n"
+"print(\"Yaş:\", age)\nprint(\"Şəhər:\", city)\nprint(\"Tələbə:\", is_student)\n```",
+parse_mode="Markdown", reply_markup=reply_markup
+)
+
+    elif query.data == "az_014":
+        keyboard = [[InlineKeyboardButton("Novbeti bolum ➡️", callback_data="az_012")],
+                   [InlineKeyboardButton("menyuya qayit ", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
+    "🔹 *Addım 1: Python-u yüklə*\n"
+    "[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
+    "🔹 *Addım 2: Quraşdırma*\n"
+    "— 'Add Python to PATH' qutusunu işarələ\n"
+    "— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
+    "🔹 *Addım 3: Yoxlama*\n"
+    "`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
+    "🔹 *Addım 4: PyCharm-i yüklə*\n"
+    "[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
+    "— Community versiyasını quraşdır\n\n"
+    "🔹 *Addım 5: Python-u qoş*\n"
+    "New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
+    "`C:/Program Files/Python3X/python.exe`\n\n"
+    "✅ *Yoxlama:*\n"
+    "Yeni fayl yarat və kodu əlavə et:\n"
+    "```python\nprint(\"Hello, world!\")\n```\n"
+    "▶️ Run düyməsini kliklə",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+
+
+    elif query.data == "az_013":
+        keyboard = [[InlineKeyboardButton("Novbeti bolum ➡️", callback_data="az_015")],
+                    [InlineKeyboardButton("Son bolum",callback_data="az_016")],
+                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "🧠 *Условия в Python: if, elif, else*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Это способ выполнять код, только если выполнено определённое условие.\n"
+            "— Используется if, elif, else\n\n"
+            "🔹 *Синтаксис:*\n"
+            "```python\nage = 16\n\nif age >= 18:\n    print(\"Ты совершеннолетний\")\n"
+            "elif age >= 14:\n    print(\"Ты подросток\")\nelse:\n    print(\"Ты ребёнок\")\n```\n\n"
+            "🔹 *Операторы сравнения:* ==, !=, >, <, >=, <=\n"
+            "🔹 *Логические операторы:* and, or, not\n\n"
+            "✅ *Попробуй сам:*\n"
+            "```python\nname = input(\"Твоё имя: \")\nif name == \"Tom\":\n    print(\"Привет, Том!\")\n"
+            "else:\n    print(\"Привет, гость!\")\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+    elif query.data == "az_016":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_013")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_014")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "🐍 *Переменные и типы данных в Python*\n\n"
+            "🔹 *Что такое переменная?*\n"
+            "— Это имя для хранения данных. Тип определяется автоматически.\n\n"
+            "🔹 *Примеры переменных:*\n"
+            "`x = 10` — целое число (int)\n"
+            "`name = \"Tom\"` — строка (str)\n"
+            "`pi = 3.14` — число с плавающей точкой (float)\n\n"
+            "🔹 *Основные типы данных:*\n"
+            "- int — целые числа\n"
+            "- float — числа с десятичной точкой\n"
+            "- str — текстовые строки\n"
+            "- bool — True / False (логика)\n\n"
+            "🔹 *Как вывести данные?*\n"
+            "`print(x)`\n`print(name)`\n`print(pi)`\n\n"
+            "✅ *Попробуй сам:*\n"
+            "```python\nage = 15\ncity = \"Москва\"\nis_student = True\n\n"
+            "print(\"Возраст:\", age)\nprint(\"Город:\", city)\nprint(\"Студент:\", is_student)\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_015":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_017")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_018")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔄 *Python: Циклы for и while*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это конструкция для повторного выполнения блока кода.\n"
+                                      "— Используется для перебора списков, чисел и других коллекций.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл for:*\n"
+                                      "```python\nfor i in range(5):\n    print(i)\n```\n"
+                                      "— Выведет числа от 0 до 4.\n\n"
+                                      "🔸 range(5) создаёт последовательность: 0, 1, 2, 3, 4\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл while:*\n"
+                                      "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
+                                      "— Повторяет блок кода, пока условие истинно.\n\n"
+                                      "============================\n"
+                                      "🔹 *Перебор списка с for:*\n"
+                                      "```python\nfruits = [\"яблоко\", \"банан\", \"вишня\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- for — удобен для перебора элементов\n"
+                                      "- while — пока условие выполняется, цикл продолжается\n"
+                                      "- Чтобы остановить цикл досрочно, можно использовать `break`\n\n"
+                                      "💡 Циклы — основа автоматизации и обработки больших объёмов данных!\n"
+                                      "Попробуй сам написать простой цикл и вывести список чисел или слов!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_018":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_015")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_016")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "🧠 *Условия в Python: if, elif, else*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Это способ выполнять код, только если выполнено определённое условие.\n"
+            "— Используется if, elif, else\n\n"
+            "🔹 *Синтаксис:*\n"
+            "```python\nage = 16\n\nif age >= 18:\n    print(\"Ты совершеннолетний\")\n"
+            "elif age >= 14:\n    print(\"Ты подросток\")\nelse:\n    print(\"Ты ребёнок\")\n```\n\n"
+            "🔹 *Операторы сравнения:* ==, !=, >, <, >=, <=\n"
+            "🔹 *Логические операторы:* and, or, not\n\n"
+            "✅ *Попробуй сам:*\n"
+            "```python\nname = input(\"Твоё имя: \")\nif name == \"Tom\":\n    print(\"Привет, Том!\")\n"
+            "else:\n    print(\"Привет, гость!\")\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_017":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_019")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_020")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📚 *Python: Списки (list)*\n\n"
+                                      "🔹 *Что такое список?*\n"
+                                      "— Это упорядоченная коллекция элементов.\n"
+                                      "— Можно хранить числа, строки и даже другие списки внутри.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример списка:*\n"
+                                      "```python\nfruits = [\"яблоко\", \"банан\", \"вишня\"]\n```\n"
+                                      "— Список из трёх строк.\n\n"
+                                      "🔸 Доступ по индексу:\n"
+                                      "`fruits[0]` → \"яблоко\"\n"
+                                      "`fruits[2]` → \"вишня\"\n\n"
+                                      "============================\n"
+                                      "🔹 *Изменение и добавление элементов:*\n"
+                                      "```python\nfruits[1] = \"киви\"  # Замена 'банан' на 'киви'\nfruits.append(\"груша\")  # Добавляем элемент\n```\n\n"
+                                      "============================\n"
+                                      "🔹 *Перебор списка:*\n"
+                                      "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
+                                      "🔸 Выводит каждый элемент списка.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Индексы начинаются с 0\n"
+                                      "- Можно хранить элементы разных типов\n"
+                                      "- Списки изменяемы (можно добавлять, удалять элементы)\n\n"
+                                      "💡 Списки — один из самых мощных инструментов для работы с коллекциями данных в Python.\n"
+                                      "Попробуй создать свой список и перебрать его в цикле!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_020":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_017")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_018")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔄 *Python: Циклы for и while*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это конструкция для повторного выполнения блока кода.\n"
+                                      "— Используется для перебора списков, чисел и других коллекций.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл for:*\n"
+                                      "```python\nfor i in range(5):\n    print(i)\n```\n"
+                                      "— Выведет числа от 0 до 4.\n\n"
+                                      "🔸 range(5) создаёт последовательность: 0, 1, 2, 3, 4\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл while:*\n"
+                                      "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
+                                      "— Повторяет блок кода, пока условие истинно.\n\n"
+                                      "============================\n"
+                                      "🔹 *Перебор списка с for:*\n"
+                                      "```python\nfruits = [\"яблоко\", \"банан\", \"вишня\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- for — удобен для перебора элементов\n"
+                                      "- while — пока условие выполняется, цикл продолжается\n"
+                                      "- Чтобы остановить цикл досрочно, можно использовать `break`\n\n"
+                                      "💡 Циклы — основа автоматизации и обработки больших объёмов данных!\n"
+                                      "Попробуй сам написать простой цикл и вывести список чисел или слов!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_019":
+        keyboard = [[InlineKeyboardButton("прошлая глава",callback_data="az_021")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🛠️ *Функции в Python*\n\n"
+                                      "🔹 *Что такое функция?*\n"
+                                      "— Это блок кода, который выполняет определённую задачу.\n"
+                                      "— Функции помогают избежать повторения кода и делают программы понятнее.\n\n"
+                                      "============================\n"
+                                      "🔹 *Простейшая функция:*\n"
+                                      "```python\ndef say_hello():\n    print(\"Привет, мир!\")\n\nsay_hello()  # Вызов функции\n```\n"
+                                      "— Ключевое слово `def`, имя функции, круглые скобки и двоеточие.\n"
+                                      "— Всё, что внутри — выполняется при вызове функции.\n\n"
+                                      "============================\n"
+                                      "🔹 *Функция с параметрами:*\n"
+                                      "```python\ndef greet(name):\n    print(\"Привет,\", name)\n\ngreet(\"Алиса\")\n```\n"
+                                      "— Можно передавать значения в функцию.\n"
+                                      "— Они называются аргументами или параметрами.\n\n"
+                                      "============================\n"
+                                      "🔹 *Функция с возвратом значения (`return`):*\n"
+                                      "```python\ndef square(x):\n    return x * x\n\nresult = square(5)\nprint(result)\n```\n"
+                                      "— `return` возвращает результат работы функции.\n"
+                                      "— Можно сохранить результат в переменную.\n\n"
+                                      "============================\n"
+                                      "✅ *Почему функции важны?*\n"
+                                      "- Делают код компактным и читаемым\n"
+                                      "- Позволяют переиспользовать один и тот же блок кода\n"
+                                      "- Можно разбивать большие программы на логические части\n\n"
+                                      "💡 Сначала попробуй написать функцию, которая выводит твоё имя, потом — функцию, которая возвращает сумму двух чисел!\n"
+                                      "Функции — это основа любого языка программирования! 🚀",
+                                      parse_mode="Markdown",reply_markup = reply_markup
+                                      )
+    elif query.data == "az_021":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_019")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_020")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📚 *Python: Списки (list)*\n\n"
+                                      "🔹 *Что такое список?*\n"
+                                      "— Это упорядоченная коллекция элементов.\n"
+                                      "— Можно хранить числа, строки и даже другие списки внутри.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример списка:*\n"
+                                      "```python\nfruits = [\"яблоко\", \"банан\", \"вишня\"]\n```\n"
+                                      "— Список из трёх строк.\n\n"
+                                      "🔸 Доступ по индексу:\n"
+                                      "`fruits[0]` → \"яблоко\"\n"
+                                      "`fruits[2]` → \"вишня\"\n\n"
+                                      "============================\n"
+                                      "🔹 *Изменение и добавление элементов:*\n"
+                                      "```python\nfruits[1] = \"киви\"  # Замена 'банан' на 'киви'\nfruits.append(\"груша\")  # Добавляем элемент\n```\n\n"
+                                      "============================\n"
+                                      "🔹 *Перебор списка:*\n"
+                                      "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
+                                      "🔸 Выводит каждый элемент списка.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Индексы начинаются с 0\n"
+                                      "- Можно хранить элементы разных типов\n"
+                                      "- Списки изменяемы (можно добавлять, удалять элементы)\n\n"
+                                      "💡 Списки — один из самых мощных инструментов для работы с коллекциями данных в Python.\n"
+                                      "Попробуй создать свой список и перебрать его в цикле!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_009":
+        keyboard = [[InlineKeyboardButton("⚙ Начать", callback_data="az_022")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("«Начнем!\nГлава 1:»", reply_markup=reply_markup)
+
+    elif query.data == "az_022":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_023")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙*Установка и старт C++:*\n\n"
+            "🔹 *Шаг 1: Установи компилятор*\n"
+            "[Скачать MinGW](https://sourceforge.net/projects/mingw/)\n"
+            "— Установи gcc и добавь путь к bin в PATH\n\n"
+            "🔹 *Шаг 2: Скачай редактор*\n"
+            "[Скачать Visual Studio Code](https://code.visualstudio.com/)\n\n"
+            "🔹 *Шаг 3: Проверь компилятор:*\n"
+            "`g++ --version`\n\n"
+            "🔹 *Шаг 4: Простой код:*\n"
+            "```cpp\n#include <iostream>\nint main() {\n"
+            "    std::cout << \"Hello, world!\";\n    return 0;\n}\n```\n"
+            "Сохрани как `main.cpp`, скомпилируй:\n"
+            "`g++ main.cpp -o main`\n`./main`",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_023":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_024")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_025")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙️ *C++: Переменные и типы данных*\n\n"
+            "🔹 *Что такое переменная?*\n"
+            "— Это именованная область памяти для хранения данных.\n"
+            "— Перед использованием переменную нужно объявить с типом.\n\n"
+            "🔹 *Примеры:*\n"
+            "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
+            "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
+            "🔹 *Пример вывода:*\n"
+            "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
+            "    int age = 15;\n    std::string name = \"Tom\";\n"
+            "    std::cout << \"Имя: \" << name << \"\\n\";\n"
+            "    std::cout << \"Возраст: \" << age << \"\\n\";\n    return 0;\n}\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+    elif query.data == "az_025":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_023")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙*Установка и старт C++:*\n\n"
+            "🔹 *Шаг 1: Установи компилятор*\n"
+            "[Скачать MinGW](https://sourceforge.net/projects/mingw/)\n"
+            "— Установи gcc и добавь путь к bin в PATH\n\n"
+            "🔹 *Шаг 2: Скачай редактор*\n"
+            "[Скачать Visual Studio Code](https://code.visualstudio.com/)\n\n"
+            "🔹 *Шаг 3: Проверь компилятор:*\n"
+            "`g++ --version`\n\n"
+            "🔹 *Шаг 4: Простой код:*\n"
+            "```cpp\n#include <iostream>\nint main() {\n"
+            "    std::cout << \"Hello, world!\";\n    return 0;\n}\n```\n"
+            "Сохрани как `main.cpp`, скомпилируй:\n"
+            "`g++ main.cpp -o main`\n`./main`",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_024":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_026")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_027")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "🧠 *C++: Условия (if, else, else if)*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Позволяет выполнять код при выполнении условий.\n\n"
+            "🔹 *Пример:*\n"
+            "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n"
+            "    int age = 16;\n"
+            "    if (age >= 18) {\n        cout << \"Ты совершеннолетний\";\n"
+            "    } else if (age >= 14) {\n        cout << \"Ты подросток\";\n"
+            "    } else {\n        cout << \"Ты ребёнок\";\n    }\n    return 0;\n}\n```\n\n"
+            "🔹 *Операторы:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
+            "🔹 *Логика:* `&&`, `||`, `!`\n\n"
+            "✅ *Попробуй сам!*",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+    elif query.data == "az_027":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_024")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_025")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙️ *C++: Переменные и типы данных*\n\n"
+            "🔹 *Что такое переменная?*\n"
+            "— Это именованная область памяти для хранения данных.\n"
+            "— Перед использованием переменную нужно объявить с типом.\n\n"
+            "🔹 *Примеры:*\n"
+            "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
+            "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
+            "🔹 *Пример вывода:*\n"
+            "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
+            "    int age = 15;\n    std::string name = \"Tom\";\n"
+            "    std::cout << \"Имя: \" << name << \"\\n\";\n"
+            "    std::cout << \"Возраст: \" << age << \"\\n\";\n    return 0;\n}\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_026":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_028")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_029")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔁 *C++: Циклы (for, while, do while)*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это способ многократно выполнять один и тот же блок кода, пока выполняется условие.\n\n"
+                                      "🔹 *Типы циклов в C++:*\n"
+                                      "- `for` — когда заранее известно количество повторений\n"
+                                      "- `while` — пока условие истинно\n"
+                                      "- `do while` — сначала делает, потом проверяет условие\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: for*\n"
+                                      "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << i << \" \";\n}\n```\n"
+                                      "🔸 Вывод: `0 1 2 3 4`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: while*\n"
+                                      "```cpp\nint i = 0;\nwhile (i < 3) {\n    cout << i << endl;\n    i++;\n}\n```\n"
+                                      "🔸 Вывод: `0`, `1`, `2`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: do while*\n"
+                                      "```cpp\nint i = 0;\ndo {\n    cout << i << endl;\n    i++;\n} while (i < 2);\n```\n"
+                                      "🔸 Вывод: `0`, `1`\n\n"
+                                      "============================\n"
+                                      "✅ *Когда использовать?*\n"
+                                      "- `for` — удобно для счётчиков (i = 0; i < N; i++)\n"
+                                      "- `while` — когда заранее не знаешь, сколько раз\n"
+                                      "- `do while` — минимум 1 раз выполнение гарантировано\n\n"
+                                      "Попробуй сам!"
+                                      ,
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+    elif query.data == "az_029":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_026")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_027")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "🧠 *C++: Условия (if, else, else if)*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Позволяет выполнять код при выполнении условий.\n\n"
+            "🔹 *Пример:*\n"
+            "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n"
+            "    int age = 16;\n"
+            "    if (age >= 18) {\n        cout << \"Ты совершеннолетний\";\n"
+            "    } else if (age >= 14) {\n        cout << \"Ты подросток\";\n"
+            "    } else {\n        cout << \"Ты ребёнок\";\n    }\n    return 0;\n}\n```\n\n"
+            "🔹 *Операторы:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
+            "🔹 *Логика:* `&&`, `||`, `!`\n\n"
+            "✅ *Попробуй сам!*",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_028":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_030")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_031")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *C++: Массивы (Arrays)*\n\n"
+                                      "🔹 *Что такое массив?*\n"
+                                      "— Это набор элементов **одного типа**, расположенных в памяти подряд.\n"
+                                      "— Каждый элемент имеет свой индекс (нумерация с 0).\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример массива:*\n"
+                                      "```cpp\nint numbers[5] = {10, 20, 30, 40, 50};\n```\n"
+                                      "— Создаёт массив из 5 элементов типа int.\n\n"
+                                      "🔸 Доступ к элементу:\n"
+                                      "`numbers[0]` → 10\n"
+                                      "`numbers[3]` → 40\n\n"
+                                      "============================\n"
+                                      "🔹 *Вывод всех элементов через цикл:*\n"
+                                      "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << numbers[i] << \" \";\n}\n```\n"
+                                      "🔸 Вывод: `10 20 30 40 50`\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод значений от пользователя:*\n"
+                                      "```cpp\nint a[3];\nfor (int i = 0; i < 3; i++) {\n    cin >> a[i];\n}\n```\n"
+                                      "🔸 Сохраняет 3 числа в массив.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Индексы от `0` до `n - 1`\n"
+                                      "- Выход за границы массива = ❌ ошибка (UB — undefined behavior)\n"
+                                      "- Все элементы одного типа (int, float, char и т.д.)\n\n"
+                                      "💡 Массивы — это основа. С ними ты изучишь работу с памятью, сортировку, алгоритмы!\n\n"
+                                      "Попробуй создать массив и вывести его элементы!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+    elif query.data == "az_031":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_028")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_029")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔁 *C++: Циклы (for, while, do while)*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это способ многократно выполнять один и тот же блок кода, пока выполняется условие.\n\n"
+                                      "🔹 *Типы циклов в C++:*\n"
+                                      "- `for` — когда заранее известно количество повторений\n"
+                                      "- `while` — пока условие истинно\n"
+                                      "- `do while` — сначала делает, потом проверяет условие\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: for*\n"
+                                      "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << i << \" \";\n}\n```\n"
+                                      "🔸 Вывод: `0 1 2 3 4`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: while*\n"
+                                      "```cpp\nint i = 0;\nwhile (i < 3) {\n    cout << i << endl;\n    i++;\n}\n```\n"
+                                      "🔸 Вывод: `0`, `1`, `2`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: do while*\n"
+                                      "```cpp\nint i = 0;\ndo {\n    cout << i << endl;\n    i++;\n} while (i < 2);\n```\n"
+                                      "🔸 Вывод: `0`, `1`\n\n"
+                                      "============================\n"
+                                      "✅ *Когда использовать?*\n"
+                                      "- `for` — удобно для счётчиков (i = 0; i < N; i++)\n"
+                                      "- `while` — когда заранее не знаешь, сколько раз\n"
+                                      "- `do while` — минимум 1 раз выполнение гарантировано\n\n"
+                                      "Попробуй сам!"
+                                      ,
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_030":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_032")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_033")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔤 *C++: Строки (Strings)*\n\n"
+                                      "🔹 *Что такое строка?*\n"
+                                      "— Это последовательность символов, например, имя или фраза.\n"
+                                      "— В C++ можно использовать массив символов или класс `std::string`.\n\n"
+                                      "============================\n"
+                                      "🔹 *Строка как массив символов:*\n"
+                                      "```cpp\nchar name[6] = \"Tom\";\n```\n"
+                                      "🔸 Символ `\\0` автоматически добавляется в конце — это конец строки.\n"
+                                      "🔸 Размер массива должен быть больше длины строки.\n\n"
+                                      "============================\n"
+                                      "🔹 *Строки с `std::string`:*\n"
+                                      "```cpp\n#include <string>\n\nstd::string city = \"Baku\";\n```\n"
+                                      "— Такой способ удобнее и безопаснее.\n\n"
+                                      "============================\n"
+                                      "🔹 *Основные операции:*\n"
+                                      "```cpp\nstd::string name = \"Tom\";\n\n"
+                                      "cout << name << endl;         // Вывод строки\n"
+                                      "cout << name.length() << endl; // Длина строки\n"
+                                      "name += \" Hardy\";             // Конкатенация (сложение)\n"
+                                      "```\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод строки от пользователя:*\n"
+                                      "```cpp\nstd::string userName;\ncout << \"Введите имя: \";\ncin >> userName;\n```\n"
+                                      "❗ `cin` читает до первого пробела. Если нужна фраза:\n"
+                                      "```cpp\nstd::string fullName;\ngetline(cin, fullName);\n```\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- `std::string` проще и безопаснее, чем массивы `char`\n"
+                                      "- Можно легко соединять строки, измерять длину, искать символы\n"
+                                      "- Для русских символов может понадобиться настройка кодировки\n\n"
+                                      "💡 Строки — это основа работы с текстом, формами, сообщениями!\n"
+                                      "Попробуй создать строку и вывести её на экран! 🚀",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_033":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_030")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_031")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *C++: Массивы (Arrays)*\n\n"
+                                      "🔹 *Что такое массив?*\n"
+                                      "— Это набор элементов **одного типа**, расположенных в памяти подряд.\n"
+                                      "— Каждый элемент имеет свой индекс (нумерация с 0).\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример массива:*\n"
+                                      "```cpp\nint numbers[5] = {10, 20, 30, 40, 50};\n```\n"
+                                      "— Создаёт массив из 5 элементов типа int.\n\n"
+                                      "🔸 Доступ к элементу:\n"
+                                      "`numbers[0]` → 10\n"
+                                      "`numbers[3]` → 40\n\n"
+                                      "============================\n"
+                                      "🔹 *Вывод всех элементов через цикл:*\n"
+                                      "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << numbers[i] << \" \";\n}\n```\n"
+                                      "🔸 Вывод: `10 20 30 40 50`\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод значений от пользователя:*\n"
+                                      "```cpp\nint a[3];\nfor (int i = 0; i < 3; i++) {\n    cin >> a[i];\n}\n```\n"
+                                      "🔸 Сохраняет 3 числа в массив.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Индексы от `0` до `n - 1`\n"
+                                      "- Выход за границы массива = ❌ ошибка (UB — undefined behavior)\n"
+                                      "- Все элементы одного типа (int, float, char и т.д.)\n\n"
+                                      "💡 Массивы — это основа. С ними ты изучишь работу с памятью, сортировку, алгоритмы!\n\n"
+                                      "Попробуй создать массив и вывести его элементы!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_032":
+        keyboard = [
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_034")],
+                      [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *C++: Функции*\n\n"
+                                      "🔹 *Что такое функция?*\n"
+                                      "— Это блок кода, выполняющий определённую задачу.\n"
+                                      "— Помогает структурировать программу и избежать повторений.\n\n"
+                                      "============================\n"
+                                      "🔹 *Простейшая функция:*\n"
+                                      "```cpp\nvoid sayHello() {\n    cout << \"Привет, мир!\" << endl;\n}\n\nint main() {\n    sayHello();\n    return 0;\n}\n```\n"
+                                      "— Ключевое слово `void` означает, что функция ничего не возвращает.\n"
+                                      "— Вызываем функцию просто по имени.\n\n"
+                                      "============================\n"
+                                      "🔹 *Функция с параметрами:*\n"
+                                      "```cpp\nvoid greet(string name) {\n    cout << \"Привет, \" << name << endl;\n}\n\nint main() {\n    greet(\"Алиса\");\n    return 0;\n}\n```\n"
+                                      "— Можно передавать данные внутрь функции.\n"
+                                      "— Параметры указываются в скобках при объявлении.\n\n"
+                                      "============================\n"
+                                      "🔹 *Функция с возвращаемым значением:*\n"
+                                      "```cpp\nint square(int x) {\n    return x * x;\n}\n\nint main() {\n    int res = square(5);\n    cout << res;\n    return 0;\n}\n```\n"
+                                      "— Указываем тип возвращаемого значения (например, `int`).\n"
+                                      "— Используем `return` для возврата результата.\n\n"
+                                      "============================\n"
+                                      "✅ *Почему функции важны?*\n"
+                                      "- Код становится компактным и понятным\n"
+                                      "- Можно переиспользовать один и тот же код\n"
+                                      "- Программа легко делится на части\n\n"
+                                      "💡 Попробуй написать свою функцию, которая считает сумму двух чисел и возвращает результат!\n"
+                                      "Функции — это фундамент хорошего кода на C++! 🚀",
+                                      parse_mode="Markdown",reply_markup = reply_markup)
+    elif query.data == "az_034":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_032")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_033")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔤 *C++: Строки (Strings)*\n\n"
+                                      "🔹 *Что такое строка?*\n"
+                                      "— Это последовательность символов, например, имя или фраза.\n"
+                                      "— В C++ можно использовать массив символов или класс `std::string`.\n\n"
+                                      "============================\n"
+                                      "🔹 *Строка как массив символов:*\n"
+                                      "```cpp\nchar name[6] = \"Tom\";\n```\n"
+                                      "🔸 Символ `\\0` автоматически добавляется в конце — это конец строки.\n"
+                                      "🔸 Размер массива должен быть больше длины строки.\n\n"
+                                      "============================\n"
+                                      "🔹 *Строки с `std::string`:*\n"
+                                      "```cpp\n#include <string>\n\nstd::string city = \"Baku\";\n```\n"
+                                      "— Такой способ удобнее и безопаснее.\n\n"
+                                      "============================\n"
+                                      "🔹 *Основные операции:*\n"
+                                      "```cpp\nstd::string name = \"Tom\";\n\n"
+                                      "cout << name << endl;         // Вывод строки\n"
+                                      "cout << name.length() << endl; // Длина строки\n"
+                                      "name += \" Hardy\";             // Конкатенация (сложение)\n"
+                                      "```\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод строки от пользователя:*\n"
+                                      "```cpp\nstd::string userName;\ncout << \"Введите имя: \";\ncin >> userName;\n```\n"
+                                      "❗ `cin` читает до первого пробела. Если нужна фраза:\n"
+                                      "```cpp\nstd::string fullName;\ngetline(cin, fullName);\n```\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- `std::string` проще и безопаснее, чем массивы `char`\n"
+                                      "- Можно легко соединять строки, измерять длину, искать символы\n"
+                                      "- Для русских символов может понадобиться настройка кодировки\n\n"
+                                      "💡 Строки — это основа работы с текстом, формами, сообщениями!\n"
+                                      "Попробуй создать строку и вывести её на экран! 🚀",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_010":
+        keyboard = [[InlineKeyboardButton("⚙ Начать", callback_data="az_035")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("Давайте начнем!\nГлава 1:", reply_markup=reply_markup)
+    elif query.data == "az_035":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_036")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *Установка и старт JavaScript:*\n\n"
+                                      "🔹 *Шаг 1: Скачай редактор*\n"
+                                      "[Скачать Visual Studio Code](https://code.visualstudio.com/)\n\n"
+                                      "🔹 *Шаг 2: Проверь наличие Node.js*\n"
+                                      "[Скачать Node.js](https://nodejs.org/)\n"
+                                      "— Установи и проверь версию:\n"
+                                      "`node --version`\n\n"
+                                      "🔹 *Шаг 3: Простой код:*\n"
+                                      "Создай файл `main.js` с кодом:\n"
+                                      "```js\nconsole.log(\"Hello, world!\");\n```\n"
+                                      "Запусти через терминал:\n"
+                                      "`node main.js`\n\n"
+                                      "💡 *JavaScript — это первый шаг к созданию сайтов, ботов и приложений!*",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+    elif query.data == "az_036":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_037")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_038")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Переменные и типы данных*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Это именованное хранилище данных.\n"
+                                      "— Объявляется через `let`, `const` или старый способ `var`.\n\n"
+                                      "🔹 *Примеры:*\n"
+                                      "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
+                                      "🔹 *Вывод в консоль:*\n"
+                                      "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Имя:\", name);\nconsole.log(\"Возраст:\", age);\n```\n"
+                                      "💡 *Совет:* Используй `const` для значений, которые не меняются, и `let` для изменяемых переменных.",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+    elif query.data == "az_038":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_036")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *Установка и старт JavaScript:*\n\n"
+                                      "🔹 *Шаг 1: Скачай редактор*\n"
+                                      "[Скачать Visual Studio Code](https://code.visualstudio.com/)\n\n"
+                                      "🔹 *Шаг 2: Проверь наличие Node.js*\n"
+                                      "[Скачать Node.js](https://nodejs.org/)\n"
+                                      "— Установи и проверь версию:\n"
+                                      "`node --version`\n\n"
+                                      "🔹 *Шаг 3: Простой код:*\n"
+                                      "Создай файл `main.js` с кодом:\n"
+                                      "```js\nconsole.log(\"Hello, world!\");\n```\n"
+                                      "Запусти через терминал:\n"
+                                      "`node main.js`\n\n"
+                                      "💡 *JavaScript — это первый шаг к созданию сайтов, ботов и приложений!*",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_037":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_039")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_040")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙️ *JavaScript: Условия и сравнения*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Это проверка, при которой код внутри блока выполняется, если результат выражения — `true`.\n"
+            "— В JavaScript для этого используется конструкция `if`.\n\n"
+            "🔹 *Пример:*\n"
+            "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
+            "🔹 *Операторы сравнения:*\n"
+            "`==` — сравнение по значению (может преобразовывать типы)\n"
+            "`===` — строгое сравнение (учитывает и тип, и значение)\n"
+            "`!=` — не равно (по значению)\n"
+            "`!==` — строгое не равно (по типу и значению)\n"
+            "`>` — больше\n"
+            "`<` — меньше\n"
+            "`>=` — больше или равно\n"
+            "`<=` — меньше или равно\n\n"
+            "💡 *Важно:* Лучше использовать `===` и `!==` для избежания неожиданных ошибок из-за преобразования типов.",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+    elif query.data == "az_040":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_037")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_038")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Переменные и типы данных*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Это именованное хранилище данных.\n"
+                                      "— Объявляется через `let`, `const` или старый способ `var`.\n\n"
+                                      "🔹 *Примеры:*\n"
+                                      "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
+                                      "🔹 *Вывод в консоль:*\n"
+                                      "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Имя:\", name);\nconsole.log(\"Возраст:\", age);\n```\n"
+                                      "💡 *Совет:* Используй `const` для значений, которые не меняются, и `let` для изменяемых переменных.",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+    elif query.data == "az_039":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_041")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_042")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Логические операторы*\n\n"
+                                      "🔹 *Что это?*\n"
+                                      "— Логические операторы помогают объединять условия.\n"
+                                      "— С ними можно проверять сразу несколько условий одновременно.\n\n"
+                                      "🔹 *Виды логических операторов:*\n"
+                                      "`&&` — И (оба условия должны быть истинны)\n"
+                                      "`||` — ИЛИ (достаточно одного истинного условия)\n"
+                                      "`!` — НЕ (отрицание, меняет значение на противоположное)\n\n"
+                                      "🔹 *Примеры:*\n"
+                                      "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
+                                      "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"Пользователь оффлайн\");\n}\n```\n\n"
+                                      "💡 *Важно:* Сначала проверяется логика внутри скобок, затем применяются операторы.",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+    elif query.data == "az_042":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_039")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_040")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "⚙️ *JavaScript: Условия и сравнения*\n\n"
+            "🔹 *Что такое условие?*\n"
+            "— Это проверка, при которой код внутри блока выполняется, если результат выражения — `true`.\n"
+            "— В JavaScript для этого используется конструкция `if`.\n\n"
+            "🔹 *Пример:*\n"
+            "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
+            "🔹 *Операторы сравнения:*\n"
+            "`==` — сравнение по значению (может преобразовывать типы)\n"
+            "`===` — строгое сравнение (учитывает и тип, и значение)\n"
+            "`!=` — не равно (по значению)\n"
+            "`!==` — строгое не равно (по типу и значению)\n"
+            "`>` — больше\n"
+            "`<` — меньше\n"
+            "`>=` — больше или равно\n"
+            "`<=` — меньше или равно\n\n"
+            "💡 *Важно:* Лучше использовать `===` и `!==` для избежания неожиданных ошибок из-за преобразования типов.",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
+
+    elif query.data == "az_041":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_043")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_044")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔁 *JavaScript: Циклы*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это способ повторять блок кода несколько раз.\n"
+                                      "— Используется для работы с массивами, повторяющихся задач и автоматизации.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл for*\n"
+                                      "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
+                                      "— Выводит числа от 0 до 4.\n"
+                                      "`i++` — увеличивает счётчик на 1 каждый раз.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл while*\n"
+                                      "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
+                                      "— Пока `x < 3`, код выполняется.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл do...while*\n"
+                                      "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
+                                      "— Код выполнится хотя бы один раз, даже если условие сразу false.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: перебор массива*\n"
+                                      "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
+                                      "— Перебор всех элементов массива.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Легко создать бесконечный цикл (не забывай изменять счётчик!)\n"
+                                      "- Можно использовать `break` для выхода из цикла\n"
+                                      "- `continue` — пропускает текущую итерацию\n\n"
+                                      "💡 Циклы — ключевой инструмент при работе со структурами данных и автоматизации задач!\n"
+                                      "Попробуй написать цикл, который выводит числа от 10 до 1 в обратном порядке! 🚀",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+    elif query.data == "az_044":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_041")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_042")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Логические операторы*\n\n"
+                                      "🔹 *Что это?*\n"
+                                      "— Логические операторы помогают объединять условия.\n"
+                                      "— С ними можно проверять сразу несколько условий одновременно.\n\n"
+                                      "🔹 *Виды логических операторов:*\n"
+                                      "`&&` — И (оба условия должны быть истинны)\n"
+                                      "`||` — ИЛИ (достаточно одного истинного условия)\n"
+                                      "`!` — НЕ (отрицание, меняет значение на противоположное)\n\n"
+                                      "🔹 *Примеры:*\n"
+                                      "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
+                                      "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"Пользователь оффлайн\");\n}\n```\n\n"
+                                      "💡 *Важно:* Сначала проверяется логика внутри скобок, затем применяются операторы.",
+                                      parse_mode="Markdown", reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_043":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_045")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_046")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Функции подробно*\n\n"
+                                      "🔹 *Что такое функция?*\n"
+                                      "— Это именованный блок кода, который выполняет определённую задачу.\n"
+                                      "— Функцию можно вызывать сколько угодно раз, не дублируя код.\n"
+                                      "— Это основа структурированного программирования.\n\n"
+                                      "🔹 *Зачем нужны функции:*\n"
+                                      "✔ Чтобы не повторять одинаковый код\n"
+                                      "✔ Чтобы разделять программу на логические части\n"
+                                      "✔ Чтобы принимать данные (аргументы) и возвращать результат\n\n"
+                                      "🔹 *Пример простой функции:*\n"
+                                      "```js\nfunction sayHello() {\n    console.log(\"Привет!\");\n}\n\nsayHello(); // вызов функции\n```\n"
+                                      "💡 Функция `sayHello` выводит \"Привет!\" каждый раз, когда её вызывают.\n\n"
+                                      "🔹 *Функция с параметрами:*\n"
+                                      "```js\nfunction greet(name) {\n    console.log(\"Привет, \" + name);\n}\n\ngreet(\"Том\");\ngreet(\"Анна\");\n```\n"
+                                      "💡 Параметр `name` позволяет передавать в функцию разные значения.\n\n"
+                                      "🔹 *Функция, которая что-то возвращает:*\n"
+                                      "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
+                                      "💡 `return` возвращает результат, который можно сохранить или вывести.\n\n"
+                                      "🔹 *Важно:*\n"
+                                      "✔ Функцию можно вызвать в любом месте после её объявления\n"
+                                      "✔ Код внутри функции выполняется только при вызове\n"
+                                      "✔ Можно передавать сколько угодно аргументов\n\n"
+                                      "Функции делают код чище, проще и гибче.",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+    elif query.data == "az_046":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_043")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_044")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔁 *JavaScript: Циклы*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Это способ повторять блок кода несколько раз.\n"
+                                      "— Используется для работы с массивами, повторяющихся задач и автоматизации.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл for*\n"
+                                      "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
+                                      "— Выводит числа от 0 до 4.\n"
+                                      "`i++` — увеличивает счётчик на 1 каждый раз.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл while*\n"
+                                      "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
+                                      "— Пока `x < 3`, код выполняется.\n\n"
+                                      "============================\n"
+                                      "🔹 *Цикл do...while*\n"
+                                      "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
+                                      "— Код выполнится хотя бы один раз, даже если условие сразу false.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример: перебор массива*\n"
+                                      "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
+                                      "— Перебор всех элементов массива.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Легко создать бесконечный цикл (не забывай изменять счётчик!)\n"
+                                      "- Можно использовать `break` для выхода из цикла\n"
+                                      "- `continue` — пропускает текущую итерацию\n\n"
+                                      "💡 Циклы — ключевой инструмент при работе со структурами данных и автоматизации задач!\n"
+                                      "Попробуй написать цикл, который выводит числа от 10 до 1 в обратном порядке! 🚀",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+
+    elif query.data == "az_045":
+        keyboard = [[InlineKeyboardButton("прошлая глава", callback_data="az_047")],
+                    [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]
+                    ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *JavaScript: Объекты (Objects)*\n\n"
+                                      "🔹 *Что такое объект?*\n"
+                                      "— Это структура для хранения связанных данных и функций.\n"
+                                      "— Состоит из пар \"ключ: значение\".\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример простого объекта:*\n"
+                                      "```js\n"
+                                      "let person = {\n"
+                                      "  name: \"Tom\",\n"
+                                      "  age: 25,\n"
+                                      "  isStudent: true\n"
+                                      "};\n"
+                                      "```\n"
+                                      "🔸 Доступ к данным:\n"
+                                      "`person.name` → \"Tom\"\n"
+                                      "`person[\"age\"]` → 25\n\n"
+                                      "============================\n"
+                                      "🔹 *Объект с методом:*\n"
+                                      "```js\n"
+                                      "let car = {\n"
+                                      "  brand: \"Toyota\",\n"
+                                      "  start: function() {\n"
+                                      "    console.log(\"Двигатель запущен\");\n"
+                                      "  }\n"
+                                      "};\n\n"
+                                      "car.start();\n"
+                                      "```\n"
+                                      "============================\n"
+                                      "✅ *Зачем нужны объекты?*\n"
+                                      "- Хранят сложные данные в одной переменной\n"
+                                      "- Позволяют моделировать реальные объекты\n"
+                                      "- Используются повсюду: DOM, серверные запросы, игры\n\n"
+                                      "💡 Попробуй создать объект \"phone\" с полями \"model\", \"year\" и методом \"call()\"!",
+                                      parse_mode="Markdown",reply_markup = reply_markup)
+    elif query.data == "az_047":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_045")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_046")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *JavaScript: Функции подробно*\n\n"
+                                      "🔹 *Что такое функция?*\n"
+                                      "— Это именованный блок кода, который выполняет определённую задачу.\n"
+                                      "— Функцию можно вызывать сколько угодно раз, не дублируя код.\n"
+                                      "— Это основа структурированного программирования.\n\n"
+                                      "🔹 *Зачем нужны функции:*\n"
+                                      "✔ Чтобы не повторять одинаковый код\n"
+                                      "✔ Чтобы разделять программу на логические части\n"
+                                      "✔ Чтобы принимать данные (аргументы) и возвращать результат\n\n"
+                                      "🔹 *Пример простой функции:*\n"
+                                      "```js\nfunction sayHello() {\n    console.log(\"Привет!\");\n}\n\nsayHello(); // вызов функции\n```\n"
+                                      "💡 Функция `sayHello` выводит \"Привет!\" каждый раз, когда её вызывают.\n\n"
+                                      "🔹 *Функция с параметрами:*\n"
+                                      "```js\nfunction greet(name) {\n    console.log(\"Привет, \" + name);\n}\n\ngreet(\"Том\");\ngreet(\"Анна\");\n```\n"
+                                      "💡 Параметр `name` позволяет передавать в функцию разные значения.\n\n"
+                                      "🔹 *Функция, которая что-то возвращает:*\n"
+                                      "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
+                                      "💡 `return` возвращает результат, который можно сохранить или вывести.\n\n"
+                                      "🔹 *Важно:*\n"
+                                      "✔ Функцию можно вызвать в любом месте после её объявления\n"
+                                      "✔ Код внутри функции выполняется только при вызове\n"
+                                      "✔ Можно передавать сколько угодно аргументов\n\n"
+                                      "Функции делают код чище, проще и гибче.",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+
+    elif query.data == "az_003":
+        keyboard = [[InlineKeyboardButton("☕ Начните изучать Java", callback_data="az_048")]
+            ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("Java", reply_markup=reply_markup)
+    elif query.data == "az_048":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_049")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("☕️ *Java: Установка и первый проект*\n\n"
+                                      "🔹 *Шаг 1: Скачай и установи JDK*\n"
+                                      "[🔗 Официальная страница загрузки](https://www.oracle.com/java/technologies/javase-downloads.html)\n"
+                                      "— Выбери Java SE Development Kit (JDK) под свою операционную систему\n"
+                                      "— Во время установки отметь галочку `Add JAVA to PATH` (если доступна)\n\n"
+                                      "🔹 *Шаг 2: Проверь установку*\n"
+                                      "Открой терминал или командную строку и введи:\n"
+                                      "```bash\njava -version\njavac -version\n```\n"
+                                      "Если появились версии — установка прошла успешно!\n\n"
+                                      "🔹 *Шаг 3: Установи среду разработки (IDE)*\n"
+                                      "✅ [IntelliJ IDEA Community (рекомендуется)](https://www.jetbrains.com/idea/download/)\n"
+                                      "✅ [Visual Studio Code + расширение Java](https://code.visualstudio.com/)\n\n"
+                                      "🔹 *Шаг 4: Напиши свой первый Java-код!*\n"
+                                      "Создай файл с именем `Main.java` и введи:\n"
+                                      "```java\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, Java!\");\n    }\n}\n```\n"
+                                      "Затем запусти его в терминале:\n"
+                                      "```bash\njavac Main.java\njava Main\n```\n"
+                                      "✅ Ожидаемый вывод: `Hello, Java!`\n\n"
+                                      "============================\n"
+                                      "🎯 *Ты готов начать изучать Java!*\n"
+                                      "Дальше: переменные, условия, циклы, функции и объектно-ориентированное программирование!\n\n"
+                                      "👇 Нажми кнопку ниже, чтобы перейти к следующему уроку!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_049":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_050")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_051")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Java: Переменные и типы данных*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Переменная — это имя, которое используется для хранения данных.\n"
+                                      "— Каждая переменная должна быть объявлена с конкретным типом данных.\n\n"
+                                      "🔹 *Основные типы данных:*\n"
+                                      "- `int`: целые числа, например `42`\n"
+                                      "- `double`: числа с плавающей точкой, например `3.14`\n"
+                                      "- `char`: одиночный символ, например `'A'`\n"
+                                      "- `boolean`: логические значения — `true` или `false`\n"
+                                      "- `String`: текстовая строка, например `\"Hello\"`\n\n"
+                                      "============================\n"
+                                      "🔹 *Объявление и использование переменных:*\n"
+                                      "```java\n"
+                                      "int age = 18;\n"
+                                      "double pi = 3.14;\n"
+                                      "char grade = 'A';\n"
+                                      "boolean isStudent = true;\n"
+                                      "String name = \"Tom\";\n"
+                                      "```\n\n"
+                                      "🔸 Используй `System.out.println()` для вывода значений:\n"
+                                      "```java\n"
+                                      "System.out.println(name);\n"
+                                      "System.out.println(age);\n"
+                                      "```\n"
+                                      "🔸 Вывод:\n"
+                                      "`Tom`\n"
+                                      "`18`\n\n"
+                                      "============================\n"
+                                      "✅ *Полезные советы:*\n"
+                                      "- Java — строго типизированный язык, каждый параметр должен иметь тип\n"
+                                      "- Java чувствителен к регистру: `Name` ≠ `name`\n"
+                                      "- Используй понятные имена: `int n = 5;` ❌, `int score = 5;` ✅\n\n"
+                                      "💡 Попробуй сам объявить переменные и вывести их через `System.out.println()`!",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+    elif query.data == "az_051":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_049")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("☕️ *Java: Установка и первый проект*\n\n"
+                                      "🔹 *Шаг 1: Скачай и установи JDK*\n"
+                                      "[🔗 Официальная страница загрузки](https://www.oracle.com/java/technologies/javase-downloads.html)\n"
+                                      "— Выбери Java SE Development Kit (JDK) под свою операционную систему\n"
+                                      "— Во время установки отметь галочку `Add JAVA to PATH` (если доступна)\n\n"
+                                      "🔹 *Шаг 2: Проверь установку*\n"
+                                      "Открой терминал или командную строку и введи:\n"
+                                      "```bash\njava -version\njavac -version\n```\n"
+                                      "Если появились версии — установка прошла успешно!\n\n"
+                                      "🔹 *Шаг 3: Установи среду разработки (IDE)*\n"
+                                      "✅ [IntelliJ IDEA Community (рекомендуется)](https://www.jetbrains.com/idea/download/)\n"
+                                      "✅ [Visual Studio Code + расширение Java](https://code.visualstudio.com/)\n\n"
+                                      "🔹 *Шаг 4: Напиши свой первый Java-код!*\n"
+                                      "Создай файл с именем `Main.java` и введи:\n"
+                                      "```java\npublic class Main {\n    public static void main(String[] args) {\n        System.out.println(\"Hello, Java!\");\n    }\n}\n```\n"
+                                      "Затем запусти его в терминале:\n"
+                                      "```bash\njavac Main.java\njava Main\n```\n"
+                                      "✅ Ожидаемый вывод: `Hello, Java!`\n\n"
+                                      "============================\n"
+                                      "🎯 *Ты готов начать изучать Java!*\n"
+                                      "Дальше: переменные, условия, циклы, функции и объектно-ориентированное программирование!\n\n"
+                                      "👇 Нажми кнопку ниже, чтобы перейти к следующему уроку!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_050":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_052")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_053")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "📚 *Java: Условные операторы (if, else, else if)*\n\n"
+            "🔹 *Что такое условный оператор?*\n"
+            "— Это конструкция, которая позволяет выполнять разный код в зависимости от условия.\n\n"
+            "============================\n"
+            "🔹 *Пример кода:*\n"
+            "```java\n"
+            "if (age >= 18) {\n"
+            "    System.out.println(\"Вы совершеннолетний\");\n"
+            "} else if (age >= 14) {\n"
+            "    System.out.println(\"Вы подросток\");\n"
+            "} else {\n"
+            "    System.out.println(\"Вы ребенок\");\n"
+            "}\n"
+            "```\n\n"
+            "🔹 *Операторы сравнения:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
+            "🔹 *Логические операторы:* `&&` (и), `||` (или), `!` (не)\n\n"
+            "✅ *Попробуй это:*\n"
+            "Напиши программу, которая выводит сообщение в зависимости от возраста человека!",
+            parse_mode="Markdown", reply_markup=reply_markup)
+    elif query.data == "az_053":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_050")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_051")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Java: Переменные и типы данных*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Переменная — это имя, которое используется для хранения данных.\n"
+                                      "— Каждая переменная должна быть объявлена с конкретным типом данных.\n\n"
+                                      "🔹 *Основные типы данных:*\n"
+                                      "- `int`: целые числа, например `42`\n"
+                                      "- `double`: числа с плавающей точкой, например `3.14`\n"
+                                      "- `char`: одиночный символ, например `'A'`\n"
+                                      "- `boolean`: логические значения — `true` или `false`\n"
+                                      "- `String`: текстовая строка, например `\"Hello\"`\n\n"
+                                      "============================\n"
+                                      "🔹 *Объявление и использование переменных:*\n"
+                                      "```java\n"
+                                      "int age = 18;\n"
+                                      "double pi = 3.14;\n"
+                                      "char grade = 'A';\n"
+                                      "boolean isStudent = true;\n"
+                                      "String name = \"Tom\";\n"
+                                      "```\n\n"
+                                      "🔸 Используй `System.out.println()` для вывода значений:\n"
+                                      "```java\n"
+                                      "System.out.println(name);\n"
+                                      "System.out.println(age);\n"
+                                      "```\n"
+                                      "🔸 Вывод:\n"
+                                      "`Tom`\n"
+                                      "`18`\n\n"
+                                      "============================\n"
+                                      "✅ *Полезные советы:*\n"
+                                      "- Java — строго типизированный язык, каждый параметр должен иметь тип\n"
+                                      "- Java чувствителен к регистру: `Name` ≠ `name`\n"
+                                      "- Используй понятные имена: `int n = 5;` ❌, `int score = 5;` ✅\n\n"
+                                      "💡 Попробуй сам объявить переменные и вывести их через `System.out.println()`!",
+                                      parse_mode="Markdown", reply_markup=reply_markup)
+
+    elif query.data == "az_052":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_054")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_055")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔄 *Java: Циклы*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Цикл позволяет выполнить один и тот же блок кода несколько раз.\n"
+                                      "— Полезен для повторяющихся действий, автоматизации и обработки данных.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла for:*\n"
+                                      "```java\n"
+                                      "for (int i = 0; i < 5; i++) {\n"
+                                      "    System.out.println(i);\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Выводит числа от 0 до 4.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла while:*\n"
+                                      "```java\n"
+                                      "int x = 0;\n"
+                                      "while (x < 3) {\n"
+                                      "    System.out.println(x);\n"
+                                      "    x++;\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Повторяет действия, пока условие истинно.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла do...while:*\n"
+                                      "```java\n"
+                                      "int y = 0;\n"
+                                      "do {\n"
+                                      "    System.out.println(y);\n"
+                                      "    y++;\n"
+                                      "} while (y < 2);\n"
+                                      "```\n"
+                                      "— Код выполняется хотя бы один раз, даже если условие ложно.\n\n"
+                                      "============================\n"
+                                      "✅ *Полезно знать:*\n"
+                                      "- Используйте `break`, чтобы досрочно выйти из цикла\n"
+                                      "- Используйте `continue`, чтобы перейти к следующей итерации\n"
+                                      "- Избегайте бесконечных циклов, корректно обновляя условие\n\n"
+                                      "💡 Попробуйте написать цикл, который считает от 10 до 1 в обратном порядке!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_055":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_052")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_053")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+            "📚 *Java: Условные операторы (if, else, else if)*\n\n"
+            "🔹 *Что такое условный оператор?*\n"
+            "— Это конструкция, которая позволяет выполнять разный код в зависимости от условия.\n\n"
+            "============================\n"
+            "🔹 *Пример кода:*\n"
+            "```java\n"
+            "if (age >= 18) {\n"
+            "    System.out.println(\"Вы совершеннолетний\");\n"
+            "} else if (age >= 14) {\n"
+            "    System.out.println(\"Вы подросток\");\n"
+            "} else {\n"
+            "    System.out.println(\"Вы ребенок\");\n"
+            "}\n"
+            "```\n\n"
+            "🔹 *Операторы сравнения:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
+            "🔹 *Логические операторы:* `&&` (и), `||` (или), `!` (не)\n\n"
+            "✅ *Попробуй это:*\n"
+            "Напиши программу, которая выводит сообщение в зависимости от возраста человека!",
+            parse_mode="Markdown", reply_markup=reply_markup)
+
+    elif query.data == "az_054":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_056")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_057")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Java: Массивы*\n\n"
+                                      "🔹 *Что такое массив?*\n"
+                                      "— Массив — это коллекция элементов одного типа, хранящихся последовательно в памяти.\n"
+                                      "— Каждый элемент имеет индекс (начиная с 0).\n\n"
+                                      "============================\n"
+                                      "🔹 *Создание массива целых чисел:*\n"
+                                      "```java\n"
+                                      "int[] numbers = {10, 20, 30, 40, 50};\n"
+                                      "```\n"
+                                      "— Создаёт массив из 5 целых чисел.\n\n"
+                                      "🔸 Доступ к элементам:\n"
+                                      "`numbers[0]` → 10\n"
+                                      "`numbers[3]` → 40\n\n"
+                                      "============================\n"
+                                      "🔹 *Вывод всех элементов с помощью цикла for:*\n"
+                                      "```java\n"
+                                      "for (int i = 0; i < numbers.length; i++) {\n"
+                                      "    System.out.println(numbers[i]);\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— `numbers.length` возвращает размер массива.\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод значений от пользователя:*\n"
+                                      "```java\n"
+                                      "Scanner input = new Scanner(System.in);\n"
+                                      "int[] a = new int[3];\n"
+                                      "for (int i = 0; i < 3; i++) {\n"
+                                      "    a[i] = input.nextInt();\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Сохраняет 3 числа, введённые пользователем.\n\n"
+                                      "============================\n"
+                                      "✅ *Полезные напоминания:*\n"
+                                      "- Индексы идут от `0` до `n - 1`\n"
+                                      "- Размер массива фиксирован\n"
+                                      "- Выход за границы массива вызовет ошибку (ArrayIndexOutOfBoundsException)\n\n"
+                                      "💡 Массивы — основа структур данных, сортировок и алгоритмов!\n"
+                                      "Попробуй создать свой массив и вывести его элементы!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_057":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_054")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_055")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔄 *Java: Циклы*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Цикл позволяет выполнить один и тот же блок кода несколько раз.\n"
+                                      "— Полезен для повторяющихся действий, автоматизации и обработки данных.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла for:*\n"
+                                      "```java\n"
+                                      "for (int i = 0; i < 5; i++) {\n"
+                                      "    System.out.println(i);\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Выводит числа от 0 до 4.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла while:*\n"
+                                      "```java\n"
+                                      "int x = 0;\n"
+                                      "while (x < 3) {\n"
+                                      "    System.out.println(x);\n"
+                                      "    x++;\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Повторяет действия, пока условие истинно.\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример цикла do...while:*\n"
+                                      "```java\n"
+                                      "int y = 0;\n"
+                                      "do {\n"
+                                      "    System.out.println(y);\n"
+                                      "    y++;\n"
+                                      "} while (y < 2);\n"
+                                      "```\n"
+                                      "— Код выполняется хотя бы один раз, даже если условие ложно.\n\n"
+                                      "============================\n"
+                                      "✅ *Полезно знать:*\n"
+                                      "- Используйте `break`, чтобы досрочно выйти из цикла\n"
+                                      "- Используйте `continue`, чтобы перейти к следующей итерации\n"
+                                      "- Избегайте бесконечных циклов, корректно обновляя условие\n\n"
+                                      "💡 Попробуйте написать цикл, который считает от 10 до 1 в обратном порядке!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_056":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_058")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_059")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🧠 *Java: Методы (Функции)*\n\n"
+                                      "🔹 *Что такое метод?*\n"
+                                      "— Метод — это блок кода, который выполняет конкретную задачу.\n"
+                                      "— Его можно вызывать много раз без повторного написания кода.\n\n"
+                                      "============================\n"
+                                      "🔹 *Зачем использовать методы?*\n"
+                                      "✔️ Избегать дублирования кода\n"
+                                      "✔️ Делать программу понятнее и проще для поддержки\n"
+                                      "✔️ Принимать параметры и возвращать результат\n\n"
+                                      "============================\n"
+                                      "🔹 *Простой пример:*\n"
+                                      "```java\n"
+                                      "public class Main {\n"
+                                      "    public static void sayHello() {\n"
+                                      "        System.out.println(\"Привет!\");\n"
+                                      "    }\n\n"
+                                      "    public static void main(String[] args) {\n"
+                                      "        sayHello(); // вызов метода\n"
+                                      "    }\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Метод `sayHello` выводит \"Привет!\".\n\n"
+                                      "============================\n"
+                                      "🔹 *Метод с параметрами:*\n"
+                                      "```java\n"
+                                      "public static void greet(String name) {\n"
+                                      "    System.out.println(\"Привет, \" + name);\n"
+                                      "}\n\n"
+                                      "greet(\"Алиса\");\n"
+                                      "```\n"
+                                      "— Параметры делают метод универсальнее.\n\n"
+                                      "============================\n"
+                                      "🔹 *Метод с возвращаемым значением:*\n"
+                                      "```java\n"
+                                      "public static int square(int x) {\n"
+                                      "    return x * x;\n"
+                                      "}\n\n"
+                                      "int result = square(4); // 16\n"
+                                      "```\n"
+                                      "— `return` возвращает результат метода.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Все методы должны находиться внутри класса\n"
+                                      "- `main()` — это точка входа в программу\n"
+                                      "- `void` означает, что метод ничего не возвращает\n\n"
+                                      "💡 Попробуй написать свой метод, который выводит твоё имя или складывает два числа! 🚀",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_059":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_056")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_057")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Java: Массивы*\n\n"
+                                      "🔹 *Что такое массив?*\n"
+                                      "— Массив — это коллекция элементов одного типа, хранящихся последовательно в памяти.\n"
+                                      "— Каждый элемент имеет индекс (начиная с 0).\n\n"
+                                      "============================\n"
+                                      "🔹 *Создание массива целых чисел:*\n"
+                                      "```java\n"
+                                      "int[] numbers = {10, 20, 30, 40, 50};\n"
+                                      "```\n"
+                                      "— Создаёт массив из 5 целых чисел.\n\n"
+                                      "🔸 Доступ к элементам:\n"
+                                      "`numbers[0]` → 10\n"
+                                      "`numbers[3]` → 40\n\n"
+                                      "============================\n"
+                                      "🔹 *Вывод всех элементов с помощью цикла for:*\n"
+                                      "```java\n"
+                                      "for (int i = 0; i < numbers.length; i++) {\n"
+                                      "    System.out.println(numbers[i]);\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— `numbers.length` возвращает размер массива.\n\n"
+                                      "============================\n"
+                                      "🔹 *Ввод значений от пользователя:*\n"
+                                      "```java\n"
+                                      "Scanner input = new Scanner(System.in);\n"
+                                      "int[] a = new int[3];\n"
+                                      "for (int i = 0; i < 3; i++) {\n"
+                                      "    a[i] = input.nextInt();\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Сохраняет 3 числа, введённые пользователем.\n\n"
+                                      "============================\n"
+                                      "✅ *Полезные напоминания:*\n"
+                                      "- Индексы идут от `0` до `n - 1`\n"
+                                      "- Размер массива фиксирован\n"
+                                      "- Выход за границы массива вызовет ошибку (ArrayIndexOutOfBoundsException)\n\n"
+                                      "💡 Массивы — основа структур данных, сортировок и алгоритмов!\n"
+                                      "Попробуй создать свой массив и вывести его элементы!",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_058":
+        keyboard = [
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_060")],
+        [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🏗️ *Java: Классы и объекты*\n\n"
+                                      "🔹 *Что такое класс?*\n"
+                                      "— Класс — это шаблон (blueprint) для создания объектов.\n"
+                                      "— Он определяет свойства (данные) и поведение (методы) объектов.\n\n"
+                                      "🔹 *Что такое объект?*\n"
+                                      "— Объект — это экземпляр, созданный на основе класса. Это реальный участник программы.\n\n"
+                                      "============================\n"
+                                      "🔹 *Простой пример:*\n"
+                                      "```java\n"
+                                      "public class Dog {\n"
+                                      "    String name;\n"
+                                      "    int age;\n\n"
+                                      "    void bark() {\n"
+                                      "        System.out.println(name + \": Гав-гав!\");\n"
+                                      "    }\n"
+                                      "}\n\n"
+                                      "public class Main {\n"
+                                      "    public static void main(String[] args) {\n"
+                                      "        Dog myDog = new Dog();\n"
+                                      "        myDog.name = \"Шарик\";\n"
+                                      "        myDog.age = 3;\n"
+                                      "        myDog.bark();\n"
+                                      "    }\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Класс `Dog` имеет два свойства и один метод.\n"
+                                      "— `myDog` — это объект класса `Dog`, который может вызывать методы и изменять данные.\n\n"
+                                      "============================\n"
+                                      "🔹 *Важные понятия:*\n"
+                                      "- Названия классов пишутся с заглавной буквы: `Person`, `Car`, `Animal` и т.д.\n"
+                                      "- `new` используется для создания объектов\n"
+                                      "- В методах можно обращаться к свойствам объекта\n\n"
+                                      "✅ *Классы и объекты — это основа Java*\n"
+                                      "— Почти все Java-программы построены вокруг объектов!\n\n"
+                                      "💡 Далее мы изучим конструкторы, инкапсуляцию, наследование и полиморфизм! 🚀",
+                                      parse_mode="Markdown",reply_markup = reply_markup)
+    elif query.data == "az_060":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_058")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_059")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🧠 *Java: Методы (Функции)*\n\n"
+                                      "🔹 *Что такое метод?*\n"
+                                      "— Метод — это блок кода, который выполняет конкретную задачу.\n"
+                                      "— Его можно вызывать много раз без повторного написания кода.\n\n"
+                                      "============================\n"
+                                      "🔹 *Зачем использовать методы?*\n"
+                                      "✔️ Избегать дублирования кода\n"
+                                      "✔️ Делать программу понятнее и проще для поддержки\n"
+                                      "✔️ Принимать параметры и возвращать результат\n\n"
+                                      "============================\n"
+                                      "🔹 *Простой пример:*\n"
+                                      "```java\n"
+                                      "public class Main {\n"
+                                      "    public static void sayHello() {\n"
+                                      "        System.out.println(\"Привет!\");\n"
+                                      "    }\n\n"
+                                      "    public static void main(String[] args) {\n"
+                                      "        sayHello(); // вызов метода\n"
+                                      "    }\n"
+                                      "}\n"
+                                      "```\n"
+                                      "— Метод `sayHello` выводит \"Привет!\".\n\n"
+                                      "============================\n"
+                                      "🔹 *Метод с параметрами:*\n"
+                                      "```java\n"
+                                      "public static void greet(String name) {\n"
+                                      "    System.out.println(\"Привет, \" + name);\n"
+                                      "}\n\n"
+                                      "greet(\"Алиса\");\n"
+                                      "```\n"
+                                      "— Параметры делают метод универсальнее.\n\n"
+                                      "============================\n"
+                                      "🔹 *Метод с возвращаемым значением:*\n"
+                                      "```java\n"
+                                      "public static int square(int x) {\n"
+                                      "    return x * x;\n"
+                                      "}\n\n"
+                                      "int result = square(4); // 16\n"
+                                      "```\n"
+                                      "— `return` возвращает результат метода.\n\n"
+                                      "============================\n"
+                                      "✅ *Важно помнить:*\n"
+                                      "- Все методы должны находиться внутри класса\n"
+                                      "- `main()` — это точка входа в программу\n"
+                                      "- `void` означает, что метод ничего не возвращает\n\n"
+                                      "💡 Попробуй написать свой метод, который выводит твоё имя или складывает два числа! 🚀",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_004":
+        keyboard = [[InlineKeyboardButton("«Начнём!\n»«*Глава 1:*", callback_data="az_061")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("<<>>", reply_markup=reply_markup)
+    elif query.data == "az_061":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_062")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🐱‍💻 *Установка C и настройка в CLion IDE*\n\n"
+                                      "🔹 *Шаг 1: Скачайте компилятор MinGW*\n"
+                                      "[Скачать MinGW](https://sourceforge.net/projects/mingw/) — установите gcc и добавьте папку `bin` в системную переменную PATH\n\n"
+                                      "🔹 *Шаг 2: Скачайте CLion IDE*\n"
+                                      "[Скачать CLion](https://www.jetbrains.com/clion/download/) — установите Community или Trial версию\n\n"
+                                      "🔹 *Шаг 3: Проверьте установку*\n"
+                                      "Откройте терминал и выполните:\n"
+                                      "```bash\n"
+                                      "gcc --version\n"
+                                      "```\n\n"
+                                      "🔹 *Шаг 4: Напишите простой C-программу*\n"
+                                      "Создайте файл `main.c` с кодом:\n"
+                                      "```c\n"
+                                      "#include <stdio.h>\n\n"
+                                      "int main() {\n"
+                                      "    printf(\"Привет, мир!\\n\");\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Шаг 5: Скомпилируйте и запустите программу*\n"
+                                      "В терминале выполните:\n"
+                                      "```bash\n"
+                                      "gcc main.c -o main\n"
+                                      "```\n"
+                                      "Запустите программу:\n"
+                                      "```bash\n"
+                                      "./main\n"
+                                      "```\n\n"
+                                      "✅ *Проверьте результат:*\n"
+                                      "Вы должны увидеть:\n"
+                                      "```\nПривет, мир!\n```\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+    elif query.data == "az_062":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_063")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_064")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Переменные и типы данных в C*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Имя для хранения данных в памяти.\n"
+                                      "— Каждая переменная имеет тип, который определяет, какие данные она хранит.\n\n"
+                                      "🔹 *Основные типы данных:*\n"
+                                      "- `int` — целые числа, например: `42`\n"
+                                      "- `float` — числа с плавающей точкой, например: `3.14`\n"
+                                      "- `char` — один символ, например: `'A'`\n"
+                                      "- `double` — более точные числа с плавающей точкой\n\n"
+                                      "============================\n"
+                                      "🔹 *Объявление переменных:*\n"
+                                      "```c\n"
+                                      "int age = 18;\n"
+                                      "float pi = 3.14;\n"
+                                      "char grade = 'A';\n"
+                                      "double largeNum = 123456.789;\n"
+                                      "```\n\n"
+                                      "🔹 *Вывод на экран:*\n"
+                                      "```c\n"
+                                      "#include <stdio.h>\n"
+                                      "int main() {\n"
+                                      "    int age = 18;\n"
+                                      "    printf(\"Возраст: %d\\n\", age);\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "✅ *Попробуйте сами:* объявите несколько переменных и выведите их значения!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_064":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_062")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🐱‍💻 *Установка C и настройка в CLion IDE*\n\n"
+                                      "🔹 *Шаг 1: Скачайте компилятор MinGW*\n"
+                                      "[Скачать MinGW](https://sourceforge.net/projects/mingw/) — установите gcc и добавьте папку `bin` в системную переменную PATH\n\n"
+                                      "🔹 *Шаг 2: Скачайте CLion IDE*\n"
+                                      "[Скачать CLion](https://www.jetbrains.com/clion/download/) — установите Community или Trial версию\n\n"
+                                      "🔹 *Шаг 3: Проверьте установку*\n"
+                                      "Откройте терминал и выполните:\n"
+                                      "```bash\n"
+                                      "gcc --version\n"
+                                      "```\n\n"
+                                      "🔹 *Шаг 4: Напишите простой C-программу*\n"
+                                      "Создайте файл `main.c` с кодом:\n"
+                                      "```c\n"
+                                      "#include <stdio.h>\n\n"
+                                      "int main() {\n"
+                                      "    printf(\"Привет, мир!\\n\");\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Шаг 5: Скомпилируйте и запустите программу*\n"
+                                      "В терминале выполните:\n"
+                                      "```bash\n"
+                                      "gcc main.c -o main\n"
+                                      "```\n"
+                                      "Запустите программу:\n"
+                                      "```bash\n"
+                                      "./main\n"
+                                      "```\n\n"
+                                      "✅ *Проверьте результат:*\n"
+                                      "Вы должны увидеть:\n"
+                                      "```\nПривет, мир!\n```\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_063":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_065")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_066")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *Операторы и выражения в C*\n\n"
+                                      "🔹 *Что такое оператор?*\n"
+                                      "— Символ или комбинация символов, которые выполняют операции над данными.\n\n"
+                                      "🔹 *Типы операторов:*\n"
+                                      "- Арифметические: `+`, `-`, `*`, `/`, `%`\n"
+                                      "- Присваивания: `=`, `+=`, `-=`, `*=` и т.д.\n"
+                                      "- Сравнения: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
+                                      "- Логические: `&&`, `||`, `!`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример арифметических операций:*\n"
+                                      "```c\n"
+                                      "int a = 10, b = 3;\n"
+                                      "int sum = a + b;       // 13\n"
+                                      "int diff = a - b;      // 7\n"
+                                      "int product = a * b;   // 30\n"
+                                      "int quotient = a / b;  // 3\n"
+                                      "int remainder = a % b; // 1\n"
+                                      "```\n\n"
+                                      "🔹 *Пример сравнения и логики:*\n"
+                                      "```c\n"
+                                      "int x = 5, y = 10;\n"
+                                      "if (x < y && y > 0) {\n"
+                                      "    printf(\"x меньше y и y положительное\\n\");\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "✅ *Задание:* попробуйте написать выражения с разными операторами и вывести результаты!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_066":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_063")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_064")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("📦 *Переменные и типы данных в C*\n\n"
+                                      "🔹 *Что такое переменная?*\n"
+                                      "— Имя для хранения данных в памяти.\n"
+                                      "— Каждая переменная имеет тип, который определяет, какие данные она хранит.\n\n"
+                                      "🔹 *Основные типы данных:*\n"
+                                      "- `int` — целые числа, например: `42`\n"
+                                      "- `float` — числа с плавающей точкой, например: `3.14`\n"
+                                      "- `char` — один символ, например: `'A'`\n"
+                                      "- `double` — более точные числа с плавающей точкой\n\n"
+                                      "============================\n"
+                                      "🔹 *Объявление переменных:*\n"
+                                      "```c\n"
+                                      "int age = 18;\n"
+                                      "float pi = 3.14;\n"
+                                      "char grade = 'A';\n"
+                                      "double largeNum = 123456.789;\n"
+                                      "```\n\n"
+                                      "🔹 *Вывод на экран:*\n"
+                                      "```c\n"
+                                      "#include <stdio.h>\n"
+                                      "int main() {\n"
+                                      "    int age = 18;\n"
+                                      "    printf(\"Возраст: %d\\n\", age);\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "✅ *Попробуйте сами:* объявите несколько переменных и выведите их значения!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_065":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_067")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_068")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🧠 *Условные операторы в C: if, else if, else*\n\n"
+                                      "🔹 *Что такое условный оператор?*\n"
+                                      "— Позволяет выполнять разные части кода в зависимости от условий.\n\n"
+                                      "🔹 *Синтаксис if:*\n"
+                                      "```c\n"
+                                      "if (условие) {\n"
+                                      "    // код, если условие истинно\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Использование else if и else:*\n"
+                                      "```c\n"
+                                      "if (x > 0) {\n"
+                                      "    printf(\"Положительное число\\n\");\n"
+                                      "} else if (x == 0) {\n"
+                                      "    printf(\"Ноль\\n\");\n"
+                                      "} else {\n"
+                                      "    printf(\"Отрицательное число\\n\");\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Логические операторы для условий:*\n"
+                                      "- `&&` — И (AND)\n"
+                                      "- `||` — ИЛИ (OR)\n"
+                                      "- `!`  — НЕ (NOT)\n\n"
+                                      "✅ *Задание:* напишите программу, которая проверяет число и выводит сообщение о его знаке!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+    elif query.data == "az_068":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_065")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_066")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *Операторы и выражения в C*\n\n"
+                                      "🔹 *Что такое оператор?*\n"
+                                      "— Символ или комбинация символов, которые выполняют операции над данными.\n\n"
+                                      "🔹 *Типы операторов:*\n"
+                                      "- Арифметические: `+`, `-`, `*`, `/`, `%`\n"
+                                      "- Присваивания: `=`, `+=`, `-=`, `*=` и т.д.\n"
+                                      "- Сравнения: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
+                                      "- Логические: `&&`, `||`, `!`\n\n"
+                                      "============================\n"
+                                      "🔹 *Пример арифметических операций:*\n"
+                                      "```c\n"
+                                      "int a = 10, b = 3;\n"
+                                      "int sum = a + b;       // 13\n"
+                                      "int diff = a - b;      // 7\n"
+                                      "int product = a * b;   // 30\n"
+                                      "int quotient = a / b;  // 3\n"
+                                      "int remainder = a % b; // 1\n"
+                                      "```\n\n"
+                                      "🔹 *Пример сравнения и логики:*\n"
+                                      "```c\n"
+                                      "int x = 5, y = 10;\n"
+                                      "if (x < y && y > 0) {\n"
+                                      "    printf(\"x меньше y и y положительное\\n\");\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "✅ *Задание:* попробуйте написать выражения с разными операторами и вывести результаты!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+
+    elif query.data == "az_067":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_069")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_070")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🔄 *Циклы в C: for, while, do-while*\n\n"
+                                      "🔹 *Что такое цикл?*\n"
+                                      "— Позволяет повторять блок кода несколько раз.\n\n"
+                                      "🔹 *Цикл for:*\n"
+                                      "```c\n"
+                                      "for (int i = 0; i < 5; i++) {\n"
+                                      "    printf(\"Итерация %d\\n\", i);\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Цикл while:*\n"
+                                      "```c\n"
+                                      "int i = 0;\n"
+                                      "while (i < 5) {\n"
+                                      "    printf(\"Итерация %d\\n\", i);\n"
+                                      "    i++;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Цикл do-while:*\n"
+                                      "```c\n"
+                                      "int i = 0;\n"
+                                      "do {\n"
+                                      "    printf(\"Итерация %d\\n\", i);\n"
+                                      "    i++;\n"
+                                      "} while (i < 5);\n"
+                                      "```\n\n"
+                                      "✅ *Задание:* попробуйте написать цикл, который выводит числа от 1 до 10!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_070":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_067")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_068")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("🧠 *Условные операторы в C: if, else if, else*\n\n"
+                                      "🔹 *Что такое условный оператор?*\n"
+                                      "— Позволяет выполнять разные части кода в зависимости от условий.\n\n"
+                                      "🔹 *Синтаксис if:*\n"
+                                      "```c\n"
+                                      "if (условие) {\n"
+                                      "    // код, если условие истинно\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Использование else if и else:*\n"
+                                      "```c\n"
+                                      "if (x > 0) {\n"
+                                      "    printf(\"Положительное число\\n\");\n"
+                                      "} else if (x == 0) {\n"
+                                      "    printf(\"Ноль\\n\");\n"
+                                      "} else {\n"
+                                      "    printf(\"Отрицательное число\\n\");\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Логические операторы для условий:*\n"
+                                      "- `&&` — И (AND)\n"
+                                      "- `||` — ИЛИ (OR)\n"
+                                      "- `!`  — НЕ (NOT)\n\n"
+                                      "✅ *Задание:* напишите программу, которая проверяет число и выводит сообщение о его знаке!\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup
+                                      )
+
+    elif query.data == "az_069":
+        keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_071")],
+                    [InlineKeyboardButton("прошлая глава", callback_data="az_072")],
+                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("⚙️ *Функции в C*\n\n"
+                                      "🔹 *Что такое функция?*\n"
+                                      "— Блок кода, который выполняет определённую задачу.\n"
+                                      "— Позволяет структурировать программу и повторно использовать код.\n\n"
+                                      "🔹 *Объявление и вызов функции:*\n"
+                                      "```c\n"
+                                      "void sayHello() {\n"
+                                      "    printf(\"Привет, мир!\\n\");\n"
+                                      "}\n\n"
+                                      "int main() {\n"
+                                      "    sayHello(); // вызов функции\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Функция с параметрами:*\n"
+                                      "```c\n"
+                                      "void greet(char name[]) {\n"
+                                      "    printf(\"Привет, %s!\\n\", name);\n"
+                                      "}\n\n"
+                                      "int main() {\n"
+                                      "    greet(\"Том\");\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "🔹 *Функция с возвращаемым значением:*\n"
+                                      "```c\n"
+                                      "int square(int x) {\n"
+                                      "    return x * x;\n"
+                                      "}\n\n"
+                                      "int main() {\n"
+                                      "    int result = square(5);\n"
+                                      "    printf(\"Квадрат 5 равен %d\\n\", result);\n"
+                                      "    return 0;\n"
+                                      "}\n"
+                                      "```\n\n"
+                                      "✅ *Попробуйте написать функцию, которая складывает два числа и возвращает результат!*\n",
+                                      parse_mode="Markdown",
+                                      reply_markup=reply_markup)
+    elif query.data == "az_072":
+        keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_073")],
+                    [InlineKeyboardButton("son bolum", callback_data="az_074")],
+                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔄 *C-də dövrlər: for, while, do-while*\n\n"
+    "🔹 *Dövr nədir?*\n"
+    "— Kod blokunu bir neçə dəfə təkrarlamağa imkan verir.\n\n"
+    "🔹 *for dövrü:*\n"
+    "```c\n"
+    "for (int i = 0; i < 5; i++) {\n"
+    "    printf(\"İterasiya %d\\n\", i);\n"
+    "}\n"
+    "```\n\n"
+    "🔹 *while dövrü:*\n"
+    "```c\n"
+    "int i = 0;\n"
+    "while (i < 5) {\n"
+    "    printf(\"İterasiya %d\\n\", i);\n"
+    "    i++;\n"
+    "}\n"
+    "```\n\n"
+    "🔹 *do-while dövrü:*\n"
+    "```c\n"
+    "int i = 0;\n"
+    "do {\n"
+    "    printf(\"İterasiya %d\\n\", i);\n"
+    "    i++;\n"
+    "} while (i < 5);\n"
+    "```\n\n"
+    "✅ *Tapşırıq:* 1-dən 10-a qədər olan ədədləri çap edən dövr yazmağa çalışın!\n",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+
+
+    elif query.data == "az_076":
+        keyboard = [[InlineKeyboardButton("son bolum", callback_data="az_075")],
+                   [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "📌 *C-də göstəricilər (pointer-lər)*\n\n"
+    "🔹 *Göstərici nədir?*\n"
+    "— Göstərici başqa bir dəyişənin ünvanını saxlayan dəyişəndir.\n"
+    "— yaddaşla, massivlərlə və funksiyalarla effektiv işləmək üçün istifadə olunur.\n\n"
+    "🔹 *Sadə pointer nümunəsi:*\n"
+    "```c\n"
+    "int x = 10;\n"
+    "int* ptr = &x;\n"
+    "printf(\"Dəyər: %d\\n\", *ptr); // dereferensasiya\n"
+    "```\n"
+    "— `&x` — `x` dəyişəninin ünvanı\n"
+    "— `*ptr` — ünvandakı dəyərə çıxış\n\n"
+    "🔹 *İzah:*\n"
+    "- `int* ptr;` — tam ədədə göstərici\n"
+    "- `*` — dereferensasiya (ünvandakı dəyəri almaq)\n"
+    "- `&` — dəyişənin ünvanını almaq\n\n"
+    "============================\n"
+    "🔹 *Göstərici ilə dəyərin dəyişdirilməsi:*\n"
+    "```c\n"
+    "int a = 5;\n"
+    "int* p = &a;\n"
+    "*p = 100;\n"
+    "printf(\"%d\\n\", a); // 100 çıxaracaq\n"
+    "```\n"
+    "✅ Göstərici dəyişənin ünvanındakı dəyəri dəyişir.\n\n"
+    "============================\n"
+    "🔹 *Ünvanların çapı:*\n"
+    "```c\n"
+    "int val = 42;\n"
+    "printf(\"Dəyişənin ünvanı: %p\\n\", &val);\n"
+    "```\n"
+    "— `%p` ünvanların çıxışı üçün istifadə olunur.\n\n"
+    "============================\n"
+    "💡 Göstəricilər C dilinin fundamental hissəsidir.\n"
+    "Onlar massivlərdə, sətrlərdə, funksiyalara məlumat ötürmədə və yaddaş idarəçiliyində geniş istifadə olunur.\n\n"
+    "📎 Növbəti fəsildə sən *massivlər və göstəricilər* haqqında öyrənəcəksən!\n",
+    parse_mode="Markdown",
+    reply_markup=reply_markup)
+    elif query.data == "az_075":
+        keyboard = [[InlineKeyboardButton("Növbəti bolum ➡", callback_data="az_076")],
+                    [InlineKeyboardButton("son bolum", callback_data="az_077")],
+                   [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *C-də funksiyalar*\n\n"
+    "🔹 *Funksiya nədir?*\n"
+    "— Müəyyən bir tapşırığı yerinə yetirən kod blokudur.\n"
+    "— Proqramı strukturlaşdırmağa və kodu təkrar istifadə etməyə imkan verir.\n\n"
+    "🔹 *Funksiyanın elan edilməsi və çağırılması:*\n"
+    "```c\n"
+    "void sayHello() {\n"
+    "    printf(\"Salam, dünya!\\n\");\n"
+    "}\n\n"
+    "int main() {\n"
+    "    sayHello(); // funksiyanın çağırılması\n"
+    "    return 0;\n"
+    "}\n"
+    "```\n\n"
+    "🔹 *Parametrləri olan funksiya:*\n"
+    "```c\n"
+    "void greet(char name[]) {\n"
+    "    printf(\"Salam, %s!\\n\", name);\n"
+    "}\n\n"
+    "int main() {\n"
+    "    greet(\"Tom\");\n"
+    "    return 0;\n"
+    "}\n"
+    "```\n\n"
+    "🔹 *Qayıdan dəyəri olan funksiya:*\n"
+    "```c\n"
+    "int square(int x) {\n"
+    "    return x * x;\n"
+    "}\n\n"
+    "int main() {\n"
+    "    int result = square(5);\n"
+    "    printf(\"5-in kvadratı %d-dir\\n\", result);\n"
+    "    return 0;\n"
+    "}\n"
+    "```\n\n"
+    "✅ *İki ədədi toplayıb nəticəni qaytaran bir funksiya yazmağa çalışın!*",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
 
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CallbackQueryHandler(zero, pattern="^start_learning$"))
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CallbackQueryHandler(
     lang,
-    pattern="^(nunutireihgtj|nbxbhdbschdsivud|xxxxxxxxxxxxxxxxxxxxxxxxx|asdasdadssss|threep|myayuayuayuadlllllllll|CCCCG|CCCCGCCCCGCCCCGCCCCGCCCCG|mindalnoe|amburanmal|amburanmall|amburanmalll|amburanrank|amburanrankamburanrankamburanrankamburanrank|arang|arangarangarangarangarangarangarang|armsakina|armsss|azerbaijan|bananadjo|bejing|bejingg|brands|brandss|brang|brangbrangbrangbrangbrangbrang|cont|continue|continue_learning|cp|cpone|cpones|cponess|cpp|cpp3|cpp4|cpp5|crang|crangcrangcrangcrangcrangcrangcrangcrang|cyber|cyberindo|cyberindocyberindocyberindo|cyberqwak|cyberqwakcyberqwakcyberqwak|cybers|cybersec|cybersecurity|cyberx|cyberxx|dod|doddo|dodgevaper|dodorank|dodorankdostdost|english|englishlessons|f|ferrari|ferrarir|ferrarirank|ferrarirankastonmazdipidazdi|ferraritunar|financebro|firstchinese|fisher|fishering|fisheringg|fisheringgg|fisheringggg|for|fors|frekal|fsociety|fuckincarti|heteroex|heyvanlar|heyvanlarheyvanlarheyvanlarheyvanlarheyvanlarheyvanlar|huggywug|huggywugg|huggywuggy|iaiaiaiaiai|idgaf|if|ifelif|ifelifelse|ilan|isheringggg|its|itss|java_start|java_startings|java_startings_java_startings|jingg|jinggrank|jinggrankjinggrankjinggrankjinggrank|jvone|jvones|jvonesss|krisarank|last|lastcre|lastcrecre|lastcrengie|lastcrengiecrengie|lastthing|lastthingthing|legs|legsaca|lex|lextu|lextural|lexturalss|lexturank|lexturanklexturanklexturanklexturank|lextutu|lexust|lexustt|lexustural|lexx|lexxrank|lexxranklexxranklexxranklexxranklexxrank|lmao|mcqueen|mcqueens|mcqueenss|mehrab|mehrabmehrabmehrabmehrab|men|mens|metalheart|metalheartmetalheartmetalheartmetalheartmetalheartmetalheart|metalsonic|metalsonicexexe|mrbananadjojo|myayuayuayua|mybau|next|nextdat|nextdatnextdatnextdatnextdatnextdat|nextx|nextxx|numberone|numberones|numberoness|numberseven|office|officess|onyx|onyxx|porsc|porsche|porschetunar|porscrank|porscrankporscrankporscrank|poxx|poxxy|priletelivmayami|priletelivmayamipriletelivmayamipriletelivmayami|pt|pyt|python|qew|rankrankrank|rebirtha|rebirtharank|rebirtharankrebirtharank|rezer|rezere|rezeress|russian|ryzee|ryzeeb|ryzrank|saintlaurent|scrip|script|sezer|sezere|sezeresx|sheringggg|sikakakakaka|silik|silikininirank|silikon|silikone|silikonerank|silikoneranksilikoneranksilikonerank|silikonrank|silikonranksilikonrank|silikrank|simmms|simrank|siren|sirens|sirenseacreatu|sirenseacreatur|sirenseacreature|sirenseacreaturrank|siuu|siuurank|siuurankkk|sixthousand|sremon|srip|sriplara|sriplarasososos|srtdemonessa|srtrank|srtrankpuususu|start_learning|style|styles|suii|suiiirank|suiirank|sxazx|sybau|tentiics|tentiicsranking|thebest|three|threep|threepp|threepppipi|threepppipithreepppipithreepppipithreepppipithreepppipi|toomycas|toomycash|tuk|tut|tutpalentiitam|tututu|tututut|two|twop|twopp|twopples|twopplestwopplestwopplestwopplestwopples|ukrainian|valley|valleyrank|valleyrankvalleyrankvalleyrank|venomous|venomouss|venuss|venussrank|venussrankvenussrankvenussrankvenussrankvenussrank|vezer|vezere|vezeress|warmly|xxx|xxxx|xzero|yveskarl|yveskarlina|yveskarlinaka|yxx|yxxkai|zehrab|zehrabzehrabzehrabzehrabzehrab|zerorank|zerorankzerorankzerorankzerorank|zerotrust|zerotrusts|zerotrustss|zzz|pionyerererer|zig&sharko|misipipi&kakaku|voutbsdfnkkv|lalalxlalxdle|crchemolexczxsefv|lastcrenajfningie|dimariadebruynenen|lastcrecrecrecer|ligimitirovaniydaunin|cemolecrchrchemole|crchcrchcrchcrch|cecececececececece|zikozikzokzizozokz|crchadasdfgvfrgt|gansdifjjdifjkonjffdu|puntik|kuzshineko|kadisher|vnncvnmcmcvmncv|mymashine|vsexoroshoharry|nudemeeamputirovat|dizdizodi|csadadsfsav|sdvfenvbkjgnlbknkmopghk|nmvncmvnmckboikgjhbijojortgrdf|dameungrr|unwewewqwq|gagrgagfgdgxsfncdee|chhnbbgbghjve|crcvjkbkvnbjfgivjfde|iouyeryhefyrfvnnvreioaojf2q|nkkmlhhnnbbyuooopyytfv|sikioxoxcme|cposlsacmmcnjfdie|blyatutebyanetpravle|etojonnyetomoysinle|odinbiznesmenustavsiyotsvoyegostarika|tictoxocesnaveshatinogdaddedushku|vistoriyuonvikladivayetgrustniyeblete|lewiskasdkknknwoe|racecurse|noanotherpower|dislikeeverthynlovevelo|crchemolvkofdovosmcmoe|crzenxoaskxce|kaknasoxranenkaxe|zatofotkipizdatiyeele|rytttttt|anasnimetsmenyaremenlousvi|crchemaadsasdadad|yoxagzuvayoxunpoz|imyoungblackandrcihiadnpussylicker|letmeshowwhatyougiveup|yobraputatiriajd|copagangsmysfhnur|vmineocenmnogoonblkjfnv|doctorhannibalpsycho|yapyupizdatiyviskimolodoye|imgladifdjvjfdvnifnvrecvbryyee|eroutuwrfnmzxnj|etocecenskiyflot|goluboysahpmurnejdet|uusuasdaudodsuodaioasdau|hastworexes|baybaybygridlskdfrgreoji|kkhkhhkkjkjhkhkoji|potipotipoti|crchcscddddddddddsdlkjnfhkl|ooptoripitprittoiprt|prptprppeprepeppafroiguhtgksahs|rioioirrrroeoirpire|viytisuximizvodi|popaodkpaskpopofpajmamam|marlonmogspercentofpeople|tiutuosiojimvpsiieee|zinanzinsnedeji|izsamariamsimd|owiworweuwruworwwe|soliiiiiiinaranuebalat|modaiskustvokulinariya|xoxoxooxooxoxeeetoyavovremayaprisel|pizdecebaniystozasmertvnishite|ebaniyzavozastviiii|ebatttttttttt|socsinyourmouthe|bablateperebatpizdec|dvauksazactotisact|outofmymind|diaaaadajgaa|isdippsjjaias|ututututututrejfjwoejfpjqwp|nozamoyeobidniye|tushdlyauveliceniyaobyema|igogoogogogogogog|sitiporosaaututjj|porbugyy|zeoohyfrbn|ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc|nikadsidjiofsale|pozitivnoyevliyaniyeigr|debroutroutroute|ppsdjoscdjfvojfsnojnsjosonj|zughtjfrhegjhfeuewfwefhwfhu|vprincipeyamogutebepomocye|celuymenyanazlojidfienewjf|drruuuororiridididir|tvoyotecnaoralkatyue|ueleonoriestdoci|zdravstvuytesergeyvladimirovic|soniceandsasyyilimeem|vsevashipismafalyifotki|watisthisdokkwomwmamacoco|kilogramovitsteyke|posletakoyjenshini|zabiliibudemjitdalse|egegeggeeggemeoreoy|nikogonebudetprostopodpishi|crmovefveiuorhoe|creschemolecresclecreschemole|creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb)$"
+    pattern="^(ututututututrejfjwoejfpjqwasddwasxzxzzxxzzp|sirenseacreatusdnewinihioqfhufbejra|azeriqaqa|diaaaadajgaitsjustadreamamaatentiicsicsicsics|psodapsdasopsdaopdpsoadsoapz;|nunutireihgtj|nbxbhdbschdsivud|xxxxxxxxxxxxxxxxxxxxxxxxx|asdasdadssss|threep|myayuayuayuadlllllllll|CCCCG|CCCCGCCCCGCCCCGCCCCGCCCCG|mindalnoe|amburanmal|amburanmall|amburanmalll|amburanrank|amburanrankamburanrankamburanrankamburanrank|arang|arangarangarangarangarangarangarang|armsakina|armsss|azerbaijan|bananadjo|bejing|bejingg|brands|brandss|brang|brangbrangbrangbrangbrangbrang|cont|continue|continue_learning|cp|cpone|cpones|cponess|cpp|cpp3|cpp4|cpp5|crang|crangcrangcrangcrangcrangcrangcrangcrang|cyber|cyberindo|cyberindocyberindocyberindo|cyberqwak|cyberqwakcyberqwakcyberqwak|cybers|cybersec|cybersecurity|cyberx|cyberxx|dod|doddo|dodgevaper|dodorank|dodorankdostdost|english|englishlessons|f|ferrari|ferrarir|ferrarirank|ferrarirankastonmazdipidazdi|ferraritunar|financebro|firstchinese|fisher|fishering|fisheringg|fisheringgg|fisheringggg|for|fors|frekal|fsociety|fuckincarti|heteroex|heyvanlar|heyvanlarheyvanlarheyvanlarheyvanlarheyvanlarheyvanlar|huggywug|huggywugg|huggywuggy|iaiaiaiaiai|idgaf|if|ifelif|ifelifelse|ilan|isheringggg|its|itss|java_start|java_startings|java_startings_java_startings|jingg|jinggrank|jinggrankjinggrankjinggrankjinggrank|jvone|jvones|jvonesss|krisarank|last|lastcre|lastcrecre|lastcrengie|lastcrengiecrengie|lastthing|lastthingthing|legs|legsaca|lex|lextu|lextural|lexturalss|lexturank|lexturanklexturanklexturanklexturank|lextutu|lexust|lexustt|lexustural|lexx|lexxrank|lexxranklexxranklexxranklexxranklexxrank|lmao|mcqueen|mcqueens|mcqueenss|mehrab|mehrabmehrabmehrabmehrab|men|mens|metalheart|metalheartmetalheartmetalheartmetalheartmetalheartmetalheart|metalsonic|metalsonicexexe|mrbananadjojo|myayuayuayua|mybau|next|nextdat|nextdatnextdatnextdatnextdatnextdat|nextx|nextxx|numberone|numberones|numberoness|numberseven|office|officess|onyx|onyxx|porsc|porsche|porschetunar|porscrank|porscrankporscrankporscrank|poxx|poxxy|priletelivmayami|priletelivmayamipriletelivmayamipriletelivmayami|pt|pyt|python|qew|rankrankrank|rebirtha|rebirtharank|rebirtharankrebirtharank|rezer|rezere|rezeress|russian|ryzee|ryzeeb|ryzrank|saintlaurent|scrip|script|sezer|sezere|sezeresx|sheringggg|sikakakakaka|silik|silikininirank|silikon|silikone|silikonerank|silikoneranksilikoneranksilikonerank|silikonrank|silikonranksilikonrank|silikrank|simmms|simrank|siren|sirens|sirenseacreatu|sirenseacreatur|sirenseacreature|sirenseacreaturrank|siuu|siuurank|siuurankkk|sixthousand|sremon|srip|sriplara|sriplarasososos|srtdemonessa|srtrank|srtrankpuususu|start_learning|style|styles|suii|suiiirank|suiirank|sxazx|sybau|tentiics|tentiicsranking|thebest|three|threep|threepp|threepppipi|threepppipithreepppipithreepppipithreepppipithreepppipi|toomycas|toomycash|tuk|tut|tutpalentiitam|tututu|tututut|two|twop|twopp|twopples|twopplestwopplestwopplestwopplestwopples|ukrainian|valley|valleyrank|valleyrankvalleyrankvalleyrank|venomous|venomouss|venuss|venussrank|venussrankvenussrankvenussrankvenussrankvenussrank|vezer|vezere|vezeress|warmly|xxx|xxxx|xzero|yveskarl|yveskarlina|yveskarlinaka|yxx|yxxkai|zehrab|zehrabzehrabzehrabzehrabzehrab|zerorank|zerorankzerorankzerorankzerorank|zerotrust|zerotrusts|zerotrustss|zzz|pionyerererer|zig&sharko|misipipi&kakaku|voutbsdfnkkv|lalalxlalxdle|crchemolexczxsefv|lastcrenajfningie|dimariadebruynenen|lastcrecrecrecer|ligimitirovaniydaunin|cemolecrchrchemole|crchcrchcrchcrch|cecececececececece|zikozikzokzizozokz|crchadasdfgvfrgt|gansdifjjdifjkonjffdu|puntik|kuzshineko|kadisher|vnncvnmcmcvmncv|mymashine|vsexoroshoharry|nudemeeamputirovat|dizdizodi|csadadsfsav|sdvfenvbkjgnlbknkmopghk|nmvncmvnmckboikgjhbijojortgrdf|dameungrr|unwewewqwq|gagrgagfgdgxsfncdee|chhnbbgbghjve|crcvjkbkvnbjfgivjfde|iouyeryhefyrfvnnvreioaojf2q|nkkmlhhnnbbyuooopyytfv|sikioxoxcme|cposlsacmmcnjfdie|blyatutebyanetpravle|etojonnyetomoysinle|odinbiznesmenustavsiyotsvoyegostarika|tictoxocesnaveshatinogdaddedushku|vistoriyuonvikladivayetgrustniyeblete|lewiskasdkknknwoe|racecurse|noanotherpower|dislikeeverthynlovevelo|crchemolvkofdovosmcmoe|crzenxoaskxce|kaknasoxranenkaxe|zatofotkipizdatiyeele|rytttttt|anasnimetsmenyaremenlousvi|crchemaadsasdadad|yoxagzuvayoxunpoz|imyoungblackandrcihiadnpussylicker|letmeshowwhatyougiveup|yobraputatiriajd|copagangsmysfhnur|vmineocenmnogoonblkjfnv|doctorhannibalpsycho|yapyupizdatiyviskimolodoye|imgladifdjvjfdvnifnvrecvbryyee|eroutuwrfnmzxnj|etocecenskiyflot|goluboysahpmurnejdet|uusuasdaudodsuodaioasdau|hastworexes|baybaybygridlskdfrgreoji|kkhkhhkkjkjhkhkoji|potipotipoti|crchcscddddddddddsdlkjnfhkl|ooptoripitprittoiprt|prptprppeprepeppafroiguhtgksahs|rioioirrrroeoirpire|viytisuximizvodi|popaodkpaskpopofpajmamam|marlonmogspercentofpeople|tiutuosiojimvpsiieee|zinanzinsnedeji|izsamariamsimd|owiworweuwruworwwe|soliiiiiiinaranuebalat|modaiskustvokulinariya|xoxoxooxooxoxeeetoyavovremayaprisel|pizdecebaniystozasmertvnishite|ebaniyzavozastviiii|ebatttttttttt|socsinyourmouthe|bablateperebatpizdec|dvauksazactotisact|outofmymind|diaaaadajgaa|isdippsjjaias|ututututututrejfjwoejfpjqwp|nozamoyeobidniye|tushdlyauveliceniyaobyema|igogoogogogogogog|sitiporosaaututjj|porbugyy|zeoohyfrbn|ghyuhbrdyimmvtygnmybnmutycvbnhhubtrftc|nikadsidjiofsale|pozitivnoyevliyaniyeigr|debroutroutroute|ppsdjoscdjfvojfsnojnsjosonj|zughtjfrhegjhfeuewfwefhwfhu|vprincipeyamogutebepomocye|celuymenyanazlojidfienewjf|drruuuororiridididir|tvoyotecnaoralkatyue|ueleonoriestdoci|zdravstvuytesergeyvladimirovic|soniceandsasyyilimeem|vsevashipismafalyifotki|watisthisdokkwomwmamacoco|kilogramovitsteyke|posletakoyjenshini|zabiliibudemjitdalse|egegeggeeggemeoreoy|nikogonebudetprostopodpishi|crmovefveiuorhoe|creschemolecresclecreschemole|creschekgrfhrihiginggvfgigisthgifenjidhffkdnnvkjb)$"
 ))
 if __name__ == "__main__":
     print("Бот запущен!")

@@ -4971,7 +4971,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "cyberxx":
         keyboard = [
-            [InlineKeyboardButton("下一章➡️", callback_data="nextxx")]
+            [InlineKeyboardButton("下一章➡️", callback_data="nextxx")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5008,7 +5009,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "nextxx":
         keyboard = [
             [InlineKeyboardButton("下一章➡️", callback_data="twopp")],
-            [InlineKeyboardButton("最後一章", callback_data="imgladifdjvjfdvnifnvrecvbryyee")]
+            [InlineKeyboardButton("最後一章", callback_data="imgladifdjvjfdvnifnvrecvbryyee")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5029,7 +5031,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "imgladifdjvjfdvnifnvrecvbryyee":
         keyboard = [
-            [InlineKeyboardButton("下一章➡️", callback_data="nextxx")]
+            [InlineKeyboardButton("下一章➡️", callback_data="nextxx")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5067,7 +5070,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "twopp":
         keyboard = [
             [InlineKeyboardButton("下一章➡️", callback_data="threepp")],
-            [InlineKeyboardButton("最後一章", callback_data="yapyupizdatiyviskimolodoye")]
+            [InlineKeyboardButton("最後一章", callback_data="yapyupizdatiyviskimolodoye")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5123,7 +5127,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "yapyupizdatiyviskimolodoye":
         keyboard = [
             [InlineKeyboardButton("下一章➡️", callback_data="twopp")],
-            [InlineKeyboardButton("最後一章", callback_data="imgladifdjvjfdvnifnvrecvbryyee")]
+            [InlineKeyboardButton("最後一章", callback_data="imgladifdjvjfdvnifnvrecvbryyee")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5144,7 +5149,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
 
     elif query.data == "threepp":
-        keyboard = [[InlineKeyboardButton("最後一章",callback_data="doctorhannibalpsycho")]]
+        keyboard = [[InlineKeyboardButton("最後一章",callback_data="doctorhannibalpsycho")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "📡 Ping 是一種基本的網路工具，用來檢查兩個設備之間的連接狀態。\n"
@@ -5164,7 +5170,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
     elif query.data == "doctorhannibalpsycho":
         keyboard = [
             [InlineKeyboardButton("下一章➡️", callback_data="threepp")],
-            [InlineKeyboardButton("最後一章", callback_data="yapyupizdatiyviskimolodoye")]
+            [InlineKeyboardButton("最後一章", callback_data="yapyupizdatiyviskimolodoye")],
+             [InlineKeyboardButton("返回選單", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -5249,7 +5256,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         await query.edit_message_text("讓我們開始吧！\n"
                                       "*第一章：*", reply_markup=reply_markup)
     elif query.data == "mcqueenss":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="fsociety")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="fsociety")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *安装 Python 64 位及连接 PyCharm Community*\n\n"
@@ -5274,7 +5282,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         )
     elif query.data == "fsociety":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="if")],
-                    [InlineKeyboardButton("最後一章",callback_data="vmineocenmnogoonblkjfnv")]]
+                    [InlineKeyboardButton("最後一章",callback_data="vmineocenmnogoonblkjfnv")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Python 的變數與資料型態*\n\n"
@@ -5300,7 +5309,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
             reply_markup=reply_markup
         )
     elif query.data == "vmineocenmnogoonblkjfnv":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="fsociety")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="fsociety")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *安装 Python 64 位及连接 PyCharm Community*\n\n"
@@ -5326,7 +5336,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "if":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="sezeresx")],
-                    [InlineKeyboardButton("最後一章",callback_data="copagangsmysfhnur")]]
+                    [InlineKeyboardButton("最後一章",callback_data="copagangsmysfhnur")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Python 條件語句：if、elif、else*\n\n"
@@ -5344,7 +5355,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         )
     elif query.data == "copagangsmysfhnur":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="if")],
-                    [InlineKeyboardButton("最後一章", callback_data="vmineocenmnogoonblkjfnv")]]
+                    [InlineKeyboardButton("最後一章", callback_data="vmineocenmnogoonblkjfnv")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Python 的變數與資料型態*\n\n"
@@ -5372,7 +5384,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "sezeresx":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="tut")],
-                    [InlineKeyboardButton("最後一章",callback_data="yobraputatiriajd")]]
+                    [InlineKeyboardButton("最後一章",callback_data="yobraputatiriajd")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python：for 與 while 迴圈*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -5401,7 +5414,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "yobraputatiriajd":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="sezeresx")],
-                    [InlineKeyboardButton("最後一章", callback_data="copagangsmysfhnur")]]
+                    [InlineKeyboardButton("最後一章", callback_data="copagangsmysfhnur")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Python 條件語句：if、elif、else*\n\n"
@@ -5420,7 +5434,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "tut":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="yxx")],
-                    [InlineKeyboardButton("最後一章",callback_data="letmeshowwhatyougiveup")]]
+                    [InlineKeyboardButton("最後一章",callback_data="letmeshowwhatyougiveup")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python：列表（List）*\n\n"
                                       "🔹 *什麼是列表？*\n"
@@ -5451,7 +5466,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "letmeshowwhatyougiveup":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="tut")],
-                    [InlineKeyboardButton("最後一章", callback_data="yobraputatiriajd")]]
+                    [InlineKeyboardButton("最後一章", callback_data="yobraputatiriajd")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python：for 與 while 迴圈*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -5480,7 +5496,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
 
     elif query.data == "yxx":
-        keyboard = [[InlineKeyboardButton("最後一章",callback_data="imyoungblackandrcihiadnpussylicker")]]
+        keyboard = [[InlineKeyboardButton("最後一章",callback_data="imyoungblackandrcihiadnpussylicker")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🛠️ *Python：函式（Functions）*\n\n"
                                       "🔹 *什麼是函式？*\n"
@@ -5512,7 +5529,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "imyoungblackandrcihiadnpussylicker":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="yxx")],
-                    [InlineKeyboardButton("最後一章", callback_data="letmeshowwhatyougiveup")]]
+                    [InlineKeyboardButton("最後一章", callback_data="letmeshowwhatyougiveup")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python：列表（List）*\n\n"
                                       "🔹 *什麼是列表？*\n"
@@ -5548,7 +5566,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         await query.edit_message_text("«»", reply_markup=reply_markup)
 
     elif query.data == "rezeress":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="vezeress")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="vezeress")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ 安裝與開始：*\n\n"
@@ -5572,7 +5591,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "vezeress":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="cpp5")],
-                    [InlineKeyboardButton("最後一章",callback_data="aasaaasasas")]]
+                    [InlineKeyboardButton("最後一章",callback_data="aasaaasasas")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++：變數與資料型態*\n\n"
@@ -5594,7 +5614,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
             reply_markup=reply_markup
         )
     elif query.data == "aasaaasasas":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="vezeress")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="vezeress")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ 安裝與開始：*\n\n"
@@ -5618,7 +5639,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "cpp5":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="jingg")],
-                    [InlineKeyboardButton("最後一章",callback_data="guilty")]]
+                    [InlineKeyboardButton("最後一章",callback_data="guilty")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++：條件判斷（if、else、else if）*\n\n"
@@ -5639,7 +5661,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         )
     elif query.data == "guilty":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="cpp5")],
-                    [InlineKeyboardButton("最後一章", callback_data="aasaaasasas")]]
+                    [InlineKeyboardButton("最後一章", callback_data="aasaaasasas")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++：變數與資料型態*\n\n"
@@ -5663,7 +5686,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "jingg":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="venuss")],
-                    [InlineKeyboardButton("最後一章",callback_data="yoxagzuvayoxunpoz")]]
+                    [InlineKeyboardButton("最後一章",callback_data="yoxagzuvayoxunpoz")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🔁 *C++：迴圈（for、while、do while）*\n\n"
@@ -5695,7 +5719,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
             reply_markup=reply_markup)
     elif query.data == "yoxagzuvayoxunpoz":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="jingg")],
-                    [InlineKeyboardButton("最後一章", callback_data="guilty")]]
+                    [InlineKeyboardButton("最後一章", callback_data="guilty")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++：條件判斷（if、else、else if）*\n\n"
@@ -5717,7 +5742,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "venuss":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="zerotrustss")],
-                    [InlineKeyboardButton("最後一章",callback_data="crchemaadsasdadad")]]
+                    [InlineKeyboardButton("最後一章",callback_data="crchemaadsasdadad")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++：陣列（Arrays）*\n\n"
                                       "🔹 *什麼是陣列？*\n"
@@ -5750,7 +5776,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "crchemaadsasdadad":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="venuss")],
-                    [InlineKeyboardButton("最後一章", callback_data="yoxagzuvayoxunpoz")]]
+                    [InlineKeyboardButton("最後一章", callback_data="yoxagzuvayoxunpoz")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🔁 *C++：迴圈（for、while、do while）*\n\n"
@@ -5783,7 +5810,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "zerotrustss":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="amburanmalll")],
-                    [InlineKeyboardButton("最後一章",callback_data="anasnimetsmenyaremenlousvi")]]
+                    [InlineKeyboardButton("最後一章",callback_data="anasnimetsmenyaremenlousvi")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++：字串（Strings）*\n\n"
                                       "🔹 *什麼是字串？*\n"
@@ -5821,7 +5849,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "anasnimetsmenyaremenlousvi":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="zerotrustss")],
-                    [InlineKeyboardButton("最後一章", callback_data="crchemaadsasdadad")]]
+                    [InlineKeyboardButton("最後一章", callback_data="crchemaadsasdadad")],
+                    [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++：陣列（Arrays）*\n\n"
                                       "🔹 *什麼是陣列？*\n"
@@ -5855,7 +5884,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "amburanmalll":
         keyboard = [
-                    [InlineKeyboardButton("最後一章",callback_data="rytttttt")]]
+                    [InlineKeyboardButton("最後一章",callback_data="rytttttt")],
+         [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C++：函式（Functions）*\n\n"
                                       "🔹 *什麼是函式？*\n"
@@ -5887,7 +5917,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "rytttttt":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="amburanmalll")],
-                    [InlineKeyboardButton("最後一章", callback_data="anasnimetsmenyaremenlousvi")]]
+                    [InlineKeyboardButton("最後一章", callback_data="anasnimetsmenyaremenlousvi")],
+                  [InlineKeyboardButton("返回選單", callback_data="start_learning")] ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++：字串（Strings）*\n\n"
                                       "🔹 *什麼是字串？*\n"
@@ -5929,7 +5960,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("開始吧！ \n第 1 章：", reply_markup=reply_markup)
     elif query.data == "lexustt":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lexx")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lexx")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript 安裝與入門：*\n\n"
                                       "🔹 *步驟 1：下載編輯器*\n"
@@ -5949,7 +5981,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "lexx":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lextutu")],
-                    [InlineKeyboardButton("最後一章",callback_data="zatofotkipizdatiyeele")]]
+                    [InlineKeyboardButton("最後一章",callback_data="zatofotkipizdatiyeele")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：變數與資料類型*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -5967,7 +6000,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup
                                       )
     elif query.data == "zatofotkipizdatiyeele":
-        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lexx")]]
+        keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lexx")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript 安裝與入門：*\n\n"
                                       "🔹 *步驟 1：下載編輯器*\n"
@@ -5988,7 +6022,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "lextutu":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="porsc")],
-                    [InlineKeyboardButton("最後一章",callback_data="kaknasoxranenkaxe")]]
+                    [InlineKeyboardButton("最後一章",callback_data="kaknasoxranenkaxe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：條件判斷與比較*\n\n"
                                       "🔹 *什麼是條件？*\n"
@@ -6011,7 +6046,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "kaknasoxranenkaxe":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="lextutu")],
-                    [InlineKeyboardButton("最後一章", callback_data="zatofotkipizdatiyeele")]]
+                    [InlineKeyboardButton("最後一章", callback_data="zatofotkipizdatiyeele")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：變數與資料類型*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -6031,7 +6067,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "porsc":
         keyboard = [[InlineKeyboardButton("下一章➡️️", callback_data="ferrarir")],
-                    [InlineKeyboardButton("最後一章",callback_data="crzenxoaskxce")]]
+                    [InlineKeyboardButton("最後一章",callback_data="crzenxoaskxce")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：邏輯運算子*\n\n"
                                       "🔹 *什麼是邏輯運算子？*\n"
@@ -6050,7 +6087,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       )
     elif query.data == "crzenxoaskxce":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="porsc")],
-                    [InlineKeyboardButton("最後一章", callback_data="kaknasoxranenkaxe")]]
+                    [InlineKeyboardButton("最後一章", callback_data="kaknasoxranenkaxe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：條件判斷與比較*\n\n"
                                       "🔹 *什麼是條件？*\n"
@@ -6074,7 +6112,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "ferrarir":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="doddo")],
-                    [InlineKeyboardButton("最後一章",callback_data="crchemolvkofdovosmcmoe")]]
+                    [InlineKeyboardButton("最後一章",callback_data="crchemolvkofdovosmcmoe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript：迴圈*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -6108,7 +6147,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
                                       reply_markup=reply_markup)
     elif query.data == "crchemolvkofdovosmcmoe":
         keyboard = [[InlineKeyboardButton("下一章➡️️", callback_data="ferrarir")],
-                    [InlineKeyboardButton("最後一章", callback_data="crzenxoaskxce")]]
+                    [InlineKeyboardButton("最後一章", callback_data="crzenxoaskxce")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript：邏輯運算子*\n\n"
                                       "🔹 *什麼是邏輯運算子？*\n"
@@ -6128,7 +6168,8 @@ Format: a4:c3:f0:85:ac:2d (6 bytes in hex form)
 
     elif query.data == "doddo":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="srtdemonessa")],
-                    [InlineKeyboardButton("最後一章",callback_data="dislikeeverthynlovevelo")]]
+                    [InlineKeyboardButton("最後一章",callback_data="dislikeeverthynlovevelo")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("""⚙️ *JavaScript：函式介紹*\n\n
 🔹 *什麼是函式？*\n
@@ -6176,7 +6217,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "dislikeeverthynlovevelo":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="doddo")],
-                    [InlineKeyboardButton("最後一章", callback_data="crchemolvkofdovosmcmoe")]]
+                    [InlineKeyboardButton("最後一章", callback_data="crchemolvkofdovosmcmoe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript：迴圈*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -6210,7 +6252,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
 
     elif query.data == "srtdemonessa":
-        keyboard = [[InlineKeyboardButton("最後一章",callback_data="noanotherpower")]]
+        keyboard = [[InlineKeyboardButton("最後一章",callback_data="noanotherpower")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *JavaScript：物件 (Objects)*\n\n"
                                       "🔹 *什麼是物件？*\n"
@@ -6248,7 +6291,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "noanotherpower":
         keyboard = [[InlineKeyboardButton("下一章➡️", callback_data="srtdemonessa")],
-                    [InlineKeyboardButton("最後一章", callback_data="dislikeeverthynlovevelo")]]
+                    [InlineKeyboardButton("最後一章", callback_data="dislikeeverthynlovevelo")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("""⚙️ *JavaScript：函式介紹*\n\n
         🔹 *什麼是函式？*\n
@@ -6300,7 +6344,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Java", reply_markup=reply_markup)
     elif query.data == "valley":
-        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="rebirtha")]]
+        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="rebirtha")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java：安裝與建立第一個項目*\n\n"
                                       "🔹 *步驟 1：下載並安裝 JDK*\n"
@@ -6329,7 +6374,8 @@ console.log(square(4)); // 16
 
     elif query.data == "rebirtha":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silikone")],
-                    [InlineKeyboardButton("最後一章",callback_data="racecurse")]]
+                    [InlineKeyboardButton("最後一章",callback_data="racecurse")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java：變數與資料型別*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -6357,7 +6403,8 @@ console.log(square(4)); // 16
                                       "💡 嘗試宣告一些自己的變數，並用 `System.out.println()` 印出來吧！",
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "racecurse":
-        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="rebirtha")]]
+        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="rebirtha")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java：安裝與建立第一個項目*\n\n"
                                       "🔹 *步驟 1：下載並安裝 JDK*\n"
@@ -6386,7 +6433,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silikone":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silikon")],
-                    [InlineKeyboardButton("最後一章",callback_data="lewiskasdkknknwoe")]]
+                    [InlineKeyboardButton("最後一章",callback_data="lewiskasdkknknwoe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Java: 條件語句 (if, else, else if)*\n\n"
                                       "🔹 *什麼是條件語句？*\n"
@@ -6409,7 +6457,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "lewiskasdkknknwoe":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silikone")],
-                    [InlineKeyboardButton("最後一章", callback_data="racecurse")]]
+                    [InlineKeyboardButton("最後一章", callback_data="racecurse")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java：變數與資料型別*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -6439,7 +6488,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silikon":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silik")],
-                    [InlineKeyboardButton("最後一章",callback_data="vistoriyuonvikladivayetgrustniyeblete")]]
+                    [InlineKeyboardButton("最後一章",callback_data="vistoriyuonvikladivayetgrustniyeblete")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: 迴圈 (Loops)*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -6482,7 +6532,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "vistoriyuonvikladivayetgrustniyeblete":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silikon")],
-                    [InlineKeyboardButton("最後一章", callback_data="lewiskasdkknknwoe")]]
+                    [InlineKeyboardButton("最後一章", callback_data="lewiskasdkknknwoe")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Java: 條件語句 (if, else, else if)*\n\n"
                                       "🔹 *什麼是條件語句？*\n"
@@ -6506,7 +6557,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silik":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="siuu")],
-                    [InlineKeyboardButton("最後一章",callback_data="tictoxocesnaveshatinogdaddedushku")]]
+                    [InlineKeyboardButton("最後一章",callback_data="tictoxocesnaveshatinogdaddedushku")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java：陣列 (Arrays)*\n\n"
                                       "🔹 *什麼是陣列？*\n"
@@ -6549,7 +6601,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "tictoxocesnaveshatinogdaddedushku":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="silik")],
-                    [InlineKeyboardButton("最後一章", callback_data="vistoriyuonvikladivayetgrustniyeblete")]]
+                    [InlineKeyboardButton("最後一章", callback_data="vistoriyuonvikladivayetgrustniyeblete")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: 迴圈 (Loops)*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -6593,7 +6646,8 @@ console.log(square(4)); // 16
 
     elif query.data == "siuu":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="suii")],
-                    [InlineKeyboardButton("最後一章",callback_data="odinbiznesmenustavsiyotsvoyegostarika")]]
+                    [InlineKeyboardButton("最後一章",callback_data="odinbiznesmenustavsiyotsvoyegostarika")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java：方法（Functions）*\n\n"
                                       "🔹 *什麼是方法？*\n"
@@ -6645,7 +6699,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "odinbiznesmenustavsiyotsvoyegostarika":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="siuu")],
-                    [InlineKeyboardButton("最後一章", callback_data="tictoxocesnaveshatinogdaddedushku")]]
+                    [InlineKeyboardButton("最後一章", callback_data="tictoxocesnaveshatinogdaddedushku")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java：陣列 (Arrays)*\n\n"
                                       "🔹 *什麼是陣列？*\n"
@@ -6688,7 +6743,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
 
     elif query.data == "suii":
-        keyboard = [[InlineKeyboardButton("最後一章",callback_data="etojonnyetomoysinle")]]
+        keyboard = [[InlineKeyboardButton("最後一章",callback_data="etojonnyetomoysinle")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🏗️ *Java：類別與物件（Class & Object）*\n\n"
                                       "🔹 *什麼是類別？*\n"
@@ -6728,7 +6784,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "etojonnyetomoysinle":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="suii")],
-                    [InlineKeyboardButton("最後一章", callback_data="odinbiznesmenustavsiyotsvoyegostarika")]]
+                    [InlineKeyboardButton("最後一章", callback_data="odinbiznesmenustavsiyotsvoyegostarika")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java：方法（Functions）*\n\n"
                                       "🔹 *什麼是方法？*\n"
@@ -6784,7 +6841,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("<<>>", reply_markup=reply_markup)
     elif query.data == "yveskarlinaka":
-        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="mybau")]]
+        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="mybau")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *安裝 C 與設定 CLion IDE*\n\n"
                                       "🔹 *步驟 1：下載 MinGW 編譯器*\n"
@@ -6822,7 +6880,8 @@ console.log(square(4)); // 16
 
     elif query.data == "mybau":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="sixthousand")],
-                    [InlineKeyboardButton("最後一章",callback_data="blyatutebyanetpravle")]]
+                    [InlineKeyboardButton("最後一章",callback_data="blyatutebyanetpravle")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C 語言中的變數與資料型態*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -6854,7 +6913,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
     elif query.data == "blyatutebyanetpravle":
-        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="mybau")]]
+        keyboard = [[InlineKeyboardButton("下一章➡", callback_data="mybau")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *安裝 C 與設定 CLion IDE*\n\n"
                                       "🔹 *步驟 1：下載 MinGW 編譯器*\n"
@@ -6892,7 +6952,8 @@ console.log(square(4)); // 16
 
     elif query.data == "sixthousand":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="idgaf")],
-                    [InlineKeyboardButton("最後一章",callback_data="cposlsacmmcnjfdie")]]
+                    [InlineKeyboardButton("最後一章",callback_data="cposlsacmmcnjfdie")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C 語言中的運算子與運算式*\n\n"
                                       "🔹 *什麼是運算子？*\n"
@@ -6924,7 +6985,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "cposlsacmmcnjfdie":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="sixthousand")],
-                    [InlineKeyboardButton("最後一章", callback_data="blyatutebyanetpravle")]]
+                    [InlineKeyboardButton("最後一章", callback_data="blyatutebyanetpravle")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C 語言中的變數與資料型態*\n\n"
                                       "🔹 *什麼是變數？*\n"
@@ -6958,7 +7020,8 @@ console.log(square(4)); // 16
 
     elif query.data == "idgaf":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="frekal")],
-                    [InlineKeyboardButton("最後一章",callback_data="sikioxoxcme")]]
+                    [InlineKeyboardButton("最後一章",callback_data="sikioxoxcme")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C 語言中的條件判斷：if、else if、else*\n\n"
                                       "🔹 *什麼是條件判斷？*\n"
@@ -6989,7 +7052,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "sikioxoxcme":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="idgaf")],
-                    [InlineKeyboardButton("最後一章", callback_data="cposlsacmmcnjfdie")]]
+                    [InlineKeyboardButton("最後一章", callback_data="cposlsacmmcnjfdie")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C 語言中的運算子與運算式*\n\n"
                                       "🔹 *什麼是運算子？*\n"
@@ -7022,7 +7086,8 @@ console.log(square(4)); // 16
 
     elif query.data == "frekal":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="sybau")],
-                    [InlineKeyboardButton("最後一章",callback_data="nkkmlhhnnbbyuooopyytfv")]]
+                    [InlineKeyboardButton("最後一章",callback_data="nkkmlhhnnbbyuooopyytfv")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *C 語言中的迴圈：for、while、do-while*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -7054,7 +7119,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "nkkmlhhnnbbyuooopyytfv":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="frekal")],
-                    [InlineKeyboardButton("最後一章", callback_data="sikioxoxcme")]]
+                    [InlineKeyboardButton("最後一章", callback_data="sikioxoxcme")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C 語言中的條件判斷：if、else if、else*\n\n"
                                       "🔹 *什麼是條件判斷？*\n"
@@ -7085,7 +7151,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "sybau":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="lmao")],
-                    [InlineKeyboardButton("最後一章",callback_data="iouyeryhefyrfvnnvreioaojf2q")]]
+                    [InlineKeyboardButton("最後一章",callback_data="iouyeryhefyrfvnnvreioaojf2q")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C 語言中的函式（Functions）*\n\n"
                                       "🔹 *什麼是函式？*\n"
@@ -7127,7 +7194,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "iouyeryhefyrfvnnvreioaojf2q":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="sybau")],
-                    [InlineKeyboardButton("最後一章", callback_data="nkkmlhhnnbbyuooopyytfv")]]
+                    [InlineKeyboardButton("最後一章", callback_data="nkkmlhhnnbbyuooopyytfv")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *C 語言中的迴圈：for、while、do-while*\n\n"
                                       "🔹 *什麼是迴圈？*\n"
@@ -7159,7 +7227,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
 
     elif query.data == "lmao":
-        keyboard = [[InlineKeyboardButton("最後一章",callback_data="crcvjkbkvnbjfgivjfde")]]
+        keyboard = [[InlineKeyboardButton("最後一章",callback_data="crcvjkbkvnbjfgivjfde")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📌 *C 語言中的指標（Pointers）*\n\n"
                                       "🔹 *什麼是指標？*\n"
@@ -7200,7 +7269,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "crcvjkbkvnbjfgivjfde":
         keyboard = [[InlineKeyboardButton("下一章➡", callback_data="lmao")],
-                    [InlineKeyboardButton("最後一章", callback_data="iouyeryhefyrfvnnvreioaojf2q")]]
+                    [InlineKeyboardButton("最後一章", callback_data="iouyeryhefyrfvnnvreioaojf2q")],
+                   [InlineKeyboardButton("返回選單", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C 語言中的函式（Functions）*\n\n"
                                       "🔹 *什麼是函式？*\n"
@@ -7282,7 +7352,8 @@ console.log(square(4)); // 16
 
     elif query.data == "cyberqwak":
         keyboard = [
-            [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="nextdat")]
+            [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="nextdat")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7318,7 +7389,8 @@ console.log(square(4)); // 16
     elif query.data == "nextdat":
         keyboard = [
             [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="twopples")],
-            [InlineKeyboardButton("son bölüm", callback_data="chhnbbgbghjve")]
+            [InlineKeyboardButton("son bölüm", callback_data="chhnbbgbghjve")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7339,7 +7411,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "chhnbbgbghjve":
         keyboard = [
-            [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="nextdat")]
+            [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="nextdat")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7375,7 +7448,8 @@ console.log(square(4)); // 16
     elif query.data == "twopples":
         keyboard = [
             [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="threepppipi")],
-            [InlineKeyboardButton("son bölüm", callback_data="gagrgagfgdgxsfncdee")]
+            [InlineKeyboardButton("son bölüm", callback_data="gagrgagfgdgxsfncdee")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7433,7 +7507,8 @@ console.log(square(4)); // 16
     elif query.data == "gagrgagfgdgxsfncdee":
         keyboard = [
             [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="twopples")],
-            [InlineKeyboardButton("son bölüm", callback_data="chhnbbgbghjve")]
+            [InlineKeyboardButton("son bölüm", callback_data="chhnbbgbghjve")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7453,7 +7528,8 @@ console.log(square(4)); // 16
                                       ,
                                       reply_markup=reply_markup)
     elif query.data == "threepppipi":
-        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="unwewewqwq")]]
+        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="unwewewqwq")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "📡 *Ping nedir?*\n\n"
@@ -7480,7 +7556,8 @@ console.log(square(4)); // 16
     elif query.data == "unwewewqwq":
         keyboard = [
             [InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="threepppipi")],
-            [InlineKeyboardButton("son bölüm", callback_data="gagrgagfgdgxsfncdee")]
+            [InlineKeyboardButton("son bölüm", callback_data="gagrgagfgdgxsfncdee")],
+            [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -7565,7 +7642,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("<<>>", reply_markup=reply_markup)
     elif query.data == "saintlaurent":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="financebro")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="financebro")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Python 64 Bit Kurulumu ve PyCharm Community Bağlantısı*\n\n"
@@ -7590,7 +7668,8 @@ console.log(square(4)); // 16
         )
     elif query.data == "financebro":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="heteroex")],
-                    [InlineKeyboardButton("son bölüm", callback_data="dameungrr")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="dameungrr")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐍 *Python: Değişkenler ve Veri Türleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -7621,7 +7700,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup
                                       )
     elif query.data == "dameungrr":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="financebro")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="financebro")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🐍 *Python 64 Bit Kurulumu ve PyCharm Community Bağlantısı*\n\n"
@@ -7647,7 +7727,8 @@ console.log(square(4)); // 16
 
     elif query.data == "heteroex":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="mindalnoe")],
-                    [InlineKeyboardButton("son bölüm", callback_data="asdasdadssss")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="asdasdadssss")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Python Koşullu İfadeler: if, elif, else*\n\n"
@@ -7679,7 +7760,8 @@ console.log(square(4)); // 16
         )
     elif query.data == "asdasdadssss":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="heteroex")],
-                    [InlineKeyboardButton("son bölüm", callback_data="dameungrr")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="dameungrr")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐍 *Python: Değişkenler ve Veri Türleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -7711,7 +7793,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "mindalnoe":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="tutpalentiitam")],
-                    [InlineKeyboardButton("son bölüm", callback_data="nmvncmvnmckboikgjhbijojortgrdf")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="nmvncmvnmckboikgjhbijojortgrdf")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: for ve while Döngüleri*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -7752,7 +7835,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "nmvncmvnmckboikgjhbijojortgrdf":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="mindalnoe")],
-                    [InlineKeyboardButton("son bölüm", callback_data="asdasdadssss")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="asdasdadssss")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Python Koşullu İfadeler: if, elif, else*\n\n"
@@ -7785,7 +7869,8 @@ console.log(square(4)); // 16
 
     elif query.data == "tutpalentiitam":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="yxxkai")],
-                    [InlineKeyboardButton("son bölüm", callback_data="sdvfenvbkjgnlbknkmopghk")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="sdvfenvbkjgnlbknkmopghk")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Listeler (List)*\n\n"
                                       "🔹 *Liste nedir?*\n"
@@ -7816,7 +7901,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "sdvfenvbkjgnlbknkmopghk":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="tutpalentiitam")],
-                    [InlineKeyboardButton("son bölüm", callback_data="nmvncmvnmckboikgjhbijojortgrdf")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="nmvncmvnmckboikgjhbijojortgrdf")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Python: for ve while Döngüleri*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -7857,7 +7943,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
 
     elif query.data == "yxxkai":
-        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="csadadsfsav")]]
+        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="csadadsfsav")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup= InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🛠️ *Python: Fonksiyonlar (Functions)*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -7888,7 +7975,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "csadadsfsav":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="yxxkai")],
-                    [InlineKeyboardButton("son bölüm", callback_data="sdvfenvbkjgnlbknkmopghk")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="sdvfenvbkjgnlbknkmopghk")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Python: Listeler (List)*\n\n"
                                       "🔹 *Liste nedir?*\n"
@@ -7924,7 +8012,8 @@ console.log(square(4)); // 16
         await query.edit_message_text("«»", reply_markup=reply_markup)
 
     elif query.data == "arang":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="brang")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="brang")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ Kurulum ve Başlangıç:*\n\n"
@@ -7948,7 +8037,8 @@ console.log(square(4)); // 16
 
     elif query.data == "brang":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="crang")],
-                    [InlineKeyboardButton("son bölüm", callback_data="dizdizodi")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="dizdizodi")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++: Değişkenler ve Veri Tipleri*\n\n"
@@ -7970,7 +8060,8 @@ console.log(square(4)); // 16
             reply_markup=reply_markup
         )
     elif query.data == "dizdizodi":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="brang")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="brang")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++ Kurulum ve Başlangıç:*\n\n"
@@ -7994,7 +8085,8 @@ console.log(square(4)); // 16
 
     elif query.data == "crang":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="jinggrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="nudemeeamputirovat")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="nudemeeamputirovat")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++: Koşullu İfadeler (if, else, else if)*\n\n"
@@ -8015,7 +8107,8 @@ console.log(square(4)); // 16
         )
     elif query.data == "nudemeeamputirovat":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="crang")],
-                    [InlineKeyboardButton("son bölüm", callback_data="dizdizodi")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="dizdizodi")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "⚙️ *C++: Değişkenler ve Veri Tipleri*\n\n"
@@ -8038,7 +8131,8 @@ console.log(square(4)); // 16
         )
     elif query.data == "jinggrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="venussrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="vsexoroshoharry")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="vsexoroshoharry")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🔁 *C++: Döngüler (for, while, do while)*\n\n"
@@ -8070,7 +8164,8 @@ console.log(square(4)); // 16
             reply_markup=reply_markup)
     elif query.data == "vsexoroshoharry":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="jinggrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="nudemeeamputirovat")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="nudemeeamputirovat")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *C++: Koşullu İfadeler (if, else, else if)*\n\n"
@@ -8092,7 +8187,8 @@ console.log(square(4)); // 16
 
     elif query.data == "venussrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="zerorank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="mymashine")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="mymashine")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Diziler (Arrays)*\n\n"
                                       "🔹 *Dizi nedir?*\n"
@@ -8125,7 +8221,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "mymashine":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="venussrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="vsexoroshoharry")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="vsexoroshoharry")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🔁 *C++: Döngüler (for, while, do while)*\n\n"
@@ -8158,7 +8255,8 @@ console.log(square(4)); // 16
 
     elif query.data == "zerorank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="amburanrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="vnncvnmcmcvmncv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="vnncvnmcmcvmncv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Diziler (Strings)*\n\n"
                                       "🔹 *String nedir?*\n"
@@ -8196,7 +8294,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "vnncvnmcmcvmncv":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="zerorank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="mymashine")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="mymashine")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C++: Diziler (Arrays)*\n\n"
                                       "🔹 *Dizi nedir?*\n"
@@ -8230,7 +8329,8 @@ console.log(square(4)); // 16
 
     elif query.data == "amburanrank":
         keyboard = [
-                    [InlineKeyboardButton("son bölüm", callback_data="kadisher")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="kadisher")],
+        [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C++: Fonksiyonlar (Functions)*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -8262,7 +8362,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "kadisher":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="amburanrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="vnncvnmcmcvmncv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="vnncvnmcmcvmncv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔤 *C++: Diziler (Strings)*\n\n"
                                       "🔹 *String nedir?*\n"
@@ -8305,7 +8406,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Hadi başlayalım! \nBölüm 1:", reply_markup=reply_markup)
     elif query.data == "metalsonic":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexxrank")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexxrank")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript Kurulum ve Başlangıç:*\n\n"
                                       "🔹 *Adım 1: Editör İndir*\n"
@@ -8325,7 +8427,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "lexxrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexturank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="kuzshineko")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="kuzshineko")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -8343,7 +8446,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup
                                       )
     elif query.data == "kuzshineko":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexxrank")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexxrank")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript Kurulum ve Başlangıç:*\n\n"
                                       "🔹 *Adım 1: Editör İndir*\n"
@@ -8365,7 +8469,8 @@ console.log(square(4)); // 16
 
     elif query.data == "lexturank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="porscrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="puntik")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="puntik")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Koşullar ve Karşılaştırmalar*\n\n"
                                       "🔹 *Koşul nedir?*\n"
@@ -8388,7 +8493,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "puntik":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="lexturank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="kuzshineko")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="kuzshineko")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -8408,7 +8514,8 @@ console.log(square(4)); // 16
 
     elif query.data == "porscrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="ferrarirank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="gansdifjjdifjkonjffdu")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="gansdifjjdifjkonjffdu")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Mantıksal Operatörler*\n\n"
                                       "🔹 *Mantıksal operatör nedir?*\n"
@@ -8427,7 +8534,8 @@ console.log(square(4)); // 16
                                       )
     elif query.data == "gansdifjjdifjkonjffdu":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="porscrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="puntik")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="puntik")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Koşullar ve Karşılaştırmalar*\n\n"
                                       "🔹 *Koşul nedir?*\n"
@@ -8452,7 +8560,8 @@ console.log(square(4)); // 16
 
     elif query.data == "ferrarirank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="dodorank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchadasdfgvfrgt")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchadasdfgvfrgt")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript: Döngüler*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -8486,7 +8595,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "crchadasdfgvfrgt":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="ferrarirank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="gansdifjjdifjkonjffdu")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="gansdifjjdifjkonjffdu")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Mantıksal Operatörler*\n\n"
                                       "🔹 *Mantıksal operatör nedir?*\n"
@@ -8506,7 +8616,8 @@ console.log(square(4)); // 16
 
     elif query.data == "dodorank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="srtrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="zikozikzokzizozokz")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="zikozikzokzizozokz")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Fonksiyonlara Giriş*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -8535,7 +8646,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "zikozikzokzizozokz":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="dodorank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchadasdfgvfrgt")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchadasdfgvfrgt")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔁 *JavaScript: Döngüler*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -8568,7 +8680,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
     elif query.data == "srtrank":
-        keyboard = [[InlineKeyboardButton("Onceki bölüm", callback_data="cecececececececece")]]
+        keyboard = [[InlineKeyboardButton("Onceki bölüm", callback_data="cecececececececece")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *JavaScript: Nesneler (Objects)*\n\n"
                                       "🔹 *Nedir nesne?*\n"
@@ -8606,7 +8719,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "cecececececececece":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="srtrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="zikozikzokzizozokz")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="zikozikzokzizozokz")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *JavaScript: Fonksiyonlara Giriş*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -8639,7 +8753,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Java", reply_markup=reply_markup)
     elif query.data == "valleyrank":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="rebirtharank")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="rebirtharank")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java: Kurulum ve İlk Projeyi Oluşturma*\n\n"
                                       "🔹 *Adım 1: JDK İndir ve Kur*\n"
@@ -8667,7 +8782,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "rebirtharank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikonerank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchcrchcrchcrch")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchcrchcrchcrch")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -8695,7 +8811,8 @@ console.log(square(4)); // 16
                                       "💡 Kendi değişkenlerini tanımlayıp `System.out.println()` ile yazdırmayı dene!",
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "crchcrchcrchcrch":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="rebirtharank")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="rebirtharank")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("☕️ *Java: Kurulum ve İlk Projeyi Oluşturma*\n\n"
                                       "🔹 *Adım 1: JDK İndir ve Kur*\n"
@@ -8724,7 +8841,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silikonerank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikonrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="cemolecrchrchemole")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="cemolecrchrchemole")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Java: Koşul İfadeleri (if, else, else if)*\n\n"
                                       "🔹 *Koşul ifadesi nedir?*\n"
@@ -8747,7 +8865,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown", reply_markup=reply_markup)
     elif query.data == "cemolecrchrchemole":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikonerank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchcrchcrchcrch")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchcrchcrchcrch")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -8777,7 +8896,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silikonrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikrank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="ligimitirovaniydaunin")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="ligimitirovaniydaunin")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: Döngüler (Loops)*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -8820,7 +8940,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "ligimitirovaniydaunin":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikonrank")],
-                    [InlineKeyboardButton("son bölüm", callback_data="cemolecrchrchemole")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="cemolecrchrchemole")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📚 *Java: Koşul İfadeleri (if, else, else if)*\n\n"
                                       "🔹 *Koşul ifadesi nedir?*\n"
@@ -8844,7 +8965,8 @@ console.log(square(4)); // 16
 
     elif query.data == "silikrank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="siuurank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrecrecrecer")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrecrecrecer")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Diziler (Arrays)*\n\n"
                                       "🔹 *Dizi nedir?*\n"
@@ -8887,7 +9009,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "lastcrecrecrecer":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="silikrank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="ligimitirovaniydaunin")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="ligimitirovaniydaunin")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *Java: Döngüler (Loops)*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -8931,7 +9054,8 @@ console.log(square(4)); // 16
 
     elif query.data == "siuurank":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="suiirank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="dimariadebruynenen")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="dimariadebruynenen")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java: Metodlar (Functions)*\n\n"
                                       "🔹 *Metod nedir?*\n"
@@ -8983,7 +9107,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "dimariadebruynenen":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="siuurank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrecrecrecer")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrecrecrecer")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *Java: Diziler (Arrays)*\n\n"
                                       "🔹 *Dizi nedir?*\n"
@@ -9026,7 +9151,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
 
     elif query.data == "suiirank":
-        keyboard = [[InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrenajfningie")]]
+        keyboard = [[InlineKeyboardButton("Önceki Bölüm", callback_data="lastcrenajfningie")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🏗️ *Java: Sınıflar ve Nesneler (Class & Object)*\n\n"
                                       "🔹 *Sınıf nedir?*\n"
@@ -9067,7 +9193,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "lastcrenajfningie":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡", callback_data="suiirank")],
-                    [InlineKeyboardButton("Önceki Bölüm", callback_data="dimariadebruynenen")]]
+                    [InlineKeyboardButton("Önceki Bölüm", callback_data="dimariadebruynenen")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *Java: Metodlar (Functions)*\n\n"
                                       "🔹 *Metod nedir?*\n"
@@ -9123,7 +9250,8 @@ console.log(square(4)); // 16
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("<<>>", reply_markup=reply_markup)
     elif query.data == "fisher":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fishering")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fishering")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *C Kurulumu ve CLion IDE Ayarları*\n\n"
                                       "🔹 *Adım 1: MinGW Derleyicisini İndirin*\n"
@@ -9160,7 +9288,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "fishering":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchemolexczxsefv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchemolexczxsefv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C Dilinde Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -9192,7 +9321,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
     elif query.data == "crchemolexczxsefv":
-        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fishering")]]
+        keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fishering")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *C Kurulumu ve CLion IDE Ayarları*\n\n"
                                       "🔹 *Adım 1: MinGW Derleyicisini İndirin*\n"
@@ -9230,7 +9360,8 @@ console.log(square(4)); // 16
 
     elif query.data == "fisheringg":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringgg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="lalalxlalxdle")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="lalalxlalxdle")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C Dilinde Operatörler ve İfadeler*\n\n"
                                       "🔹 *Operatör nedir?*\n"
@@ -9262,7 +9393,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "lalalxlalxdle":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="crchemolexczxsefv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="crchemolexczxsefv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C Dilinde Değişkenler ve Veri Tipleri*\n\n"
                                       "🔹 *Değişken nedir?*\n"
@@ -9295,7 +9427,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "fisheringgg":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="voutbsdfnkkv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="voutbsdfnkkv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C Dilinde Koşullu İfadeler: if, else if, else*\n\n"
                                       "🔹 *Koşullu ifade nedir?*\n"
@@ -9325,7 +9458,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "voutbsdfnkkv":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringgg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="lalalxlalxdle")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="lalalxlalxdle")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C Dilinde Operatörler ve İfadeler*\n\n"
                                       "🔹 *Operatör nedir?*\n"
@@ -9358,7 +9492,8 @@ console.log(square(4)); // 16
 
     elif query.data == "fisheringggg":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="isheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="misipipiaskakaku")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="misipipiaskakaku")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *C Dilinde Döngüler: for, while, do-while*\n\n"
                                       "🔹 *Döngü nedir?*\n"
@@ -9390,7 +9525,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "misipipiaskakaku":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="fisheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="voutbsdfnkkv")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="voutbsdfnkkv")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C Dilinde Koşullu İfadeler: if, else if, else*\n\n"
                                       "🔹 *Koşullu ifade nedir?*\n"
@@ -9421,7 +9557,8 @@ console.log(square(4)); // 16
 
     elif query.data == "isheringggg":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="sheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="zigiiiiiiiiisharko")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="zigiiiiiiiiisharko")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C Dilinde Fonksiyonlar (Functions)*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -9462,7 +9599,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
     elif query.data == "sheringggg":
-        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="pionyerererer")]]
+        keyboard = [[InlineKeyboardButton("son bölüm", callback_data="pionyerererer")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📌 *C Dilinde Pointer'lar (İşaretçiler)*\n\n"
                                       "🔹 *Pointer nedir?*\n"
@@ -9503,7 +9641,8 @@ console.log(square(4)); // 16
                                       parse_mode="Markdown",reply_markup = reply_markup)
     elif query.data == "pionyerererer":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="sheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="zig&sharko")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="zig&sharko")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C Dilinde Fonksiyonlar (Functions)*\n\n"
                                       "🔹 *Fonksiyon nedir?*\n"
@@ -9545,7 +9684,8 @@ console.log(square(4)); // 16
                                       reply_markup=reply_markup)
     elif query.data == "zigiiiiiiiiisharko":
         keyboard = [[InlineKeyboardButton("Sonraki Bölüm ➡️", callback_data="isheringggg")],
-                    [InlineKeyboardButton("son bölüm", callback_data="misipipi&kakaku")]]
+                    [InlineKeyboardButton("son bölüm", callback_data="misipipi&kakaku")],
+                   [InlineKeyboardButton("Menüye dön", callback_data="start_learning")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔄 *C Dilinde Döngüler: for, while, do-while*\n\n"
                                       "🔹 *Döngü nedir?*\n"

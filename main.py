@@ -11959,15 +11959,13 @@ console.log(square(4)); // 16
 )
     elif query.data == "basla_az":
           keyboard = [
-            [InlineKeyboardButton("русский", callback_data="russian")],
-            [InlineKeyboardButton("english", callback_data="english")],
-            [InlineKeyboardButton("中國人", callback_data="firstchinese")],
-            [InlineKeyboardButton("Türkçe", callback_data="tuk")],
-            [InlineKeyboardButton("Azerbaycan dilli",callback_data = "azeriqaqa")]
-
-        ]
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
+              [InlineKeyboardButton("русский", callback_data="russian")],
+              [InlineKeyboardButton("english", callback_data="english")],
+              [InlineKeyboardButton("中國人", callback_data="firstchinese")],
+              [InlineKeyboardButton("Türkçe", callback_data="tuk")],
+              [InlineKeyboardButton("Azerbaycan dilli",callback_data = "azeriqaqa")]]
+          reply_markup = InlineKeyboardMarkup(keyboard)
+          await query.edit_message_text("🌍 *Choose your language / Выберите язык / Dil seçin / 選擇語言*\n\n"
                                       "🇬🇧 English\n"
                                
                                       "🇷🇺 Русский\n"

@@ -9716,14 +9716,14 @@ console.log(square(4)); // 16
                                       "✅ *Deneyin:* 1’den 10’a kadar sayıları yazdıran bir döngü yazın!\n",
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
-      if query.data == "azeriqaqa":
-        keyboard = [[InlineKeyboardButton("🔥 Təlimə başlayın", callback_data="az_001")]]
-        reply_markup = InlineKeyboardMarkup(keyboard)
-        await query.edit_message_text(
-            "Привет! Готов учиться программированию?\n"
-            ,
-            reply_markup=reply_markup
-        )
+              if query.data == "azeriqaqa":
+            keyboard = [[InlineKeyboardButton("🔥 Təlimə başlayın", callback_data="az_001")]]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            await query.edit_message_text(
+                "Привет! Готов учиться программированию?\n"
+                ,
+                reply_markup=reply_markup
+            )
     elif query.data == "az_001":
         keyboard = [
             [InlineKeyboardButton("Proqramlaşdırma dilləri", callback_data="az_002")],
@@ -9731,7 +9731,7 @@ console.log(square(4)); // 16
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-          "🚀 Əla! İndi nəyi öyrənmək istədiyinizi seçin:",
+            "🚀 Əla! İndi nəyi öyrənmək istədiyinizi seçin:",
             reply_markup=reply_markup
         )
     elif query.data == "az_002":
@@ -9744,7 +9744,7 @@ console.log(square(4)); // 16
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-          "Yaxşı!! İndi öyrənmək istədiyiniz dili seçin:",
+            "Yaxşı!! İndi öyrənmək istədiyiniz dili seçin:",
             reply_markup=reply_markup
         )
 
@@ -9760,64 +9760,64 @@ console.log(square(4)); // 16
     elif query.data == "kyber_az":
         keyboard = [
             [InlineKeyboardButton("növbəti fəsil➡️", callback_data="sonrakı_bölüm_az")],
-             [InlineKeyboardButton("menyuya qayıt",callback_data="basla_az")]
+            [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔗 Şəbəkələr — sadəcə bir-birinə bağlı obyektlərdir.\n"
-" Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
-"📡 Şəbəkələr hər yerdə mövcuddur:\n"
-" - 🚇 Şəhərdə ictimai nəqliyyat\n"
-" - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
-" - 🏘️ Qonşularla ünsiyyət\n"
-" - ✉️ Məktub və paket göndərmə sistemləri\n\n"
-"💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
-" Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
-"📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
-"🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
-" Bunlara daxildir:\n"
-" - 💻 Noutbuklar\n"
-" - 📱 Smartfonlar\n"
-" - 📷 Video nəzarət kameraları\n"
-" - 🚦 İşıqforlar\n"
-" - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
-"🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
-" - ⛅ Hava məlumatlarının toplanması\n"
-" - ⚡ Evlərə elektrik təminatı\n"
-" - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
-"🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
-"şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
-"👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
-"Biz buna sonra yenidən qayıdacağıq...\n"
-"The first chapter is here!!\n"
-"Birinci fəsil artıq burada!!"
-,
-reply_markup=reply_markup
-                                     )
+                                      " Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
+                                      "📡 Şəbəkələr hər yerdə mövcuddur:\n"
+                                      " - 🚇 Şəhərdə ictimai nəqliyyat\n"
+                                      " - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
+                                      " - 🏘️ Qonşularla ünsiyyət\n"
+                                      " - ✉️ Məktub və paket göndərmə sistemləri\n\n"
+                                      "💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
+                                      " Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
+                                      "📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
+                                      "🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
+                                      " Bunlara daxildir:\n"
+                                      " - 💻 Noutbuklar\n"
+                                      " - 📱 Smartfonlar\n"
+                                      " - 📷 Video nəzarət kameraları\n"
+                                      " - 🚦 İşıqforlar\n"
+                                      " - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
+                                      "🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
+                                      " - ⛅ Hava məlumatlarının toplanması\n"
+                                      " - ⚡ Evlərə elektrik təminatı\n"
+                                      " - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
+                                      "🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
+                                      "şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
+                                      "👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
+                                      "Biz buna sonra yenidən qayıdacağıq...\n"
+                                      "The first chapter is here!!\n"
+                                      "Birinci fəsil artıq burada!!"
+                                      ,
+                                      reply_markup=reply_markup
+                                      )
 
 
     elif query.data == "sonrakı_bölüm_az":
         keyboard = [
             [InlineKeyboardButton("Novbeti bolum ➡️", callback_data="iki_az")],
-            [InlineKeyboardButton("Son bolum",callback_data="az_005")],
+            [InlineKeyboardButton("Son bolum", callback_data="az_005")],
             [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🌐 *Fəsil 2: İnternetə dalış!*\n\n"
-                              "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
-                              "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
-                              "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
-                              "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
-                              "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
-                              "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
-                              "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
-                              " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
-                              " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
-                              "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n"
-                              "sonuncu fəsil burada!!!"
-                              ,
-                              reply_markup=reply_markup)
+                                      "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
+                                      "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
+                                      "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
+                                      "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
+                                      "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
+                                      "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
+                                      "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
+                                      " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
+                                      " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
+                                      "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n"
+                                      "sonuncu fəsil burada!!!"
+                                      ,
+                                      reply_markup=reply_markup)
 
     elif query.data == "az_005":
         keyboard = [
@@ -9825,35 +9825,35 @@ reply_markup=reply_markup
             [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🔗 Şəbəkələr — sadəcə bir-birinə bağlı obyektlərdir.\n"
-" Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
-"📡 Şəbəkələr hər yerdə mövcuddur:\n"
-" - 🚇 Şəhərdə ictimai nəqliyyat\n"
-" - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
-" - 🏘️ Qonşularla ünsiyyət\n"
-" - ✉️ Məktub və paket göndərmə sistemləri\n\n"
-"💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
-" Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
-"📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
-"🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
-" Bunlara daxildir:\n"
-" - 💻 Noutbuklar\n"
-" - 📱 Smartfonlar\n"
-" - 📷 Video nəzarət kameraları\n"
-" - 🚦 İşıqforlar\n"
-" - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
-"🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
-" - ⛅ Hava məlumatlarının toplanması\n"
-" - ⚡ Evlərə elektrik təminatı\n"
-" - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
-"🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
-"şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
-"👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
-"Biz buna sonra yenidən qayıdacağıq...\n"
-"The first chapter is here!!\n"
-"Birinci fəsil artıq burada!!"
-,
-reply_markup=reply_markup
-)
+                                      " Məsələn, dostlar dairəniz: siz ortaq maraqlar, hobbilər, bacarıqlar və digər şeylər vasitəsilə bir-birinizə bağlısınız. 🧠🤝\n\n"
+                                      "📡 Şəbəkələr hər yerdə mövcuddur:\n"
+                                      " - 🚇 Şəhərdə ictimai nəqliyyat\n"
+                                      " - ⚡ İnfrastruktur, məsələn, milli elektrik şəbəkəsi\n"
+                                      " - 🏘️ Qonşularla ünsiyyət\n"
+                                      " - ✉️ Məktub və paket göndərmə sistemləri\n\n"
+                                      "💻 İnformatikada — eyni ideya, amma texnologiyalara tətbiq olunur.\n"
+                                      " Məsələn, telefonunuzu 📱 götürək: istifadə etmə səbəbimiz — məlumat əldə etməkdir.\n\n"
+                                      "📶 Biz baxacağıq ki, cihazlar necə məlumat mübadiləsi edir və bu zaman hansı qaydalar tətbiq olunur.\n\n"
+                                      "🖥️ Kompüter texnikasında şəbəkə 2-dən milyardlarla cihazdan ibarət ola bilər.\n"
+                                      " Bunlara daxildir:\n"
+                                      " - 💻 Noutbuklar\n"
+                                      " - 📱 Smartfonlar\n"
+                                      " - 📷 Video nəzarət kameraları\n"
+                                      " - 🚦 İşıqforlar\n"
+                                      " - 🌾 Hətta kənd təsərrüfatı texnikası!\n\n"
+                                      "🔌 Şəbəkələr gündəlik həyatımıza inteqrasiya olunub:\n"
+                                      " - ⛅ Hava məlumatlarının toplanması\n"
+                                      " - ⚡ Evlərə elektrik təminatı\n"
+                                      " - 🚦 Yolda hərəkət prioritetinin müəyyənləşdirilməsi\n\n"
+                                      "🛡️ Şəbəkələr müasir həyatın ayrılmaz hissəsinə çevrildiyi üçün,\n"
+                                      "şəbəkə prinsiplərini anlamaq kiber təhlükəsizlik öyrənməyin əsasını təşkil edir.\n\n"
+                                      "👥 Aşağıdakı sxemə baxın: Alisa, Bob və Cim öz şəbəkələrini qurublar!\n"
+                                      "Biz buna sonra yenidən qayıdacağıq...\n"
+                                      "The first chapter is here!!\n"
+                                      "Birinci fəsil artıq burada!!"
+                                      ,
+                                      reply_markup=reply_markup
+                                      )
 
     elif query.data == "iki_az":
         keyboard = [
@@ -9864,78 +9864,78 @@ reply_markup=reply_markup
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("""
-📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
-— Özlərini tanısınlar\n
-— Başqaları tərəfindən tanınsınlar\n
+    📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
+    — Özlərini tanısınlar\n
+    — Başqaları tərəfindən tanınsınlar\n
 
-💡 Cihazlar insanlara bənzəyir:\n
-— Bizim adımız var (dəyişdirilə bilər)\n
-— Və barmaq izimiz (bəyan olunmaz, unikal)\n
+    💡 Cihazlar insanlara bənzəyir:\n
+    — Bizim adımız var (dəyişdirilə bilər)\n
+    — Və barmaq izimiz (bəyan olunmaz, unikal)\n
 
-📱 Cihazların da iki növ "identifikasiyası" var:\n
-— IP ünvanı (📍dəyişdirilə bilər)\n
-— MAC ünvanı (🔒sabit, barmaq izi kimi)\n
+    📱 Cihazların da iki növ "identifikasiyası" var:\n
+    — IP ünvanı (📍dəyişdirilə bilər)\n
+    — MAC ünvanı (🔒sabit, barmaq izi kimi)\n
 
-=====================\n
-🔹 IP ünvanları\n
-=====================\n
-IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
-O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
-Nümunə: `192.168.0.1`\n
+    =====================\n
+    🔹 IP ünvanları\n
+    =====================\n
+    IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
+    O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
+    Nümunə: `192.168.0.1`\n
 
-🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
+    🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
 
-🌍 IP ünvanlarının iki növü var:\n
-— **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
-— **İctimai IP** — İnternetdə görünür\n
+    🌍 IP ünvanlarının iki növü var:\n
+    — **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
+    — **İctimai IP** — İnternetdə görünür\n
 
-🧾 Nümunə:\n
-| Cihaz           | Şəxsi IP       | İctimai IP        |\n
-|-----------------|----------------|------------------|\n
-| Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
-| Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
+    🧾 Nümunə:\n
+    | Cihaz           | Şəxsi IP       | İctimai IP        |\n
+    |-----------------|----------------|------------------|\n
+    | Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
+    | Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
 
-🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
+    🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
 
-=====================\n
-🌐 Problem: ünvanlar çatmır!\n
-=====================\n
-IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
+    =====================\n
+    🌐 Problem: ünvanlar çatmır!\n
+    =====================\n
+    IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
 
-💡 Həll yolu:\n
-— IPv6 = 340+ trilyon ünvan (2^128)\n
-— Daha effektiv\n
-— Daha çox ünvan\n
+    💡 Həll yolu:\n
+    — IPv6 = 340+ trilyon ünvan (2^128)\n
+    — Daha effektiv\n
+    — Daha çox ünvan\n
 
-Nümunə:\n
-— IPv4: `192.168.1.1`\n
-— IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
+    Nümunə:\n
+    — IPv4: `192.168.1.1`\n
+    — IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
 
-=====================\n
-🔹 MAC ünvanları\n
-=====================\n
-Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
-Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
+    =====================\n
+    🔹 MAC ünvanları\n
+    =====================\n
+    Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
+    Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
 
-🛠 İlk 6 simvol — istehsalçı.\n
-📌 Son 6 — cihazın unikal nömrəsi.\n
+    🛠 İlk 6 simvol — istehsalçı.\n
+    📌 Son 6 — cihazın unikal nömrəsi.\n
 
-💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
-— Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
-— Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
+    💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
+    — Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
+    — Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
 
-=====================\n
-📌 Nəticə:\n
-=====================\n
-🔹 IP — dəyişir, şəbəkədən asılıdır.\n
-🔹 MAC — sabit, unikal.\n
-🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
-sonuncu fəsil burada!!!
-""",
-reply_markup=reply_markup)
+    =====================\n
+    📌 Nəticə:\n
+    =====================\n
+    🔹 IP — dəyişir, şəbəkədən asılıdır.\n
+    🔹 MAC — sabit, unikal.\n
+    🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
+    sonuncu fəsil burada!!!
+    """,
+                                      reply_markup=reply_markup)
 
-  
-      
+
+
     elif query.data == "az_006":
         keyboard = [
             [InlineKeyboardButton("Novbeti bolum➡️", callback_data="iki_az")],
@@ -9945,42 +9945,42 @@ reply_markup=reply_markup)
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🌐 *Fəsil 2: İnternetə dalış!*\n\n"
-                              "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
-                              "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
-                              "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
-                              "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
-                              "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
-                              "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
-                              "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
-                              " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
-                              " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
-                              "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n\n"
-                              "sonuncu fəsil burada!!!"
-                              ,
-                              reply_markup=reply_markup)
+                                      "İndi sən başa düşdün ki, şəbəkə — sadəcə bir-birinə bağlı cihazlardır — gəlin İnternetin necə işlədiyini öyrənək.\n\n"
+                                      "📡 İnternet — sadəcə *nəhəng bir şəbəkə*dir, kiçik şəbəkələrin çoxluğundan ibarət olub bir-birinə qoşulub.\n\n"
+                                      "👫 Təsəvvür et, Alisaya yeni dostlar — Zeyn və Tobi əlavə olunub. O, onları Bob və Cim ilə tanış etmək istəyir. Amma bir problem var: yalnız Alisa hər iki qrupun dilini başa düşür. Buna görə də o, *əlaqələndirici halqa* olur — indi hamı onun vasitəsilə ünsiyyət qura bilir. Bu, yeni şəbəkənin nümunəsidir.\n\n"
+                                      "📜 İnternetin ilk versiyası 1960-cı illərin sonunda *ARPANET* layihəsi çərçivəsində yaradılıb və ABŞ ordusu tərəfindən maliyyələşdirilib. "
+                                      "Bu, kompüterlər arasında ilk real işləyən şəbəkə idi.\n\n"
+                                      "🌍 1989-cu ildə Tim Berners-Li *Ümumdünya Veb (WWW)* konsepsiyasını təqdim etdi, bu da İnterneti məlumat mübadiləsi və saxlanması üçün əlverişli vasitəyə çevirdi.\n\n"
+                                      "🔌 Bu gün İnternet minlərlə kiçik komandadan ibarət böyük bir klub kimidir. İki növ şəbəkə mövcuddur:\n"
+                                      " - 🔒 Şəxsi şəbəkələr (Private Networks)\n"
+                                      " - 🌐 İctimai şəbəkələr (Public Networks), bunlar da İnternet adlandırdığımız şeydir\n\n"
+                                      "💡 Şəbəkədəki cihazlar bir-birlərini tapmaq və məlumat ötürmək üçün xüsusi *identifikatorlardan* istifadə edir (bundan sonra bunlar barədə danışacağıq).\n\n"
+                                      "sonuncu fəsil burada!!!"
+                                      ,
+                                      reply_markup=reply_markup)
 
 
     elif query.data == "uc_az":
-        keyboard = [[InlineKeyboardButton("Son bolum",callback_data="az_007")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+        keyboard = [[InlineKeyboardButton("Son bolum", callback_data="az_007")],
+                    [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-    "Ping — əsas şəbəkə alətidir və iki cihaz arasında əlaqənin olub-olmadığını yoxlamağa imkan verir.\n"
-    "O, ICMP (Internet Control Message Protocol) protokolu əsasında işləyir,\n"
-    "xüsusi echo-sorğular göndərir və hədəf nöqtədən echo-cavablar gözləyir.\n\n"
+            "Ping — əsas şəbəkə alətidir və iki cihaz arasında əlaqənin olub-olmadığını yoxlamağa imkan verir.\n"
+            "O, ICMP (Internet Control Message Protocol) protokolu əsasında işləyir,\n"
+            "xüsusi echo-sorğular göndərir və hədəf nöqtədən echo-cavablar gözləyir.\n\n"
 
-    "Ping vasitəsilə əlaqənin işləyib-işləmədiyini və onun nə qədər sabit olduğunu müəyyən etmək olar.\n"
-    "Həmçinin paketlərin bir cihazdan digərinə keçmə vaxtını millisekundlarla ölçmək mümkündür.\n\n"
+            "Ping vasitəsilə əlaqənin işləyib-işləmədiyini və onun nə qədər sabit olduğunu müəyyən etmək olar.\n"
+            "Həmçinin paketlərin bir cihazdan digərinə keçmə vaxtını millisekundlarla ölçmək mümkündür.\n\n"
 
-    "Bu alət artıq Linux və Windows da daxil olmaqla əksər əməliyyat sistemlərinə inteqrasiya olunub.\n"
-    "Ping etmək üçün kifayət edir ki, terminalda və ya əmr sətrində aşağıdakı komandadan istifadə edəsiniz:\n"
-    "`ping IP-ünvan` və ya `ping sayt_adı`.\n\n"
+            "Bu alət artıq Linux və Windows da daxil olmaqla əksər əməliyyat sistemlərinə inteqrasiya olunub.\n"
+            "Ping etmək üçün kifayət edir ki, terminalda və ya əmr sətrində aşağıdakı komandadan istifadə edəsiniz:\n"
+            "`ping IP-ünvan` və ya `ping sayt_adı`.\n\n"
 
-    "Məsələn, `ping 192.168.1.254` komandası icra edildikdə,\n"
-    "göndərilmiş və alınmış paketlərin sayı görünəcək,\n"
-    "həmçinin orta cavab vaxtını öyrənmək olar (məsələn, 4.16 ms).",
-    reply_markup=reply_markup
-)
+            "Məsələn, `ping 192.168.1.254` komandası icra edildikdə,\n"
+            "göndərilmiş və alınmış paketlərin sayı görünəcək,\n"
+            "həmçinin orta cavab vaxtını öyrənmək olar (məsələn, 4.16 ms).",
+            reply_markup=reply_markup
+        )
 
     elif query.data == "az_007":
         keyboard = [
@@ -9990,77 +9990,77 @@ reply_markup=reply_markup)
 
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        awaiy query.edit_message_text("""
-📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
-— Özlərini tanısınlar\n
-— Başqaları tərəfindən tanınsınlar\n
+        await query.edit_message_text("""
+    📡 Cihazların ünsiyyət qurması və şəbəkədə nizamı qoruması üçün onlara lazımdır ki:\n
+    — Özlərini tanısınlar\n
+    — Başqaları tərəfindən tanınsınlar\n
 
-💡 Cihazlar insanlara bənzəyir:\n
-— Bizim adımız var (dəyişdirilə bilər)\n
-— Və barmaq izimiz (bəyan olunmaz, unikal)\n
+    💡 Cihazlar insanlara bənzəyir:\n
+    — Bizim adımız var (dəyişdirilə bilər)\n
+    — Və barmaq izimiz (bəyan olunmaz, unikal)\n
 
-📱 Cihazların da iki növ "identifikasiyası" var:\n
-— IP ünvanı (📍dəyişdirilə bilər)\n
-— MAC ünvanı (🔒sabit, barmaq izi kimi)\n
+    📱 Cihazların da iki növ "identifikasiyası" var:\n
+    — IP ünvanı (📍dəyişdirilə bilər)\n
+    — MAC ünvanı (🔒sabit, barmaq izi kimi)\n
 
-=====================\n
-🔹 IP ünvanları\n
-=====================\n
-IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
-O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
-Nümunə: `192.168.0.1`\n
+    =====================\n
+    🔹 IP ünvanları\n
+    =====================\n
+    IP ünvan — şəbəkədə cihazın müvəqqəti adı kimidir.\n
+    O, nöqtələrlə ayrılmış 4 rəqəmdən (oktet) ibarətdir:\n
+    Nümunə: `192.168.0.1`\n
 
-🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
+    🔁 Bir IP başqa cihaz üçün verilə bilər, amma eyni IP-yə malik iki cihaz **eyni anda** bir şəbəkədə işləyə **bilməz**.\n
 
-🌍 IP ünvanlarının iki növü var:\n
-— **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
-— **İctimai IP** — İnternetdə görünür\n
+    🌍 IP ünvanlarının iki növü var:\n
+    — **Şəxsi IP** — lokal şəbəkədə istifadə olunur (ev, ofis)\n
+    — **İctimai IP** — İnternetdə görünür\n
 
-🧾 Nümunə:\n
-| Cihaz           | Şəxsi IP       | İctimai IP        |\n
-|-----------------|----------------|------------------|\n
-| Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
-| Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
+    🧾 Nümunə:\n
+    | Cihaz           | Şəxsi IP       | İctimai IP        |\n
+    |-----------------|----------------|------------------|\n
+    | Mənim PC        | 192.168.1.77   | 86.157.52.21     |\n
+    | Digər PC        | 192.168.1.74   | 86.157.52.21     |\n
 
-🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
+    🔍 Hər iki cihazın **eyni ictimai IP-si** var (bir modem), amma **fərqli şəxsi IP-ləri** var — bu yolla onlar eyni şəbəkədə ünsiyyət qura bilirlər.\n
 
-=====================\n
-🌐 Problem: ünvanlar çatmır!\n
-=====================\n
-IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
+    =====================\n
+    🌐 Problem: ünvanlar çatmır!\n
+    =====================\n
+    IPv4 = 4.29 milyard ünvan (2^32). Amma dünyada cihazların sayı — **onlarla milyard**.\n
 
-💡 Həll yolu:\n
-— IPv6 = 340+ trilyon ünvan (2^128)\n
-— Daha effektiv\n
-— Daha çox ünvan\n
+    💡 Həll yolu:\n
+    — IPv6 = 340+ trilyon ünvan (2^128)\n
+    — Daha effektiv\n
+    — Daha çox ünvan\n
 
-Nümunə:\n
-— IPv4: `192.168.1.1`\n
-— IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
+    Nümunə:\n
+    — IPv4: `192.168.1.1`\n
+    — IPv6: `2001:0db8:85a3:0000:0000:8a2e:0370:7334`\n
 
-=====================\n
-🔹 MAC ünvanları\n
-=====================\n
-Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
-Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
+    =====================\n
+    🔹 MAC ünvanları\n
+    =====================\n
+    Hər bir cihazın unikal ünvanlı şəbəkə adapteri var — **MAC ünvanı**.\n
+    Format: `a4:c3:f0:85:ac:2d` (6 bayt, 16-lıq)\n
 
-🛠 İlk 6 simvol — istehsalçı.\n
-📌 Son 6 — cihazın unikal nömrəsi.\n
+    🛠 İlk 6 simvol — istehsalçı.\n
+    📌 Son 6 — cihazın unikal nömrəsi.\n
 
-💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
-— Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
-— Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
+    💥 Amma MAC ünvan saxtalaşdırıla bilər — buna **spoofing** deyilir:\n
+    — Zərərverici özünü başqa cihaz kimi göstərə bilər.\n
+    — Məsələn, firewall yalnız adminin MAC ünvanını buraxırsa — onu aldada bilər!\n
 
-=====================\n
-📌 Nəticə:\n
-=====================\n
-🔹 IP — dəyişir, şəbəkədən asılıdır.\n
-🔹 MAC — sabit, unikal.\n
-🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
-sonuncu fəsil burada!!!
-""",
-reply_markup=reply_markup
-)
+    =====================\n
+    📌 Nəticə:\n
+    =====================\n
+    🔹 IP — dəyişir, şəbəkədən asılıdır.\n
+    🔹 MAC — sabit, unikal.\n
+    🔹 Təhlükəsizlik üçün nəzərə almaq lazımdır ki, həm IP, həm MAC həqiqiliyi təmin etmir.\n
+    sonuncu fəsil burada!!!
+    """,
+                                reply_markup=reply_markup
+                                )
 
 
 
@@ -10070,8 +10070,8 @@ reply_markup=reply_markup
         ]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-           "«YAXŞI!! Gəlin Python 🐍 səyahətimizə başlayaq»"
-,
+            "«YAXŞI!! Gəlin Python 🐍 səyahətimizə başlayaq»"
+            ,
             reply_markup=reply_markup)
     elif query.data == "cpp_az":
         keyboard = [[
@@ -10079,8 +10079,8 @@ reply_markup=reply_markup
         ]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-          "«YAXŞI!! Gəlin C++ ⚙️ səyahətimizə başlayaq»"
-,
+            "«YAXŞI!! Gəlin C++ ⚙️ səyahətimizə başlayaq»"
+            ,
             reply_markup=reply_markup)
     elif query.data == "javascript_az":
         keyboard = [[
@@ -10089,7 +10089,7 @@ reply_markup=reply_markup
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "«YAXŞI!! Gəlin 🟨 JavaScript səyahətimizə başlayaq»"
-,
+            ,
             reply_markup=reply_markup)
     elif query.data == "az_008":
         keyboard = [[InlineKeyboardButton("🐍 Bashla", callback_data="az_011")]]
@@ -10098,88 +10098,88 @@ reply_markup=reply_markup
 
     elif query.data == "az_011":
         keyboard = [[InlineKeyboardButton("Novbeti bolum➡️", callback_data="az_012")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+                    [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-"🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
-"🔹 *Addım 1: Python-u yüklə*\n"
-"[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
-"🔹 *Addım 2: Quraşdırma*\n"
-"— 'Add Python to PATH' qutusunu işarələ\n"
-"— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
-"🔹 *Addım 3: Yoxlama*\n"
-"`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
-"🔹 *Addım 4: PyCharm-i yüklə*\n"
-"[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
-"— Community versiyasını quraşdır\n\n"
-"🔹 *Addım 5: Python-u qoş*\n"
-"New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
-"`C:/Program Files/Python3X/python.exe`\n\n"
-"✅ *Yoxlama:*\n"
-"Yeni fayl yarat və kodu əlavə et:\n"
-"```python\nprint(\"Hello, world!\")\n```\n"
-"▶️ Run düyməsini kliklə",
-parse_mode="Markdown", reply_markup=reply_markup
-)
+            "🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
+            "🔹 *Addım 1: Python-u yüklə*\n"
+            "[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
+            "🔹 *Addım 2: Quraşdırma*\n"
+            "— 'Add Python to PATH' qutusunu işarələ\n"
+            "— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
+            "🔹 *Addım 3: Yoxlama*\n"
+            "`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
+            "🔹 *Addım 4: PyCharm-i yüklə*\n"
+            "[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
+            "— Community versiyasını quraşdır\n\n"
+            "🔹 *Addım 5: Python-u qoş*\n"
+            "New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
+            "`C:/Program Files/Python3X/python.exe`\n\n"
+            "✅ *Yoxlama:*\n"
+            "Yeni fayl yarat və kodu əlavə et:\n"
+            "```python\nprint(\"Hello, world!\")\n```\n"
+            "▶️ Run düyməsini kliklə",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
 
 
     elif query.data == "az_012":
         keyboard = [[InlineKeyboardButton(" Novbeti bolum➡️", callback_data="az_013")],
-                    [InlineKeyboardButton("Son bolum",callback_data="az_014")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+                    [InlineKeyboardButton("Son bolum", callback_data="az_014")],
+                    [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-"🐍 *Python-da dəyişənlər və məlumat tipləri*\n\n"
-"🔹 *Dəyişən nədir?*\n"
-"— Məlumatları saxlamaq üçün ad. Tip avtomatik müəyyən olunur.\n\n"
-"🔹 *Dəyişənlərə nümunələr:*\n"
-"`x = 10` — tam ədəd (int)\n"
-"`name = \"Tom\"` — mətn sətiri (str)\n"
-"`pi = 3.14` — onluq ədəd (float)\n\n"
-"🔹 *Əsas məlumat tipləri:*\n"
-"- int — tam ədədlər\n"
-"- float — onluq ədədlər\n"
-"- str — mətn sətirləri\n"
-"- bool — True / False (loji)\n\n"
-"🔹 *Məlumatları necə çıxarmaq olar?*\n"
-"`print(x)`\n`print(name)`\n`print(pi)`\n\n"
-"✅ *Özün sınayaraq gör:*\n"
-"```python\nage = 15\ncity = \"Moskva\"\nis_student = True\n\n"
-"print(\"Yaş:\", age)\nprint(\"Şəhər:\", city)\nprint(\"Tələbə:\", is_student)\n```",
-parse_mode="Markdown", reply_markup=reply_markup
-)
+            "🐍 *Python-da dəyişənlər və məlumat tipləri*\n\n"
+            "🔹 *Dəyişən nədir?*\n"
+            "— Məlumatları saxlamaq üçün ad. Tip avtomatik müəyyən olunur.\n\n"
+            "🔹 *Dəyişənlərə nümunələr:*\n"
+            "`x = 10` — tam ədəd (int)\n"
+            "`name = \"Tom\"` — mətn sətiri (str)\n"
+            "`pi = 3.14` — onluq ədəd (float)\n\n"
+            "🔹 *Əsas məlumat tipləri:*\n"
+            "- int — tam ədədlər\n"
+            "- float — onluq ədədlər\n"
+            "- str — mətn sətirləri\n"
+            "- bool — True / False (loji)\n\n"
+            "🔹 *Məlumatları necə çıxarmaq olar?*\n"
+            "`print(x)`\n`print(name)`\n`print(pi)`\n\n"
+            "✅ *Özün sınayaraq gör:*\n"
+            "```python\nage = 15\ncity = \"Moskva\"\nis_student = True\n\n"
+            "print(\"Yaş:\", age)\nprint(\"Şəhər:\", city)\nprint(\"Tələbə:\", is_student)\n```",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
 
     elif query.data == "az_014":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡️", callback_data="az_012")],
-                   [InlineKeyboardButton("menyuya qayit ", callback_data="basla_az")]]
+                    [InlineKeyboardButton("menyuya qayit ", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-    "🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
-    "🔹 *Addım 1: Python-u yüklə*\n"
-    "[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
-    "🔹 *Addım 2: Quraşdırma*\n"
-    "— 'Add Python to PATH' qutusunu işarələ\n"
-    "— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
-    "🔹 *Addım 3: Yoxlama*\n"
-    "`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
-    "🔹 *Addım 4: PyCharm-i yüklə*\n"
-    "[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
-    "— Community versiyasını quraşdır\n\n"
-    "🔹 *Addım 5: Python-u qoş*\n"
-    "New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
-    "`C:/Program Files/Python3X/python.exe`\n\n"
-    "✅ *Yoxlama:*\n"
-    "Yeni fayl yarat və kodu əlavə et:\n"
-    "```python\nprint(\"Hello, world!\")\n```\n"
-    "▶️ Run düyməsini kliklə",
-    parse_mode="Markdown", reply_markup=reply_markup
-)
+            "🐍 *Python 64-bit quraşdırılması və PyCharm Community-ə qoşulma*\n\n"
+            "🔹 *Addım 1: Python-u yüklə*\n"
+            "[Python-u yüklə](https://www.python.org/downloads/) — Windows x86-64 executable installer seç\n\n"
+            "🔹 *Addım 2: Quraşdırma*\n"
+            "— 'Add Python to PATH' qutusunu işarələ\n"
+            "— 'Customize Installation' → Next → 'Install for all users' → Install seç\n\n"
+            "🔹 *Addım 3: Yoxlama*\n"
+            "`python --version` terminalda — Python 3.X.X olmalıdır\n\n"
+            "🔹 *Addım 4: PyCharm-i yüklə*\n"
+            "[PyCharm-i yüklə](https://www.jetbrains.com/pycharm/download)\n"
+            "— Community versiyasını quraşdır\n\n"
+            "🔹 *Addım 5: Python-u qoş*\n"
+            "New Project → ⚙️ Add Interpreter → System Interpreter → yol:\n"
+            "`C:/Program Files/Python3X/python.exe`\n\n"
+            "✅ *Yoxlama:*\n"
+            "Yeni fayl yarat və kodu əlavə et:\n"
+            "```python\nprint(\"Hello, world!\")\n```\n"
+            "▶️ Run düyməsini kliklə",
+            parse_mode="Markdown", reply_markup=reply_markup
+        )
 
 
     elif query.data == "az_013":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡️", callback_data="az_015")],
-                    [InlineKeyboardButton("Son bolum",callback_data="az_016")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+                    [InlineKeyboardButton("Son bolum", callback_data="az_016")],
+                    [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
             "🧠 *Условия в Python: if, elif, else*\n\n"
@@ -10196,787 +10196,736 @@ parse_mode="Markdown", reply_markup=reply_markup
             "else:\n    print(\"Привет, гость!\")\n```",
             parse_mode="Markdown", reply_markup=reply_markup
         )
-        
-elif query.data == "az_016":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_013")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_014")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🐍 *Python: Dəyişənlər və məlumat tipləri*\n\n"
-        "🔹 *Dəyişən nədir?*\n"
-        "— Məlumat saxlamaq üçün istifadə olunan ad. Tipi avtomatik müəyyən edilir.\n\n"
-        "🔹 *Dəyişən nümunələri:*\n"
-        "`x = 10` — tam ədəd (int)\n"
-        "`name = \"Tom\"` — mətn (str)\n"
-        "`pi = 3.14` — onluq ədəd (float)\n\n"
-        "🔹 *Əsas məlumat tipləri:*\n"
-        "- int — tam ədədlər\n"
-        "- float — onluq ədədlər\n"
-        "- str — mətnlər\n"
-        "- bool — True / False (məntiqi)\n\n"
-        "🔹 *Məlumatı ekrana çıxarmaq üçün:*\n"
-        "`print(x)`\n`print(name)`\n`print(pi)`\n\n"
-        "✅ *Özün sınamağa çalış:*\n"
-        "```python\nage = 15\ncity = \"Bakı\"\nis_student = True\n\n"
-        "print(\"Yaş:\", age)\nprint(\"Şəhər:\", city)\nprint(\"Tələbə:\", is_student)\n```",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
 
-elif query.data == "az_015":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_017")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_018")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🔄 *Python: for və while döngüləri*\n\n"
-        "🔹 *Döngü nədir?*\n"
-        "— Kod blokunu təkrar icra etməyə imkan verən struktur.\n"
-        "— Siyahılar, ədədlər və digər kolleksiyalar üzərində təkrar üçün istifadə olunur.\n\n"
-        "============================\n"
-        "🔹 *for döngüsü:*\n"
-        "```python\nfor i in range(5):\n    print(i)\n```\n"
-        "— 0-dan 4-ə qədər ədədləri çıxarır.\n\n"
-        "🔸 range(5) ardıcıllıq yaradır: 0, 1, 2, 3, 4\n\n"
-        "============================\n"
-        "🔹 *while döngüsü:*\n"
-        "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
-        "— Şərt doğru olduğu müddətcə kodu təkrar icra edir.\n\n"
-        "============================\n"
-        "🔹 *Siyahı ilə for döngüsü:*\n"
-        "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
-        "============================\n"
-        "✅ *Yadda saxla:*\n"
-        "- for — elementlərin üzərində rahat təkrar üçün\n"
-        "- while — şərt doğru olduğu müddətcə döngü davam edir\n"
-        "- Döngünü erkən dayandırmaq üçün `break` istifadə olunur\n\n"
-        "💡 Döngülər böyük məlumatların avtomatlaşdırılması və işlənməsi üçün əsasdır!\n"
-        "Özün bir sadə döngü yaz və ədədlər və ya sözlər siyahısını çıxar!",
-        parse_mode="Markdown",
-        reply_markup=reply_markup
-    )
-
-elif query.data == "az_018":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_015")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_016")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🧠 *Python: Şərtlər if, elif, else*\n\n"
-        "🔹 *Şərt nədir?*\n"
-        "— Kod yalnız müəyyən şərt ödəndikdə icra olunur.\n"
-        "— if, elif, else istifadə olunur.\n\n"
-        "🔹 *Sintaksis:*\n"
-        "```python\nage = 16\n\nif age >= 18:\n    print(\"Siz yetkin yaşdasınız\")\n"
-        "elif age >= 14:\n    print(\"Siz yeniyetmisiniz\")\nelse:\n    print(\"Siz uşaqsınız\")\n```\n\n"
-        "🔹 *Müqayisə operatorları:* ==, !=, >, <, >=, <=\n"
-        "🔹 *Məntiqi operatorlar:* and, or, not\n\n"
-        "✅ *Özün sınamağa çalış:*\n"
-        "```python\nname = input(\"Adınız: \")\nif name == \"Tom\":\n    print(\"Salam, Tom!\")\n"
-        "else:\n    print(\"Salam, qonaq!\")\n```",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_017":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_019")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_020")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "📚 *Python: Siyahılar (list)*\n\n"
-        "🔹 *Siyahı nədir?*\n"
-        "— Elementlərin sıralı kolleksiyası.\n"
-        "— İçində ədədlər, mətnlər və hətta digər siyahılar saxlamaq olar.\n\n"
-        "============================\n"
-        "🔹 *Siyahı nümunəsi:*\n"
-        "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\n```\n"
-        "— Üç elementdən ibarət siyahı.\n\n"
-        "🔸 İndeks ilə çıxış:\n"
-        "`fruits[0]` → \"alma\"\n"
-        "`fruits[2]` → \"gilas\"\n\n"
-        "============================\n"
-        "🔹 *Elementləri dəyişmək və əlavə etmək:*\n"
-        "```python\nfruits[1] = \"kivi\"  # 'banan' yerinə 'kivi'\nfruits.append(\"armud\")  # Element əlavə et\n```\n\n"
-        "============================\n"
-        "🔹 *Siyahını döngü ilə gəzmək:*\n"
-        "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
-        "🔸 Hər elementi çıxarır.\n\n"
-        "============================\n"
-        "✅ *Yadda saxla:*\n"
-        "- İndekslər 0-dan başlayır\n"
-        "- Müxtəlif tiplərdə elementlər saxlamaq olar\n"
-        "- Siyahılar dəyişkəndir (əlavə etmək, silmək mümkündür)\n\n"
-        "💡 Siyahılar Python-da kolleksiya ilə işləmək üçün əsas vasitələrdən biridir.\n"
-        "Öz siyahını yarat və döngü ilə elementləri çıxar!",
-        parse_mode="Markdown",
-        reply_markup=reply_markup
-    )
-
-elif query.data == "az_020":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_017")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_018")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🔄 *Python: for və while döngüləri*\n\n"
-        "🔹 *Döngü nədir?*\n"
-        "— Kod blokunu təkrar icra etməyə imkan verən struktur.\n"
-        "— Siyahılar, ədədlər və digər kolleksiyalar üzərində təkrar üçün istifadə olunur.\n\n"
-        "============================\n"
-        "🔹 *for döngüsü:*\n"
-        "```python\nfor i in range(5):\n    print(i)\n```\n"
-        "— 0-dan 4-ə qədər ədədləri çıxarır.\n\n"
-        "🔸 range(5) ardıcıllıq yaradır: 0, 1, 2, 3, 4\n\n"
-        "============================\n"
-        "🔹 *while döngüsü:*\n"
-        "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
-        "— Şərt doğru olduğu müddətcə kodu təkrar icra edir.\n\n"
-        "============================\n"
-        "🔹 *Siyahı ilə for döngüsü:*\n"
-        "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
-        "============================\n"
-        "✅ *Yadda saxla:*\n"
-        "- for — elementlərin üzərində rahat təkrar üçün\n"
-        "- while — şərt doğru olduğu müddətcə döngü davam edir\n"
-        "- Döngünü erkən dayandırmaq üçün `break` istifadə olunur\n\n"
-        "💡 Döngülər böyük məlumatların avtomatlaşdırılması və işlənməsi üçün əsasdır!\n"
-        "Özün bir sadə döngü yaz və ədədlər və ya sözlər siyahısını çıxar!",
-        parse_mode="Markdown",
-        reply_markup=reply_markup
-    )
-
-elif query.data == "az_019":
-    keyboard = [
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_021")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🛠️ *Python: Funksiyalar*\n\n"
-        "🔹 *Funksiya nədir?*\n"
-        "— Müəyyən bir vəzifəni yerinə yetirən kod bloku.\n"
-        "— Funksiyalar kodun təkrarını azaldır və proqramları anlaşıqlı edir.\n\n"
-        "============================\n"
-        "🔹 *Sadə funksiya:*\n"
-        "```python\ndef say_hello():\n    print(\"Salam, dünya!\")\n\nsay_hello()  # Funksiyanı çağır\n```\n"
-        "— `def` açar sözü, funksiya adı, mötərizələr və iki nöqtə.\n"
-        "— İçindəki hər şey funksiyanı çağırdıqda icra olunur.\n\n"
-        "============================\n"
-        "🔹 *Parametrli funksiya:*\n"
-        "```python\ndef greet(name):\n    print(\"Salam,\", name)\n\ngreet(\"Aylin\")\n```\n"
-        "— Dəyərləri funksiyaya ötürmək olar.\n"
-        "— Bunlara arqument və ya parametr deyilir.\n\n"
-        "============================\n"
-        "🔹 *Dəyər qaytaran funksiya (`return`):*\n"
-        "```python\ndef square(x):\n    return x * x\n\nresult = square(5)\nprint(result)\n```\n"
-        "— `return` funksiyanın nəticəsini qaytarır.\n"
-        "— Nəticəni dəyişəndə saxlamaq olar.\n\n"
-        "============================\n"
-        "✅ *Niyə funksiyalar vacibdir?*\n"
-        "- Kod kompakt və oxunaqlı olur\n"
-        "- Eyni kod blokunu təkrar istifadə etməyə imkan verir\n"
-        "- Böyük proqramları məntiqi hissələrə bölmək olar\n\n"
-        "💡 Əvvəl öz adını çıxaran funksiya yaz, sonra iki ədədin cəmini qaytaran funksiya yaz!\n"
-        "Funksiyalar hər proqramlaşdırma dilinin əsasıdır! 🚀",
-        parse_mode="Markdown",
-        reply_markup=reply_markup
-    )
-
-elif query.data == "az_021":
-    keyboard = [
-        [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_019")],
-        [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_020")],
-        [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "📚 *Python: Siyahılar (list)*\n\n"
-        "🔹 *Siyahı nədir?*\n"
-        "— Elementlərin sıralı kolleksiyası.\n"
-        "— İçində ədədlər, mətnlər və hətta digər siyahılar saxlamaq olar.\n\n"
-        "============================\n"
-        "🔹 *Siyahı nümunəsi:*\n"
-        "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\n```\n"
-        "— Üç elementdən ibarət siyahı.\n\n"
-        "🔸 İndeks ilə çıxış:\n"
-        "`fruits[0]` → \"alma\"\n"
-        "`fruits[2]` → \"gilas\"\n\n"
-        "============================\n"
-        "🔹 *Elementləri dəyişmək və əlavə etmək:*\n"
-        "```python\nfruits[1] = \"kivi\"  # 'banan' yerinə 'kivi'\nfruits.append(\"armud\")  # Element əlavə et\n```\n\n"
-        "============================\n"
-        "🔹 *Siyahını döngü ilə gəzmək:*\n"
-        "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
-        "🔸 Hər elementi çıxarır.\n\n"
-        "============================\n"
-        "✅ *Yadda saxla:*\n"
-        "- İndekslər 0-dan başlayır\n"
-        "- Müxtəlif tiplərdə elementlər saxlamaq olar\n"
-        "- Siyahılar dəyişkəndir (əlavə etmək, silmək mümkündür)\n\n"
-        "💡 Siyahılar Python-da kolleksiya ilə işləmək üçün əsas vasitələrdən biridir.\n"
-        "Öz siyahını yarat və döngü ilə elementləri çıxar!",
-        parse_mode="Markdown",
-        reply_markup=reply_markup
-    )
-
-elif query.data == "az_009":
-    keyboard = [[InlineKeyboardButton("⚙ Başla", callback_data="az_022")]]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text("Gəlin başlayaq!\nBölmə 1:", reply_markup=reply_markup)
-
-elif query.data == "az_022":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_023")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙ *C++: Quraşdırma və başlanğıc*\n\n"
-        "🔹 *Addım 1: Kompilyatoru quraşdır*\n"
-        "[MinGW yüklə](https://sourceforge.net/projects/mingw/)\n"
-        "— gcc-ni quraşdır və bin yolunu PATH-ə əlavə et\n\n"
-        "🔹 *Addım 2: Redaktoru yüklə*\n"
-        "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
-        "🔹 *Addım 3: Kompilyatoru yoxla:*\n"
-        "`g++ --version`\n\n"
-        "🔹 *Addım 4: Sadə kod:*\n"
-        "```cpp\n#include <iostream>\nint main() {\n"
-        "    std::cout << \"Salam, dünya!\";\n    return 0;\n}\n```\n"
-        "main.cpp kimi yadda saxla və kompilyasiya et:\n"
-        "`g++ main.cpp -o main`\n`./main`",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_023":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_024")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_025")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *C++: Dəyişənlər və məlumat tipləri*\n\n"
-        "🔹 *Dəyişən nədir?*\n"
-        "— Məlumat saxlamaq üçün yaddaşda adlandırılmış sahədir.\n"
-        "— İstifadədən əvvəl dəyişəni tipi ilə elan etmək lazımdır.\n\n"
-        "🔹 *Nümunələr:*\n"
-        "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
-        "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
-        "🔹 *Çap nümunəsi:*\n"
-        "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
-        "    int age = 15;\n    std::string name = \"Tom\";\n"
-        "    std::cout << \"Ad: \" << name << \"\\n\";\n"
-        "    std::cout << \"Yaş: \" << age << \"\\n\";\n    return 0;\n}\n```",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_025":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_023")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙ *C++: Quraşdırma və başlanğıc*\n\n"
-        "🔹 *Addım 1: Kompilyatoru quraşdır*\n"
-        "[MinGW yüklə](https://sourceforge.net/projects/mingw/)\n"
-        "— gcc-ni quraşdır və bin yolunu PATH-ə əlavə et\n\n"
-        "🔹 *Addım 2: Redaktoru yüklə*\n"
-        "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
-        "🔹 *Addım 3: Kompilyatoru yoxla:*\n"
-        "`g++ --version`\n\n"
-        "🔹 *Addım 4: Sadə kod:*\n"
-        "```cpp\n#include <iostream>\nint main() {\n"
-        "    std::cout << \"Salam, dünya!\";\n    return 0;\n}\n```\n"
-        "main.cpp kimi yadda saxla və kompilyasiya et:\n"
-        "`g++ main.cpp -o main`\n`./main`",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_024":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_026")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_027")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🧠 *C++: Şərtlər (if, else, else if)*\n\n"
-        "🔹 *Şərt nədir?*\n"
-        "— Şərt ödənildikdə kod bloku icra olunur.\n\n"
-        "🔹 *Nümunə:*\n"
-        "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n"
-        "    int age = 16;\n"
-        "    if (age >= 18) {\n        cout << \"Sən böyüksən\";\n"
-        "    } else if (age >= 14) {\n        cout << \"Sən yeniyetməsən\";\n"
-        "    } else {\n        cout << \"Sən uşaqsan\";\n    }\n    return 0;\n}\n```\n\n"
-        "🔹 *Operatorlar:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
-        "🔹 *Məntiq:* `&&`, `||`, `!`\n\n"
-        "✅ *Özün sınayıb bax!*",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_027":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_024")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_025")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *C++: Dəyişənlər və məlumat tipləri*\n\n"
-        "🔹 *Dəyişən nədir?*\n"
-        "— Məlumat saxlamaq üçün yaddaşda adlandırılmış sahədir.\n"
-        "— İstifadədən əvvəl dəyişəni tipi ilə elan etmək lazımdır.\n\n"
-        "🔹 *Nümunələr:*\n"
-        "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
-        "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
-        "🔹 *Çap nümunəsi:*\n"
-        "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
-        "    int age = 15;\n    std::string name = \"Tom\";\n"
-        "    std::cout << \"Ad: \" << name << \"\\n\";\n"
-        "    std::cout << \"Yaş: \" << age << \"\\n\";\n    return 0;\n}\n```",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_026":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_028")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_029")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🔁 *C++: Döngülər (for, while, do while)*\n\n"
-        "🔹 *Döngü nədir?*\n"
-        "— Bir kod blokunu bir neçə dəfə icra etməyə imkan verir, şərt ödənilənə qədər.\n\n"
-        "🔹 *C++ döngü növləri:*\n"
-        "- `for` — təkrarlanma sayı məlumdursa\n"
-        "- `while` — şərt doğru olduqda\n"
-        "- `do while` — əvvəl icra edir, sonra şərti yoxlayır\n\n"
-        "============================\n"
-        "🔹 *for nümunəsi:*\n"
-        "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << i << \" \";\n}\n```\n"
-        "🔸 Çıxış: `0 1 2 3 4`\n\n"
-        "============================\n"
-        "🔹 *while nümunəsi:*\n"
-        "```cpp\nint i = 0;\nwhile (i < 3) {\n    cout << i << endl;\n    i++;\n}\n```\n"
-        "🔸 Çıxış: `0`, `1`, `2`\n\n"
-        "============================\n"
-        "🔹 *do while nümunəsi:*\n"
-        "```cpp\nint i = 0;\ndo {\n    cout << i << endl;\n    i++;\n} while (i < 2);\n```\n"
-        "🔸 Çıxış: `0`, `1`\n\n"
-        "============================\n"
-        "✅ *İstifadə qaydası:*\n"
-        "- `for` — sayğac üçün (i = 0; i < N; i++)\n"
-        "- `while` — təkrarlanma sayı bilinmirsə\n"
-        "- `do while` — minimum 1 dəfə icra olunacaq\n\n"
-        "Özün sınayıb bax!"
-        ,
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-elif query.data == "az_010":
-    keyboard = [[InlineKeyboardButton("⚙ Başla", callback_data="az_035")]]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text("Başlayaq!\n1-ci Bölmə:", reply_markup=reply_markup)
-
-elif query.data == "az_035":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_036")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Quraşdırma və başlanğıc*\n\n"
-        "🔹 *Addım 1: Redaktoru yüklə*\n"
-        "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
-        "🔹 *Addım 2: Node.js yoxla*\n"
-        "[Node.js yüklə](https://nodejs.org/)\n"
-        "— Quraşdır və versiyanı yoxla:\n"
-        "`node --version`\n\n"
-        "🔹 *Addım 3: Sadə kod*\n"
-        "main.js faylı yaradın və daxil edin:\n"
-        "```js\nconsole.log(\"Salam, dünya!\");\n```\n"
-        "Terminalda işə salın:\n"
-        "`node main.js`\n\n"
-        "💡 *JavaScript saytlar, botlar və tətbiqlər yaratmaq üçün ilk addımdır!*",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_036":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_037")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_038")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Dəyişənlər və məlumat tipləri*\n\n"
-        "🔹 *Dəyişən nədir?*\n"
-        "— Məlumatları saxlayan adlandırılmış konteynerdir.\n"
-        "— `let`, `const` və ya köhnə `var` ilə elan olunur.\n\n"
-        "🔹 *Nümunələr:*\n"
-        "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
-        "🔹 *Konsola çıxış:*\n"
-        "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Ad:\", name);\nconsole.log(\"Yaş:\", age);\n```\n"
-        "💡 *Məsləhət:* Dəyişməyən dəyərlər üçün `const`, dəyişənlər üçün `let` istifadə edin.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_038":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_036")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Quraşdırma və başlanğıc*\n\n"
-        "🔹 *Addım 1: Redaktoru yüklə*\n"
-        "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
-        "🔹 *Addım 2: Node.js yoxla*\n"
-        "[Node.js yüklə](https://nodejs.org/)\n"
-        "— Quraşdır və versiyanı yoxla:\n"
-        "`node --version`\n\n"
-        "🔹 *Addım 3: Sadə kod*\n"
-        "main.js faylı yaradın və daxil edin:\n"
-        "```js\nconsole.log(\"Salam, dünya!\");\n```\n"
-        "Terminalda işə salın:\n"
-        "`node main.js`\n\n"
-        "💡 *JavaScript saytlar, botlar və tətbiqlər yaratmaq üçün ilk addımdır!*",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_037":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_039")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_040")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Şərtlər və müqayisələr*\n\n"
-        "🔹 *Şərt nədir?*\n"
-        "— Bir ifadə `true` olduqda blok daxilindəki kod işləyir.\n"
-        "— JavaScript-də `if` konstrukiyası istifadə olunur.\n\n"
-        "🔹 *Nümunə:*\n"
-        "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
-        "🔹 *Müqayisə operatorları:*\n"
-        "`==` — dəyərə görə müqayisə (tipləri çevirmək mümkündür)\n"
-        "`===` — sərt müqayisə (tip və dəyər nəzərə alınır)\n"
-        "`!=` — bərabər deyil (dəyərə görə)\n"
-        "`!==` — sərt bərabər deyil (tip və dəyərə görə)\n"
-        "`>` — böyükdür\n"
-        "`<` — kiçikdir\n"
-        "`>=` — böyük və ya bərabər\n"
-        "`<=` — kiçik və ya bərabər\n\n"
-        "💡 *Vacib:* `===` və `!==` istifadə etmək tövsiyə olunur, tip çevrilməsi səhvlərinin qarşısını almaq üçün.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_040":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_037")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_038")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Dəyişənlər və məlumat tipləri*\n\n"
-        "🔹 *Dəyişən nədir?*\n"
-        "— Məlumatları saxlayan adlandırılmış konteynerdir.\n"
-        "— `let`, `const` və ya köhnə `var` ilə elan olunur.\n\n"
-        "🔹 *Nümunələr:*\n"
-        "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
-        "🔹 *Konsola çıxış:*\n"
-        "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Ad:\", name);\nconsole.log(\"Yaş:\", age);\n```\n"
-        "💡 *Məsləhət:* Dəyişməyən dəyərlər üçün `const`, dəyişənlər üçün `let` istifadə edin.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_039":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_041")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_042")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Məntiqi operatorlar*\n\n"
-        "🔹 *Məntiqi operatorlar nədir?*\n"
-        "— Şərtləri birləşdirməyə imkan verir.\n"
-        "— Bir neçə şərti eyni anda yoxlamağa kömək edir.\n\n"
-        "🔹 *Operatorlar:*\n"
-        "`&&` — VƏ (hər iki şərt doğru olmalıdır)\n"
-        "`||` — VƏ YA (hər hansı bir şərt doğru olsa kifayətdir)\n"
-        "`!` — YOX (dəyişənin əksini alır)\n\n"
-        "🔹 *Nümunələr:*\n"
-        "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
-        "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"İstifadəçi offline-dur\");\n}\n```\n\n"
-        "💡 *Vacib:* Operatorlar əvvəlcə mötərizədəki şərti yoxlayır, sonra tətbiq olunur.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-    elif query.data == "az_042":
-        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_039")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="az_040")],
-                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+    elif query.data == "az_016":
+        keyboard = [
+    [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_013")],
+    [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_014")],
+    [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]  
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
-            "⚙️ *JavaScript: Условия и сравнения*\n\n"
-            "🔹 *Что такое условие?*\n"
-            "— Это проверка, при которой код внутри блока выполняется, если результат выражения — `true`.\n"
-            "— В JavaScript для этого используется конструкция `if`.\n\n"
-            "🔹 *Пример:*\n"
-            "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
-            "🔹 *Операторы сравнения:*\n"
-            "`==` — сравнение по значению (может преобразовывать типы)\n"
-            "`===` — строгое сравнение (учитывает и тип, и значение)\n"
-            "`!=` — не равно (по значению)\n"
-            "`!==` — строгое не равно (по типу и значению)\n"
-            "`>` — больше\n"
-            "`<` — меньше\n"
-            "`>=` — больше или равно\n"
-            "`<=` — меньше или равно\n\n"
-            "💡 *Важно:* Лучше использовать `===` и `!==` для избежания неожиданных ошибок из-за преобразования типов.",
-            parse_mode="Markdown", reply_markup=reply_markup
-        )
+    "🐍 *Python: Dəyişənlər və məlumat tipləri*\n\n"
+    "🔹 *Dəyişən nədir?*\n"
+    "— Məlumat saxlamaq üçün istifadə olunan ad. Tipi avtomatik müəyyən edilir.\n\n"
+    "🔹 *Dəyişən nümunələri:*\n"
+    "`x = 10` — tam ədəd (int)\n"
+    "`name = \"Tom\"` — mətn (str)\n"
+    "`pi = 3.14` — onluq ədəd (float)\n\n"
+    "🔹 *Əsas məlumat tipləri:*\n"
+    "- int — tam ədədlər\n"
+    "- float — onluq ədədlər\n"
+    "- str — mətnlər\n"
+    "- bool — True / False (məntiqi)\n\n"
+    "🔹 *Məlumatı ekrana çıxarmaq üçün:*\n"
+    "`print(x)`\n`print(name)`\n`print(pi)`\n\n"
+    "✅ *Özün sınamağa çalış:*\n"
+    "```python\nage = 15\ncity = \"Bakı\"\nis_student = True\n\n"
+    "print(\"Yaş:\", age)\nprint(\"Şəhər:\", city)\nprint(\"Tələbə:\", is_student)\n```",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_015":
+        keyboard = [
+    [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_017")],
+    [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_018")],
+    [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔄 *Python: for və while döngüləri*\n\n"
+    "🔹 *Döngü nədir?*\n"
+    "— Kod blokunu təkrar icra etməyə imkan verən struktur.\n"
+    "— Siyahılar, ədədlər və digər kolleksiyalar üzərində təkrar üçün istifadə olunur.\n\n"
+    "============================\n"
+    "🔹 *for döngüsü:*\n"
+    "```python\nfor i in range(5):\n    print(i)\n```\n"
+    "— 0-dan 4-ə qədər ədədləri çıxarır.\n\n"
+    "🔸 range(5) ardıcıllıq yaradır: 0, 1, 2, 3, 4\n\n"
+    "============================\n"
+    "🔹 *while döngüsü:*\n"
+    "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
+    "— Şərt doğru olduğu müddətcə kodu təkrar icra edir.\n\n"
+    "============================\n"
+    "🔹 *Siyahı ilə for döngüsü:*\n"
+    "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
+    "============================\n"
+    "✅ *Yadda saxla:*\n"
+    "- for — elementlərin üzərində rahat təkrar üçün\n"
+    "- while — şərt doğru olduğu müddətcə döngü davam edir\n"
+    "- Döngünü erkən dayandırmaq üçün `break` istifadə olunur\n\n"
+    "💡 Döngülər böyük məlumatların avtomatlaşdırılması və işlənməsi üçün əsasdır!\n"
+    "Özün bir sadə döngü yaz və ədədlər və ya sözlər siyahısını çıxar!",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+    elif query.data == "az_018":
+        keyboard = [
+            [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_015")],
+            [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_016")],
+            [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]
+        
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🧠 *Python: Şərtlər if, elif, else*\n\n"
+    "🔹 *Şərt nədir?*\n"
+    "— Kod yalnız müəyyən şərt ödəndikdə icra olunur.\n"
+    "— if, elif, else istifadə olunur.\n\n"
+    "🔹 *Sintaksis:*\n"
+    "```python\nage = 16\n\nif age >= 18:\n    print(\"Siz yetkin yaşdasınız\")\n"
+    "elif age >= 14:\n    print(\"Siz yeniyetmisiniz\")\nelse:\n    print(\"Siz uşaqsınız\")\n```\n\n"
+    "🔹 *Müqayisə operatorları:* ==, !=, >, <, >=, <=\n"
+    "🔹 *Məntiqi operatorlar:* and, or, not\n\n"
+    "✅ *Özün sınamağa çalış:*\n"
+    "```python\nname = input(\"Adınız: \")\nif name == \"Tom\":\n    print(\"Salam, Tom!\")\n"
+    "else:\n    print(\"Salam, qonaq!\")\n```",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_017":
+        keyboard = [
+            [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_019")],
+            [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_020")],
+            [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]
+        
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "📚 *Python: Siyahılar (list)*\n\n"
+    "🔹 *Siyahı nədir?*\n"
+    "— Elementlərin sıralı kolleksiyası.\n"
+    "— İçində ədədlər, mətnlər və hətta digər siyahılar saxlamaq olar.\n\n"
+    "============================\n"
+    "🔹 *Siyahı nümunəsi:*\n"
+    "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\n```\n"
+    "— Üç elementdən ibarət siyahı.\n\n"
+    "🔸 İndeks ilə çıxış:\n"
+    "`fruits[0]` → \"alma\"\n"
+    "`fruits[2]` → \"gilas\"\n\n"
+    "============================\n"
+    "🔹 *Elementləri dəyişmək və əlavə etmək:*\n"
+    "```python\nfruits[1] = \"kivi\"  # 'banan' yerinə 'kivi'\nfruits.append(\"armud\")  # Element əlavə et\n```\n\n"
+    "============================\n"
+    "🔹 *Siyahını döngü ilə gəzmək:*\n"
+    "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
+    "🔸 Hər elementi çıxarır.\n\n"
+    "============================\n"
+    "✅ *Yadda saxla:*\n"
+    "- İndekslər 0-dan başlayır\n"
+    "- Müxtəlif tiplərdə elementlər saxlamaq olar\n"
+    "- Siyahılar dəyişkəndir (əlavə etmək, silmək mümkündür)\n\n"
+    "💡 Siyahılar Python-da kolleksiya ilə işləmək üçün əsas vasitələrdən biridir.\n"
+    "Öz siyahını yarat və döngü ilə elementləri çıxar!",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+    elif query.data == "az_020":
+        keyboard = [
+            [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_017")],
+            [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_018")],
+            [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔄 *Python: for və while döngüləri*\n\n"
+    "🔹 *Döngü nədir?*\n"
+    "— Kod blokunu təkrar icra etməyə imkan verən struktur.\n"
+    "— Siyahılar, ədədlər və digər kolleksiyalar üzərində təkrar üçün istifadə olunur.\n\n"
+    "============================\n"
+    "🔹 *for döngüsü:*\n"
+    "```python\nfor i in range(5):\n    print(i)\n```\n"
+    "— 0-dan 4-ə qədər ədədləri çıxarır.\n\n"
+    "🔸 range(5) ardıcıllıq yaradır: 0, 1, 2, 3, 4\n\n"
+    "============================\n"
+    "🔹 *while döngüsü:*\n"
+    "```python\nx = 0\nwhile x < 3:\n    print(x)\n    x += 1\n```\n"
+    "— Şərt doğru olduğu müddətcə kodu təkrar icra edir.\n\n"
+    "============================\n"
+    "🔹 *Siyahı ilə for döngüsü:*\n"
+    "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\nfor fruit in fruits:\n    print(fruit)\n```\n"
+    "============================\n"
+    "✅ *Yadda saxla:*\n"
+    "- for — elementlərin üzərində rahat təkrar üçün\n"
+    "- while — şərt doğru olduğu müddətcə döngü davam edir\n"
+    "- Döngünü erkən dayandırmaq üçün `break` istifadə olunur\n\n"
+    "💡 Döngülər böyük məlumatların avtomatlaşdırılması və işlənməsi üçün əsasdır!\n"
+    "Özün bir sadə döngü yaz və ədədlər və ya sözlər siyahısını çıxar!",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+    elif query.data == "az_019":
+        keyboard = [
+            [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_021")],
+            [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🛠️ *Python: Funksiyalar*\n\n"
+    "🔹 *Funksiya nədir?*\n"
+    "— Müəyyən bir vəzifəni yerinə yetirən kod bloku.\n"
+    "— Funksiyalar kodun təkrarını azaldır və proqramları anlaşıqlı edir.\n\n"
+    "============================\n"
+    "🔹 *Sadə funksiya:*\n"
+    "```python\ndef say_hello():\n    print(\"Salam, dünya!\")\n\nsay_hello()  # Funksiyanı çağır\n```\n"
+    "— `def` açar sözü, funksiya adı, mötərizələr və iki nöqtə.\n"
+    "— İçindəki hər şey funksiyanı çağırdıqda icra olunur.\n\n"
+    "============================\n"
+    "🔹 *Parametrli funksiya:*\n"
+    "```python\ndef greet(name):\n    print(\"Salam,\", name)\n\ngreet(\"Aylin\")\n```\n"
+    "— Dəyərləri funksiyaya ötürmək olar.\n"
+    "— Bunlara arqument və ya parametr deyilir.\n\n"
+    "============================\n"
+    "🔹 *Dəyər qaytaran funksiya (`return`):*\n"
+    "```python\ndef square(x):\n    return x * x\n\nresult = square(5)\nprint(result)\n```\n"
+    "— `return` funksiyanın nəticəsini qaytarır.\n"
+    "— Nəticəni dəyişəndə saxlamaq olar.\n\n"
+    "============================\n"
+    "✅ *Niyə funksiyalar vacibdir?*\n"
+    "- Kod kompakt və oxunaqlı olur\n"
+    "- Eyni kod blokunu təkrar istifadə etməyə imkan verir\n"
+    "- Böyük proqramları məntiqi hissələrə bölmək olar\n\n"
+    "💡 Əvvəl öz adını çıxaran funksiya yaz, sonra iki ədədin cəmini qaytaran funksiya yaz!\n"
+    "Funksiyalar hər proqramlaşdırma dilinin əsasıdır! 🚀",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+    elif query.data == "az_021":
+        keyboard = [
+            [InlineKeyboardButton("növbəti bölüm➡️", callback_data="az_019")],
+            [InlineKeyboardButton("əvvəlki bölüm", callback_data="az_020")],
+            [InlineKeyboardButton("menyuyə qayıt", callback_data="basla_az")]] 
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "📚 *Python: Siyahılar (list)*\n\n"
+    "🔹 *Siyahı nədir?*\n"
+    "— Elementlərin sıralı kolleksiyası.\n"
+    "— İçində ədədlər, mətnlər və hətta digər siyahılar saxlamaq olar.\n\n"
+    "============================\n"
+    "🔹 *Siyahı nümunəsi:*\n"
+    "```python\nfruits = [\"alma\", \"banan\", \"gilas\"]\n```\n"
+    "— Üç elementdən ibarət siyahı.\n\n"
+    "🔸 İndeks ilə çıxış:\n"
+    "`fruits[0]` → \"alma\"\n"
+    "`fruits[2]` → \"gilas\"\n\n"
+    "============================\n"
+    "🔹 *Elementləri dəyişmək və əlavə etmək:*\n"
+    "```python\nfruits[1] = \"kivi\"  # 'banan' yerinə 'kivi'\nfruits.append(\"armud\")  # Element əlavə et\n```\n\n"
+    "============================\n"
+    "🔹 *Siyahını döngü ilə gəzmək:*\n"
+    "```python\nfor fruit in fruits:\n    print(fruit)\n```\n"
+    "🔸 Hər elementi çıxarır.\n\n"
+    "============================\n"
+    "✅ *Yadda saxla:*\n"
+    "- İndekslər 0-dan başlayır\n"
+    "- Müxtəlif tiplərdə elementlər saxlamaq olar\n"
+    "- Siyahılar dəyişkəndir (əlavə etmək, silmək mümkündür)\n\n"
+    "💡 Siyahılar Python-da kolleksiya ilə işləmək üçün əsas vasitələrdən biridir.\n"
+    "Öz siyahını yarat və döngü ilə elementləri çıxar!",
+    parse_mode="Markdown",
+    reply_markup=reply_markup
+)
+    elif query.data == "az_009":
+        keyboard = [[InlineKeyboardButton("⚙ Başla", callback_data="az_022")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("Gəlin başlayaq!\nBölmə 1:", reply_markup=reply_markup)
+
+    elif query.data == "az_022":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_023")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙ *C++: Quraşdırma və başlanğıc*\n\n"
+    "🔹 *Addım 1: Kompilyatoru quraşdır*\n"
+    "[MinGW yüklə](https://sourceforge.net/projects/mingw/)\n"
+    "— gcc-ni quraşdır və bin yolunu PATH-ə əlavə et\n\n"
+    "🔹 *Addım 2: Redaktoru yüklə*\n"
+    "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
+    "🔹 *Addım 3: Kompilyatoru yoxla:*\n"
+    "`g++ --version`\n\n"
+    "🔹 *Addım 4: Sadə kod:*\n"
+    "```cpp\n#include <iostream>\nint main() {\n"
+    "    std::cout << \"Salam, dünya!\";\n    return 0;\n}\n```\n"
+    "main.cpp kimi yadda saxla və kompilyasiya et:\n"
+    "`g++ main.cpp -o main`\n`./main`",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_023":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_024")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_025")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
+]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *C++: Dəyişənlər və məlumat tipləri*\n\n"
+    "🔹 *Dəyişən nədir?*\n"
+    "— Məlumat saxlamaq üçün yaddaşda adlandırılmış sahədir.\n"
+    "— İstifadədən əvvəl dəyişəni tipi ilə elan etmək lazımdır.\n\n"
+    "🔹 *Nümunələr:*\n"
+    "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
+    "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
+    "🔹 *Çap nümunəsi:*\n"
+    "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
+    "    int age = 15;\n    std::string name = \"Tom\";\n"
+    "    std::cout << \"Ad: \" << name << \"\\n\";\n"
+    "    std::cout << \"Yaş: \" << age << \"\\n\";\n    return 0;\n}\n```",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_025":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_023")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙ *C++: Quraşdırma və başlanğıc*\n\n"
+    "🔹 *Addım 1: Kompilyatoru quraşdır*\n"
+    "[MinGW yüklə](https://sourceforge.net/projects/mingw/)\n"
+    "— gcc-ni quraşdır və bin yolunu PATH-ə əlavə et\n\n"
+    "🔹 *Addım 2: Redaktoru yüklə*\n"
+    "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
+    "🔹 *Addım 3: Kompilyatoru yoxla:*\n"
+    "`g++ --version`\n\n"
+    "🔹 *Addım 4: Sadə kod:*\n"
+    "```cpp\n#include <iostream>\nint main() {\n"
+    "    std::cout << \"Salam, dünya!\";\n    return 0;\n}\n```\n"
+    "main.cpp kimi yadda saxla və kompilyasiya et:\n"
+    "`g++ main.cpp -o main`\n`./main`",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_024":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_026")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_027")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🧠 *C++: Şərtlər (if, else, else if)*\n\n"
+    "🔹 *Şərt nədir?*\n"
+    "— Şərt ödənildikdə kod bloku icra olunur.\n\n"
+    "🔹 *Nümunə:*\n"
+    "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n"
+    "    int age = 16;\n"
+    "    if (age >= 18) {\n        cout << \"Sən böyüksən\";\n"
+    "    } else if (age >= 14) {\n        cout << \"Sən yeniyetməsən\";\n"
+    "    } else {\n        cout << \"Sən uşaqsan\";\n    }\n    return 0;\n}\n```\n\n"
+    "🔹 *Operatorlar:* `==`, `!=`, `>`, `<`, `>=`, `<=`\n"
+    "🔹 *Məntiq:* `&&`, `||`, `!`\n\n"
+    "✅ *Özün sınayıb bax!*",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_027":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_024")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_025")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *C++: Dəyişənlər və məlumat tipləri*\n\n"
+    "🔹 *Dəyişən nədir?*\n"
+    "— Məlumat saxlamaq üçün yaddaşda adlandırılmış sahədir.\n"
+    "— İstifadədən əvvəl dəyişəni tipi ilə elan etmək lazımdır.\n\n"
+    "🔹 *Nümunələr:*\n"
+    "`int age = 15;`\n`double pi = 3.14;`\n`char grade = 'A';`\n"
+    "`bool isOnline = true;`\n`std::string name = \"Tom\";`\n\n"
+    "🔹 *Çap nümunəsi:*\n"
+    "```cpp\n#include <iostream>\n#include <string>\n\nint main() {\n"
+    "    int age = 15;\n    std::string name = \"Tom\";\n"
+    "    std::cout << \"Ad: \" << name << \"\\n\";\n"
+    "    std::cout << \"Yaş: \" << age << \"\\n\";\n    return 0;\n}\n```",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_026":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_028")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_029")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔁 *C++: Döngülər (for, while, do while)*\n\n"
+    "🔹 *Döngü nədir?*\n"
+    "— Bir kod blokunu bir neçə dəfə icra etməyə imkan verir, şərt ödənilənə qədər.\n\n"
+    "🔹 *C++ döngü növləri:*\n"
+    "- `for` — təkrarlanma sayı məlumdursa\n"
+    "- `while` — şərt doğru olduqda\n"
+    "- `do while` — əvvəl icra edir, sonra şərti yoxlayır\n\n"
+    "============================\n"
+    "🔹 *for nümunəsi:*\n"
+    "```cpp\nfor (int i = 0; i < 5; i++) {\n    cout << i << \" \";\n}\n```\n"
+    "🔸 Çıxış: `0 1 2 3 4`\n\n"
+    "============================\n"
+    "🔹 *while nümunəsi:*\n"
+    "```cpp\nint i = 0;\nwhile (i < 3) {\n    cout << i << endl;\n    i++;\n}\n```\n"
+    "🔸 Çıxış: `0`, `1`, `2`\n\n"
+    "============================\n"
+    "🔹 *do while nümunəsi:*\n"
+    "```cpp\nint i = 0;\ndo {\n    cout << i << endl;\n    i++;\n} while (i < 2);\n```\n"
+    "🔸 Çıxış: `0`, `1`\n\n"
+    "============================\n"
+    "✅ *İstifadə qaydası:*\n"
+    "- `for` — sayğac üçün (i = 0; i < N; i++)\n"
+    "- `while` — təkrarlanma sayı bilinmirsə\n"
+    "- `do while` — minimum 1 dəfə icra olunacaq\n\n"
+    "Özün sınayıb bax!"
+    ,
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_010":
+        keyboard = [[InlineKeyboardButton("⚙ Başla", callback_data="az_035")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text("Başlayaq!\n1-ci Bölmə:", reply_markup=reply_markup)
+
+    elif query.data == "az_035":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_036")],
+             [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Quraşdırma və başlanğıc*\n\n"
+    "🔹 *Addım 1: Redaktoru yüklə*\n"
+    "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
+    "🔹 *Addım 2: Node.js yoxla*\n"
+    "[Node.js yüklə](https://nodejs.org/)\n"
+    "— Quraşdır və versiyanı yoxla:\n"
+    "`node --version`\n\n"
+    "🔹 *Addım 3: Sadə kod*\n"
+    "main.js faylı yaradın və daxil edin:\n"
+    "```js\nconsole.log(\"Salam, dünya!\");\n```\n"
+    "Terminalda işə salın:\n"
+    "`node main.js`\n\n"
+    "💡 *JavaScript saytlar, botlar və tətbiqlər yaratmaq üçün ilk addımdır!*",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_036":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_037")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_038")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Dəyişənlər və məlumat tipləri*\n\n"
+    "🔹 *Dəyişən nədir?*\n"
+    "— Məlumatları saxlayan adlandırılmış konteynerdir.\n"
+    "— `let`, `const` və ya köhnə `var` ilə elan olunur.\n\n"
+    "🔹 *Nümunələr:*\n"
+    "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
+    "🔹 *Konsola çıxış:*\n"
+    "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Ad:\", name);\nconsole.log(\"Yaş:\", age);\n```\n"
+    "💡 *Məsləhət:* Dəyişməyən dəyərlər üçün `const`, dəyişənlər üçün `let` istifadə edin.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_038":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_036")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Quraşdırma və başlanğıc*\n\n"
+    "🔹 *Addım 1: Redaktoru yüklə*\n"
+    "[Visual Studio Code yüklə](https://code.visualstudio.com/)\n\n"
+    "🔹 *Addım 2: Node.js yoxla*\n"
+    "[Node.js yüklə](https://nodejs.org/)\n"
+    "— Quraşdır və versiyanı yoxla:\n"
+    "`node --version`\n\n"
+    "🔹 *Addım 3: Sadə kod*\n"
+    "main.js faylı yaradın və daxil edin:\n"
+    "```js\nconsole.log(\"Salam, dünya!\");\n```\n"
+    "Terminalda işə salın:\n"
+    "`node main.js`\n\n"
+    "💡 *JavaScript saytlar, botlar və tətbiqlər yaratmaq üçün ilk addımdır!*",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_037":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_039")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_040")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Şərtlər və müqayisələr*\n\n"
+    "🔹 *Şərt nədir?*\n"
+    "— Bir ifadə `true` olduqda blok daxilindəki kod işləyir.\n"
+    "— JavaScript-də `if` konstrukiyası istifadə olunur.\n\n"
+    "🔹 *Nümunə:*\n"
+    "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
+    "🔹 *Müqayisə operatorları:*\n"
+    "`==` — dəyərə görə müqayisə (tipləri çevirmək mümkündür)\n"
+    "`===` — sərt müqayisə (tip və dəyər nəzərə alınır)\n"
+    "`!=` — bərabər deyil (dəyərə görə)\n"
+    "`!==` — sərt bərabər deyil (tip və dəyərə görə)\n"
+    "`>` — böyükdür\n"
+    "`<` — kiçikdir\n"
+    "`>=` — böyük və ya bərabər\n"
+    "`<=` — kiçik və ya bərabər\n\n"
+    "💡 *Vacib:* `===` və `!==` istifadə etmək tövsiyə olunur, tip çevrilməsi səhvlərinin qarşısını almaq üçün.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_040":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_037")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_038")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Dəyişənlər və məlumat tipləri*\n\n"
+    "🔹 *Dəyişən nədir?*\n"
+    "— Məlumatları saxlayan adlandırılmış konteynerdir.\n"
+    "— `let`, `const` və ya köhnə `var` ilə elan olunur.\n\n"
+    "🔹 *Nümunələr:*\n"
+    "`let age = 15;`\n`const pi = 3.14;`\n`let name = \"Tom\";`\n`let isOnline = true;`\n\n"
+    "🔹 *Konsola çıxış:*\n"
+    "```js\nlet age = 15;\nlet name = \"Tom\";\nconsole.log(\"Ad:\", name);\nconsole.log(\"Yaş:\", age);\n```\n"
+    "💡 *Məsləhət:* Dəyişməyən dəyərlər üçün `const`, dəyişənlər üçün `let` istifadə edin.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_039":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_041")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_042")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Məntiqi operatorlar*\n\n"
+    "🔹 *Məntiqi operatorlar nədir?*\n"
+    "— Şərtləri birləşdirməyə imkan verir.\n"
+    "— Bir neçə şərti eyni anda yoxlamağa kömək edir.\n\n"
+    "🔹 *Operatorlar:*\n"
+    "`&&` — VƏ (hər iki şərt doğru olmalıdır)\n"
+    "`||` — VƏ YA (hər hansı bir şərt doğru olsa kifayətdir)\n"
+    "`!` — YOX (dəyişənin əksini alır)\n\n"
+    "🔹 *Nümunələr:*\n"
+    "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
+    "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"İstifadəçi offline-dur\");\n}\n```\n\n"
+    "💡 *Vacib:* Operatorlar əvvəlcə mötərizədəki şərti yoxlayır, sonra tətbiq olunur.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_042":
+        keyboard = [[InlineKeyboardButton("следующая глава➡️", callback_data="az_039")],
+            [InlineKeyboardButton("прошлая глава", callback_data="az_040")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Условия и сравнения*\n\n"
+    "🔹 *Что такое условие?*\n"
+    "— Это проверка, при которой код внутри блока выполняется, если результат выражения — `true`.\n"
+    "— В JavaScript для этого используется конструкция `if`.\n\n"
+    "🔹 *Пример:*\n"
+    "```js\nlet age = 18;\nif (age >= 18) {\n    console.log(\"Доступ разрешён\");\n} else {\n    console.log(\"Доступ запрещён\");\n}\n```\n\n"
+    "🔹 *Операторы сравнения:*\n"
+    "`==` — сравнение по значению (может преобразовывать типы)\n"
+    "`===` — строгое сравнение (учитывает и тип, и значение)\n"
+    "`!=` — не равно (по значению)\n"
+    "`!==` — строгое не равно (по типу и значению)\n"
+    "`>` — больше\n"
+    "`<` — меньше\n"
+    "`>=` — больше или равно\n"
+    "`<=` — меньше или равно\n\n"
+    "💡 *Важно:* Лучше использовать `===` и `!==` для избежания неожиданных ошибок из-за преобразования типов.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
     elif query.data == "az_041":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_043")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_044")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🔁 *JavaScript: Döngülər (Loops)*\n\n"
-        "🔹 *Döngü nədir?*\n"
-        "— Kod blokunu bir neçə dəfə təkrarlamaq üçün üsuldur.\n"
-        "— Array-larla işləmək, təkrarlanan əməliyyatlar və avtomatlaşdırma üçün istifadə olunur.\n\n"
-        "============================\n"
-        "🔹 *for döngüsü:*\n"
-        "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
-        "— 0-dan 4-ə qədər ədədləri çap edir.\n"
-        "`i++` — hər dəfə sayğacı 1 artırır.\n\n"
-        "============================\n"
-        "🔹 *while döngüsü:*\n"
-        "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
-        "— `x < 3` şərti doğru olduqca kod işləyir.\n\n"
-        "============================\n"
-        "🔹 *do...while döngüsü:*\n"
-        "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
-        "— Şərt false olsa belə, kod ən az bir dəfə işləyir.\n\n"
-        "============================\n"
-        "🔹 *Array nümunəsi:*\n"
-        "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
-        "— Bütün array elementlərini çap edir.\n\n"
-        "============================\n"
-        "✅ *Vacib məqamlar:*\n"
-        "- Sonsuz döngü yaratmaq asandır (sayğacı unutmayın!)\n"
-        "- `break` döngüdən çıxmaq üçün istifadə olunur\n"
-        "- `continue` cari iterasiyanı keçmək üçün istifadə olunur\n\n"
-        "💡 Döngülər məlumat strukturları və avtomatlaşdırmada əsas alətdir!\n"
-        "Məsələn, 10-dan 1-ə qədər ədədləri çap edən döngü yazın! 🚀",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_044":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_041")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_042")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Məntiqi operatorlar*\n\n"
-        "🔹 *Məntiqi operatorlar nədir?*\n"
-        "— Şərtləri birləşdirməyə imkan verir.\n"
-        "— Birdən çox şərti eyni anda yoxlamağa kömək edir.\n\n"
-        "🔹 *Operatorlar:*\n"
-        "`&&` — VƏ (hər iki şərt doğru olmalıdır)\n"
-        "`||` — VƏ YA (hər hansı bir şərt doğru olsa kifayətdir)\n"
-        "`!` — YOX (dəyişənin əksini alır)\n\n"
-        "🔹 *Nümunələr:*\n"
-        "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
-        "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"İstifadəçi offline-dur\");\n}\n```\n\n"
-        "💡 *Vacib:* Operatorlar əvvəlcə mötərizədəki şərti yoxlayır, sonra tətbiq olunur.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_043":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_045")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_046")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Funksiyalar (Ətraflı)*\n\n"
-        "🔹 *Funksiya nədir?*\n"
-        "— Müəyyən bir işi yerinə yetirən adlandırılmış kod blokudur.\n"
-        "— Funksiyanı istənilən qədər çağırmaq olar, kodu təkrarlamadan.\n"
-        "— Strukturlaşdırılmış proqramlaşdırmanın əsasını təşkil edir.\n\n"
-        "🔹 *Funksiyalara niyə ehtiyac var:*\n"
-        "✔ Eyni kodu təkrarlamamaq üçün\n"
-        "✔ Proqramı məntiqi hissələrə bölmək üçün\n"
-        "✔ Parametrlər qəbul edib nəticə qaytarmaq üçün\n\n"
-        "🔹 *Sadə funksiya nümunəsi:*\n"
-        "```js\nfunction sayHello() {\n    console.log(\"Salam!\");\n}\n\nsayHello(); // funksiyanı çağırmaq\n```\n"
-        "💡 `sayHello` funksiyası hər çağırıldığında \"Salam!\" çap edir.\n\n"
-        "🔹 *Parametrli funksiya:*\n"
-        "```js\nfunction greet(name) {\n    console.log(\"Salam, \" + name);\n}\n\ngreet(\"Tom\");\ngreet(\"Anna\");\n```\n"
-        "💡 `name` parametri funksiyaya müxtəlif dəyərlər ötürməyə imkan verir.\n\n"
-        "🔹 *Nəticə qaytaran funksiya:*\n"
-        "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
-        "💡 `return` nəticəni qaytarır və onu saxlamaq və ya çap etmək olar.\n\n"
-        "🔹 *Vacib:* \n"
-        "✔ Funksiyanı elan edildikdən sonra istənilən yerdə çağırmaq olar\n"
-        "✔ Funksiya içindəki kod yalnız çağırıldıqda işləyir\n"
-        "✔ İstədiyiniz qədər arqument ötürmək mümkündür\n\n"
-        "Funksiyalar kodu daha təmiz, sadə və çevik edir.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_046":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_043")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_044")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "🔁 *JavaScript: Döngülər (Loops)*\n\n"
-        "🔹 *Döngü nədir?*\n"
-        "— Kod blokunu bir neçə dəfə təkrarlamaq üçün üsuldur.\n"
-        "— Array-larla işləmək, təkrarlanan əməliyyatlar və avtomatlaşdırma üçün istifadə olunur.\n\n"
-        "============================\n"
-        "🔹 *for döngüsü:*\n"
-        "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
-        "— 0-dan 4-ə qədər ədədləri çap edir.\n"
-        "`i++` — hər dəfə sayğacı 1 artırır.\n\n"
-        "============================\n"
-        "🔹 *while döngüsü:*\n"
-        "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
-        "— `x < 3` şərti doğru olduqca kod işləyir.\n\n"
-        "============================\n"
-        "🔹 *do...while döngüsü:*\n"
-        "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
-        "— Şərt false olsa belə, kod ən az bir dəfə işləyir.\n\n"
-        "============================\n"
-        "🔹 *Array nümunəsi:*\n"
-        "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
-        "— Bütün array elementlərini çap edir.\n\n"
-        "============================\n"
-        "✅ *Vacib məqamlar:*\n"
-        "- Sonsuz döngü yaratmaq asandır (sayğacı unutmayın!)\n"
-        "- `break` döngüdən çıxmaq üçün istifadə olunur\n"
-        "- `continue` cari iterasiyanı keçmək üçün istifadə olunur\n\n"
-        "💡 Döngülər məlumat strukturları və avtomatlaşdırmada əsas alətdir!\n"
-        "Məsələn, 10-dan 1-ə qədər ədədləri çap edən döngü yazın! 🚀",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_043")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_044")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔁 *JavaScript: Döngülər (Loops)*\n\n"
+    "🔹 *Döngü nədir?*\n"
+    "— Kod blokunu bir neçə dəfə təkrarlamaq üçün üsuldur.\n"
+    "— Array-larla işləmək, təkrarlanan əməliyyatlar və avtomatlaşdırma üçün istifadə olunur.\n\n"
+    "============================\n"
+    "🔹 *for döngüsü:*\n"
+    "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
+    "— 0-dan 4-ə qədər ədədləri çap edir.\n"
+    "`i++` — hər dəfə sayğacı 1 artırır.\n\n"
+    "============================\n"
+    "🔹 *while döngüsü:*\n"
+    "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
+    "— `x < 3` şərti doğru olduqca kod işləyir.\n\n"
+    "============================\n"
+    "🔹 *do...while döngüsü:*\n"
+    "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
+    "— Şərt false olsa belə, kod ən az bir dəfə işləyir.\n\n"
+    "============================\n"
+    "🔹 *Array nümunəsi:*\n"
+    "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
+    "— Bütün array elementlərini çap edir.\n\n"
+    "============================\n"
+    "✅ *Vacib məqamlar:*\n"
+    "- Sonsuz döngü yaratmaq asandır (sayğacı unutmayın!)\n"
+    "- `break` döngüdən çıxmaq üçün istifadə olunur\n"
+    "- `continue` cari iterasiyanı keçmək üçün istifadə olunur\n\n"
+    "💡 Döngülər məlumat strukturları və avtomatlaşdırmada əsas alətdir!\n"
+    "Məsələn, 10-dan 1-ə qədər ədədləri çap edən döngü yazın! 🚀",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_044":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_041")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_042")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Məntiqi operatorlar*\n\n"
+    "🔹 *Məntiqi operatorlar nədir?*\n"
+    "— Şərtləri birləşdirməyə imkan verir.\n"
+    "— Birdən çox şərti eyni anda yoxlamağa kömək edir.\n\n"
+    "🔹 *Operatorlar:*\n"
+    "`&&` — VƏ (hər iki şərt doğru olmalıdır)\n"
+    "`||` — VƏ YA (hər hansı bir şərt doğru olsa kifayətdir)\n"
+    "`!` — YOX (dəyişənin əksini alır)\n\n"
+    "🔹 *Nümunələr:*\n"
+    "```js\nlet age = 20;\nlet hasPassport = true;\n\nif (age >= 18 && hasPassport) {\n    console.log(\"Giriş icazəlidir\");\n} else {\n    console.log(\"Giriş qadağandır\");\n}\n```\n\n"
+    "```js\nlet isOnline = false;\nif (!isOnline) {\n    console.log(\"İstifadəçi offline-dur\");\n}\n```\n\n"
+    "💡 *Vacib:* Operatorlar əvvəlcə mötərizədəki şərti yoxlayır, sonra tətbiq olunur.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_043":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_045")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_046")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Funksiyalar (Ətraflı)*\n\n"
+    "🔹 *Funksiya nədir?*\n"
+    "— Müəyyən bir işi yerinə yetirən adlandırılmış kod blokudur.\n"
+    "— Funksiyanı istənilən qədər çağırmaq olar, kodu təkrarlamadan.\n"
+    "— Strukturlaşdırılmış proqramlaşdırmanın əsasını təşkil edir.\n\n"
+    "🔹 *Funksiyalara niyə ehtiyac var:*\n"
+    "✔ Eyni kodu təkrarlamamaq üçün\n"
+    "✔ Proqramı məntiqi hissələrə bölmək üçün\n"
+    "✔ Parametrlər qəbul edib nəticə qaytarmaq üçün\n\n"
+    "🔹 *Sadə funksiya nümunəsi:*\n"
+    "```js\nfunction sayHello() {\n    console.log(\"Salam!\");\n}\n\nsayHello(); // funksiyanı çağırmaq\n```\n"
+    "💡 `sayHello` funksiyası hər çağırıldığında \"Salam!\" çap edir.\n\n"
+    "🔹 *Parametrli funksiya:*\n"
+    "```js\nfunction greet(name) {\n    console.log(\"Salam, \" + name);\n}\n\ngreet(\"Tom\");\ngreet(\"Anna\");\n```\n"
+    "💡 `name` parametri funksiyaya müxtəlif dəyərlər ötürməyə imkan verir.\n\n"
+    "🔹 *Nəticə qaytaran funksiya:*\n"
+    "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
+    "💡 `return` nəticəni qaytarır və onu saxlamaq və ya çap etmək olar.\n\n"
+    "🔹 *Vacib:* \n"
+    "✔ Funksiyanı elan edildikdən sonra istənilən yerdə çağırmaq olar\n"
+    "✔ Funksiya içindəki kod yalnız çağırıldıqda işləyir\n"
+    "✔ İstədiyiniz qədər arqument ötürmək mümkündür\n\n"
+    "Funksiyalar kodu daha təmiz, sadə və çevik edir.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_046":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_043")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_044")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "🔁 *JavaScript: Döngülər (Loops)*\n\n"
+    "🔹 *Döngü nədir?*\n"
+    "— Kod blokunu bir neçə dəfə təkrarlamaq üçün üsuldur.\n"
+    "— Array-larla işləmək, təkrarlanan əməliyyatlar və avtomatlaşdırma üçün istifadə olunur.\n\n"
+    "============================\n"
+    "🔹 *for döngüsü:*\n"
+    "```js\nfor (let i = 0; i < 5; i++) {\n    console.log(i);\n}\n```\n"
+    "— 0-dan 4-ə qədər ədədləri çap edir.\n"
+    "`i++` — hər dəfə sayğacı 1 artırır.\n\n"
+    "============================\n"
+    "🔹 *while döngüsü:*\n"
+    "```js\nlet x = 0;\nwhile (x < 3) {\n    console.log(x);\n    x++;\n}\n```\n"
+    "— `x < 3` şərti doğru olduqca kod işləyir.\n\n"
+    "============================\n"
+    "🔹 *do...while döngüsü:*\n"
+    "```js\nlet y = 0;\ndo {\n    console.log(y);\n    y++;\n} while (y < 2);\n```\n"
+    "— Şərt false olsa belə, kod ən az bir dəfə işləyir.\n\n"
+    "============================\n"
+    "🔹 *Array nümunəsi:*\n"
+    "```js\nlet fruits = [\"🍎\", \"🍌\", \"🍇\"];\nfor (let i = 0; i < fruits.length; i++) {\n    console.log(fruits[i]);\n}\n```\n"
+    "— Bütün array elementlərini çap edir.\n\n"
+    "============================\n"
+    "✅ *Vacib məqamlar:*\n"
+    "- Sonsuz döngü yaratmaq asandır (sayğacı unutmayın!)\n"
+    "- `break` döngüdən çıxmaq üçün istifadə olunur\n"
+    "- `continue` cari iterasiyanı keçmək üçün istifadə olunur\n\n"
+    "💡 Döngülər məlumat strukturları və avtomatlaşdırmada əsas alətdir!\n"
+    "Məsələn, 10-dan 1-ə qədər ədədləri çap edən döngü yazın! 🚀",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
     elif query.data == "az_045":
-    keyboard = [
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_047")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "📦 *JavaScript: Obyektlər (Objects)*\n\n"
-        "🔹 *Obyekt nədir?*\n"
-        "— Bu, əlaqəli məlumatlar və funksiyaları saxlamaq üçün strukturudur.\n"
-        "— \"açar: dəyər\" cütlüklərindən ibarətdir.\n\n"
-        "============================\n"
-        "🔹 *Sadə obyekt nümunəsi:*\n"
-        "```js\n"
-        "let person = {\n"
-        "  name: \"Tom\",\n"
-        "  age: 25,\n"
-        "  isStudent: true\n"
-        "};\n"
-        "```\n"
-        "🔸 Məlumatlara giriş:\n"
-        "`person.name` → \"Tom\"\n"
-        "`person[\"age\"]` → 25\n\n"
-        "============================\n"
-        "🔹 *Metodu olan obyekt:*\n"
-        "```js\n"
-        "let car = {\n"
-        "  brand: \"Toyota\",\n"
-        "  start: function() {\n"
-        "    console.log(\"Mühərrik işə düşdü\");\n"
-        "  }\n"
-        "};\n\n"
-        "car.start();\n"
-        "```\n"
-        "============================\n"
-        "✅ *Obyektlər niyə lazımdır?*\n"
-        "- Çətin məlumatları bir dəyişəndə saxlamaq\n"
-        "- Həqiqi obyektləri modelləşdirmək\n"
-        "- DOM, server sorğuları, oyunlar və s. üçün istifadə olunur\n\n"
-        "💡 Öz obyektinizi yaradın: \"phone\" adlı obyekt, sahələr: \"model\", \"year\" və metod: \"call()\"!",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-elif query.data == "az_047":
-    keyboard = [
-        [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_045")],
-        [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_046")],
-        [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
-    await query.edit_message_text(
-        "⚙️ *JavaScript: Funksiyalar (Ətraflı)*\n\n"
-        "🔹 *Funksiya nədir?*\n"
-        "— Bu, müəyyən bir işi yerinə yetirən adlandırılmış kod blokudur.\n"
-        "— Funksiyanı istənilən qədər çağıra bilərsiniz, kodu təkrarlamadan.\n"
-        "— Bu, strukturlaşdırılmış proqramlaşdırmanın əsasını təşkil edir.\n\n"
-        "🔹 *Funksiyalara niyə ehtiyac var:*\n"
-        "✔ Eyni kodu təkrarlamamaq üçün\n"
-        "✔ Proqramı məntiqi hissələrə bölmək üçün\n"
-        "✔ Parametrlər qəbul edib nəticə qaytarmaq üçün\n\n"
-        "🔹 *Sadə funksiya nümunəsi:*\n"
-        "```js\nfunction sayHello() {\n    console.log(\"Salam!\");\n}\n\nsayHello(); // funksiyanı çağırmaq\n```\n"
-        "💡 `sayHello` funksiyası hər çağırıldığında \"Salam!\" çap edir.\n\n"
-        "🔹 *Parametrli funksiya:*\n"
-        "```js\nfunction greet(name) {\n    console.log(\"Salam, \" + name);\n}\n\ngreet(\"Tom\");\ngreet(\"Anna\");\n```\n"
-        "💡 `name` parametri funksiyaya müxtəlif dəyərlər ötürməyə imkan verir.\n\n"
-        "🔹 *Nəticə qaytaran funksiya:*\n"
-        "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
-        "💡 `return` nəticəni qaytarır və onu saxlamaq və ya çap etmək olar.\n\n"
-        "🔹 *Vacib:* \n"
-        "✔ Funksiyanı elan edildikdən sonra istənilən yerdə çağıra bilərsiniz\n"
-        "✔ Funksiya içindəki kod yalnız çağırıldıqda işləyir\n"
-        "✔ İstədiyiniz qədər arqument ötürə bilərsiniz\n\n"
-        "Funksiyalar kodu daha təmiz, sadə və çevik edir.",
-        parse_mode="Markdown", reply_markup=reply_markup
-    )
-
-
+        keyboard = [
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_047")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "📦 *JavaScript: Obyektlər (Objects)*\n\n"
+    "🔹 *Obyekt nədir?*\n"
+    "— Bu, əlaqəli məlumatlar və funksiyaları saxlamaq üçün strukturudur.\n"
+    "— \"açar: dəyər\" cütlüklərindən ibarətdir.\n\n"
+    "============================\n"
+    "🔹 *Sadə obyekt nümunəsi:*\n"
+    "```js\n"
+    "let person = {\n"
+    "  name: \"Tom\",\n"
+    "  age: 25,\n"
+    "  isStudent: true\n"
+    "};\n"
+    "```\n"
+    "🔸 Məlumatlara giriş:\n"
+    "`person.name` → \"Tom\"\n"
+    "`person[\"age\"]` → 25\n\n"
+    "============================\n"
+    "🔹 *Metodu olan obyekt:*\n"
+    "```js\n"
+    "let car = {\n"
+    "  brand: \"Toyota\",\n"
+    "  start: function() {\n"
+    "    console.log(\"Mühərrik işə düşdü\");\n"
+    "  }\n"
+    "};\n\n"
+    "car.start();\n"
+    "```\n"
+    "============================\n"
+    "✅ *Obyektlər niyə lazımdır?*\n"
+    "- Çətin məlumatları bir dəyişəndə saxlamaq\n"
+    "- Həqiqi obyektləri modelləşdirmək\n"
+    "- DOM, server sorğuları, oyunlar və s. üçün istifadə olunur\n\n"
+    "💡 Öz obyektinizi yaradın: \"phone\" adlı obyekt, sahələr: \"model\", \"year\" və metod: \"call()\"!",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
+    elif query.data == "az_047":
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölmə ➡️", callback_data="az_045")],
+            [InlineKeyboardButton("Əvvəlki bölmə", callback_data="az_046")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
+    "⚙️ *JavaScript: Funksiyalar (Ətraflı)*\n\n"
+    "🔹 *Funksiya nədir?*\n"
+    "— Bu, müəyyən bir işi yerinə yetirən adlandırılmış kod blokudur.\n"
+    "— Funksiyanı istənilən qədər çağıra bilərsiniz, kodu təkrarlamadan.\n"
+    "— Bu, strukturlaşdırılmış proqramlaşdırmanın əsasını təşkil edir.\n\n"
+    "🔹 *Funksiyalara niyə ehtiyac var:*\n"
+    "✔ Eyni kodu təkrarlamamaq üçün\n"
+    "✔ Proqramı məntiqi hissələrə bölmək üçün\n"
+    "✔ Parametrlər qəbul edib nəticə qaytarmaq üçün\n\n"
+    "🔹 *Sadə funksiya nümunəsi:*\n"
+    "```js\nfunction sayHello() {\n    console.log(\"Salam!\");\n}\n\nsayHello(); // funksiyanı çağırmaq\n```\n"
+    "💡 `sayHello` funksiyası hər çağırıldığında \"Salam!\" çap edir.\n\n"
+    "🔹 *Parametrli funksiya:*\n"
+    "```js\nfunction greet(name) {\n    console.log(\"Salam, \" + name);\n}\n\ngreet(\"Tom\");\ngreet(\"Anna\");\n```\n"
+    "💡 `name` parametri funksiyaya müxtəlif dəyərlər ötürməyə imkan verir.\n\n"
+    "🔹 *Nəticə qaytaran funksiya:*\n"
+    "```js\nfunction square(number) {\n    return number * number;\n}\n\nconsole.log(square(4)); // 16\n```\n"
+    "💡 `return` nəticəni qaytarır və onu saxlamaq və ya çap etmək olar.\n\n"
+    "🔹 *Vacib:* \n"
+    "✔ Funksiyanı elan edildikdən sonra istənilən yerdə çağıra bilərsiniz\n"
+    "✔ Funksiya içindəki kod yalnız çağırıldıqda işləyir\n"
+    "✔ İstədiyiniz qədər arqument ötürə bilərsiniz\n\n"
+    "Funksiyalar kodu daha təmiz, sadə və çevik edir.",
+    parse_mode="Markdown", reply_markup=reply_markup
+)
     elif query.data == "az_003":
-        keyboard = [[InlineKeyboardButton("☕ Java öyrənməyə başla"** ✅
-", callback_data="az_048")]
-            ]
+        keyboard = [[InlineKeyboardButton("☕ Java öyrənməyə başla ** ✅", callback_data="az_048")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("Java", reply_markup=reply_markup)
     elif query.data == "az_048":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_049")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_049")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "☕️ *Java: Quraşdırma və ilk layihə*\n\n"
     "🔹 *Addım 1: JDK yüklə və quraşdır*\n"
     "[🔗 Rəsmi yükləmə səhifəsi](https://www.oracle.com/java/technologies/javase-downloads.html)\n"
@@ -11002,16 +10951,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_049":
-                keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_050")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_051")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+        keyboard = [
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_050")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_051")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📦 *Java: Dəyişənlər və məlumat tipləri*\n\n"
     "🔹 *Dəyişən nədir?*\n"
     "— Dəyişən məlumatları saxlamaq üçün istifadə olunan addır.\n"
@@ -11050,12 +10996,10 @@ await query.edit_message_text(
 )
     elif query.data == "az_051":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_049")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_049")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "☕️ *Java: Quraşdırma və ilk layihə*\n\n"
     "🔹 *Addım 1: JDK yüklə və quraşdır*\n"
     "[🔗 Rəsmi yükləmə səhifəsi](https://www.oracle.com/java/technologies/javase-downloads.html)\n"
@@ -11081,17 +11025,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
-
     elif query.data == "az_050":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_052")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_053")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [ InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_052")],
+            [ InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_053")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📚 *Java: Şərt operatorları (if, else, else if)*\n\n"
     "🔹 *Şərt operatoru nədir?*\n"
     "— Şərt operatoru şərtə görə fərqli kod bloklarının icrasına imkan verir.\n\n"
@@ -11113,16 +11053,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_053":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_050")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_051")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_050")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_051")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📦 *Java: Dəyişənlər və məlumat tipləri*\n\n"
     "🔹 *Dəyişən nədir?*\n"
     "— Dəyişən məlumatları saxlamaq üçün istifadə olunan addır.\n"
@@ -11159,17 +11096,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
-
     elif query.data == "az_052":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_054")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_055")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+             [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_054")],
+             [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_055")],
+             [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "🔄 *Java: Dövrlər*\n\n"
     "🔹 *Dövr nədir?*\n"
     "— Dövr eyni kod blokunu bir neçə dəfə yerinə yetirməyə imkan verir.\n"
@@ -11211,16 +11144,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_055":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_052")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_053")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+           [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_052")],
+           [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_053")],
+           [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📚 *Java: Şərti operatorlar (if, else, else if)*\n\n"
     "🔹 *Şərti operator nədir?*\n"
     "— Bu, şərtə görə fərqli kodu icra etməyə imkan verən konstruksiyadır.\n\n"
@@ -11244,13 +11174,11 @@ await query.edit_message_text(
 )
     elif query.data == "az_054":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_056")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_057")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_056")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_057")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📦 *Java: Massivlər*\n\n"
     "🔹 *Massiv nədir?*\n"
     "— Massiv eyni tipli elementlərin ardıcıl şəkildə yaddaşda saxlanılması üçün kolleksiyadır.\n"
@@ -11292,16 +11220,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_057":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_054")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_055")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_054")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_055")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "🔄 *Java: Dövrlər*\n\n"
     "🔹 *Dövr nədir?*\n"
     "— Dövr eyni kod blokunu bir neçə dəfə yerinə yetirməyə imkan verir.\n"
@@ -11343,17 +11268,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
-
     elif query.data == "az_056":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_058")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_059")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_058")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_059")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "🧠 *Java: Metodlar (Funksiyalar)*\n\n"
     "🔹 *Metod nədir?*\n"
     "— Metod müəyyən bir tapşırığı yerinə yetirən kod blokudur.\n"
@@ -11403,16 +11324,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_059":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_056")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_057")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_056")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_057")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "📦 *Java: Massivlər*\n\n"
     "🔹 *Massiv nədir?*\n"
     "— Massiv eyni tipli elementlərin ardıcıl şəkildə yaddaşda saxlanılması üçün kolleksiyadır.\n"
@@ -11454,16 +11372,12 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
-
     elif query.data == "az_058":
         keyboard = [
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_060")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_060")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "🏗️ *Java: Siniflər və Obyektlər*\n\n"
     "🔹 *Sinif nədir?*\n"
     "— Sinif obyekt yaratmaq üçün şablondur (blueprint).\n"
@@ -11502,16 +11416,13 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
     elif query.data == "az_060":
         keyboard = [
-    [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_058")],
-    [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_059")],
-    [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]
-]
-reply_markup = InlineKeyboardMarkup(keyboard)
-
-await query.edit_message_text(
+            [InlineKeyboardButton("Növbəti bölüm ➡", callback_data="az_058")],
+            [InlineKeyboardButton("Əvvəlki bölüm", callback_data="az_059")],
+            [InlineKeyboardButton("Menyuya qayıt", callback_data="basla_az")]]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        await query.edit_message_text(
     "🧠 *Java: Metodlar (Funksiyalar)*\n\n"
     "🔹 *Metod nədir?*\n"
     "— Metod müəyyən tapşırığı yerinə yetirən kod blokudur.\n"
@@ -11561,368 +11472,371 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
-
-
     elif query.data == "az_004":
-        keyboard = [[InlineKeyboardButton(""«Başlayaq!\n»«*Bolum 1:*"", callback_data="az_061")]]
+        keyboard = [[InlineKeyboardButton("«Başlayaq!\n»«*Bolum1: *", callback_data = "az_061")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("<<>>", reply_markup=reply_markup)
     elif query.data == "az_061":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_062")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *C dilinin quraşdırılması və CLion IDE-də sazlanması*\n\n"
-"🔹 *Addım 1: MinGW kompilyatorunu yükləyin*\n"
-"[MinGW yüklə](https://sourceforge.net/projects/mingw/) — gcc-ni quraşdırın və `bin` qovluğunu sistem PATH dəyişəninə əlavə edin\n\n"
-"🔹 *Addım 2: CLion IDE-ni yükləyin*\n"
-"[CLion yüklə](https://www.jetbrains.com/clion/download/) — Community və ya Trial versiyasını quraşdırın\n\n"
-"🔹 *Addım 3: Quraşdırmanı yoxlayın*\n"
-"Terminalı açın və aşağıdakı əmri daxil edin:\n"
-"```bash\n"
-"gcc --version\n"
-"```\n\n"
-"🔹 *Addım 4: Sadə C proqramı yazın*\n"
-"`main.c` adlı fayl yaradın və aşağıdakı kodu yazın:\n"
-"```c\n"
-"#include <stdio.h>\n\n"
-"int main() {\n"
-"    printf(\"Salam, dünya!\\n\");\n"
-"    return 0;\n"
-"}\n"
-"```\n\n"
-"🔹 *Addım 5: Proqramı kompilyasiya edin və işə salın*\n"
-"Terminalda icra edin:\n"
-"```bash\n"
-"gcc main.c -o main\n"
-"```\n"
-"Proqramı işə salın:\n"
-"```bash\n"
-"./main\n"
-"```\n\n"
-"✅ *Nəticəni yoxlayın:*\n"
-"Aşağıdakı çıxışı görməlisiniz:\n"
-"```\nSalam, dünya!\n```\n",
-                                      parse_mode="Markdown",
-                                      reply_markup=reply_markup
-                                      )
+                              "🔹 *Addım 1: MinGW kompilyatorunu yükləyin*\n"
+                              "[MinGW yüklə](https://sourceforge.net/projects/mingw/) — gcc-ni quraşdırın və `bin` qovluğunu sistem PATH dəyişəninə əlavə edin\n\n"
+                              "🔹 *Addım 2: CLion IDE-ni yükləyin*\n"
+                              "[CLion yüklə](https://www.jetbrains.com/clion/download/) — Community və ya Trial versiyasını quraşdırın\n\n"
+                              "🔹 *Addım 3: Quraşdırmanı yoxlayın*\n"
+                              "Terminalı açın və aşağıdakı əmri daxil edin:\n"
+                              "```bash\n"
+                              "gcc --version\n"
+                              "```\n\n"
+                              "🔹 *Addım 4: Sadə C proqramı yazın*\n"
+                              "`main.c` adlı fayl yaradın və aşağıdakı kodu yazın:\n"
+                              "```c\n"
+                              "#include <stdio.h>\n\n"
+                              "int main() {\n"
+                              "    printf(\"Salam, dünya!\\n\");\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Addım 5: Proqramı kompilyasiya edin və işə salın*\n"
+                              "Terminalda icra edin:\n"
+                              "```bash\n"
+                              "gcc main.c -o main\n"
+                              "```\n"
+                              "Proqramı işə salın:\n"
+                              "```bash\n"
+                              "./main\n"
+                              "```\n\n"
+                              "✅ *Nəticəni yoxlayın:*\n"
+                              "Aşağıdakı çıxışı görməlisiniz:\n"
+                              "```\nSalam, dünya!\n```\n",
+                              parse_mode="Markdown",
+                              reply_markup=reply_markup
+                              )
     elif query.data == "az_062":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_063")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_064")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_064")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C dilində dəyişənlər və məlumat tipləri*\n\n"
-"🔹 *Dəyişən nədir?*\n"
-"— Yaddaşda məlumat saxlamaq üçün verilən ad.\n"
-"— Hər dəyişənin saxladığı məlumatı müəyyən edən tipi olur.\n\n"
-"🔹 *Əsas məlumat tipləri:*\n"
-"- `int` — tam ədədlər, məsələn: `42`\n"
-"- `float` — onluq kəsrli ədədlər, məsələn: `3.14`\n"
-"- `char` — bir simvol, məsələn: `'A'`\n"
-"- `double` — daha dəqiq onluq kəsrli ədədlər\n\n"
-"============================\n"
-"🔹 *Dəyişənlərin elan edilməsi:*\n"
-"```c\n"
-"int age = 18;\n"
-"float pi = 3.14;\n"
-"char grade = 'A';\n"
-"double largeNum = 123456.789;\n"
-"```\n\n"
-"🔹 *Ekrana çıxarma:*\n"
-"```c\n"
-"#include <stdio.h>\n"
-"int main() {\n"
-"    int age = 18;\n"
-"    printf(\"Yaş: %d\\n\", age);\n"
-"    return 0;\n"
-"}\n"
-"```\n\n"
-"✅ *Tapşırıq:* bir neçə dəyişən elan edin və onların dəyərlərini ekrana çıxarın!\n",
-                                      parse_mode="Markdown",
-                                      reply_markup=reply_markup)
+                              "🔹 *Dəyişən nədir?*\n"
+                              "— Yaddaşda məlumat saxlamaq üçün verilən ad.\n"
+                              "— Hər dəyişənin saxladığı məlumatı müəyyən edən tipi olur.\n\n"
+                              "🔹 *Əsas məlumat tipləri:*\n"
+                              "- `int` — tam ədədlər, məsələn: `42`\n"
+                              "- `float` — onluq kəsrli ədədlər, məsələn: `3.14`\n"
+                              "- `char` — bir simvol, məsələn: `'A'`\n"
+                              "- `double` — daha dəqiq onluq kəsrli ədədlər\n\n"
+                              "============================\n"
+                              "🔹 *Dəyişənlərin elan edilməsi:*\n"
+                              "```c\n"
+                              "int age = 18;\n"
+                              "float pi = 3.14;\n"
+                              "char grade = 'A';\n"
+                              "double largeNum = 123456.789;\n"
+                              "```\n\n"
+                              "🔹 *Ekrana çıxarma:*\n"
+                              "```c\n"
+                              "#include <stdio.h>\n"
+                              "int main() {\n"
+                              "    int age = 18;\n"
+                              "    printf(\"Yaş: %d\\n\", age);\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "✅ *Tapşırıq:* bir neçə dəyişən elan edin və onların dəyərlərini ekrana çıxarın!\n",
+                              parse_mode="Markdown",
+                              reply_markup=reply_markup)
     elif query.data == "az_064":
         keyboard = [[InlineKeyboardButton("Novbeti bolum  ➡", callback_data="az_062")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🐱‍💻 *C dilinin quraşdırılması və CLion IDE-də sazlanması*\n\n"
-"🔹 *Addım 1: MinGW kompilyatorunu yükləyin*\n"
-"[MinGW yüklə](https://sourceforge.net/projects/mingw/) — gcc-ni quraşdırın və `bin` qovluğunu sistem PATH dəyişəninə əlavə edin\n\n"
-"🔹 *Addım 2: CLion IDE-ni yükləyin*\n"
-"[CLion yüklə](https://www.jetbrains.com/clion/download/) — Community və ya Trial versiyasını quraşdırın\n\n"
-"🔹 *Addım 3: Quraşdırmanı yoxlayın*\n"
-"Terminalı açın və aşağıdakı əmri daxil edin:\n"
-"```bash\n"
-"gcc --version\n"
-"```\n\n"
-"🔹 *Addım 4: Sadə C proqramı yazın*\n"
-"`main.c` adlı fayl yaradın və aşağıdakı kodu yazın:\n"
-"```c\n"
-"#include <stdio.h>\n\n"
-"int main() {\n"
-"    printf(\"Salam, dünya!\\n\");\n"
-"    return 0;\n"
-"}\n"
-"```\n\n"
-"🔹 *Addım 5: Proqramı kompilyasiya edin və işə salın*\n"
-"Terminalda icra edin:\n"
-"```bash\n"
-"gcc main.c -o main\n"
-"```\n"
-"Proqramı işə salın:\n"
-"```bash\n"
-"./main\n"
-"```\n\n"
-"✅ *Nəticəni yoxlayın:*\n"
-"Aşağıdakı çıxışı görməlisiniz:\n"
-"```\nSalam, dünya!\n```\n"
-,
-                                      parse_mode="Markdown",
-                                      reply_markup=reply_markup
-                                      )
+                              "🔹 *Addım 1: MinGW kompilyatorunu yükləyin*\n"
+                              "[MinGW yüklə](https://sourceforge.net/projects/mingw/) — gcc-ni quraşdırın və `bin` qovluğunu sistem PATH dəyişəninə əlavə edin\n\n"
+                              "🔹 *Addım 2: CLion IDE-ni yükləyin*\n"
+                              "[CLion yüklə](https://www.jetbrains.com/clion/download/) — Community və ya Trial versiyasını quraşdırın\n\n"
+                              "🔹 *Addım 3: Quraşdırmanı yoxlayın*\n"
+                              "Terminalı açın və aşağıdakı əmri daxil edin:\n"
+                              "```bash\n"
+                              "gcc --version\n"
+                              "```\n\n"
+                              "🔹 *Addım 4: Sadə C proqramı yazın*\n"
+                              "`main.c` adlı fayl yaradın və aşağıdakı kodu yazın:\n"
+                              "```c\n"
+                              "#include <stdio.h>\n\n"
+                              "int main() {\n"
+                              "    printf(\"Salam, dünya!\\n\");\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Addım 5: Proqramı kompilyasiya edin və işə salın*\n"
+                              "Terminalda icra edin:\n"
+                              "```bash\n"
+                              "gcc main.c -o main\n"
+                              "```\n"
+                              "Proqramı işə salın:\n"
+                              "```bash\n"
+                              "./main\n"
+                              "```\n\n"
+                              "✅ *Nəticəni yoxlayın:*\n"
+                              "Aşağıdakı çıxışı görməlisiniz:\n"
+                              "```\nSalam, dünya!\n```\n"
+                              ,
+                              parse_mode="Markdown",
+                              reply_markup=reply_markup
+                              )
 
     elif query.data == "az_063":
         keyboard = [[InlineKeyboardButton("Novbeti bolum  ➡", callback_data="az_065")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_066")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_066")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C dilində operatorlar və ifadələr*\n\n"
-"🔹 *Operator nədir?*\n"
-"— Məlumatlar üzərində əməliyyat aparan simvol və ya simvol kombinasiyası.\n\n"
-"🔹 *Operator növləri:*\n"
-"- Aritmetik: `+`, `-`, `*`, `/`, `%`\n"
-"- Mənimsətmə: `=`, `+=`, `-=`, `*=` və s.\n"
-"- Müqayisə: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
-"- Məntiqi: `&&`, `||`, `!`\n\n"
-"============================\n"
-"🔹 *Aritmetik əməliyyat nümunəsi:*\n"
-"```c\n"
-"int a = 10, b = 3;\n"
-"int sum = a + b;       // 13\n"
-"int diff = a - b;      // 7\n"
-"int product = a * b;   // 30\n"
-"int quotient = a / b;  // 3\n"
-"int remainder = a % b; // 1\n"
-"```\n\n"
-"🔹 *Müqayisə və məntiq nümunəsi:*\n"
-"```c\n"
-"int x = 5, y = 10;\n"
-"if (x < y && y > 0) {\n"
-"    printf(\"x y-dən kiçikdir və y müsbətdir\\n\");\n"
-"}\n"
-"```\n\n"
-"✅ *Tapşırıq:* müxtəlif operatorlarla ifadələr yazın və nəticələri ekrana çıxarın!\n",parse_mode = "Markdown",reply_markup = reply_markup
-)
+                              "🔹 *Operator nədir?*\n"
+                              "— Məlumatlar üzərində əməliyyat aparan simvol və ya simvol kombinasiyası.\n\n"
+                              "🔹 *Operator növləri:*\n"
+                              "- Aritmetik: `+`, `-`, `*`, `/`, `%`\n"
+                              "- Mənimsətmə: `=`, `+=`, `-=`, `*=` və s.\n"
+                              "- Müqayisə: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
+                              "- Məntiqi: `&&`, `||`, `!`\n\n"
+                              "============================\n"
+                              "🔹 *Aritmetik əməliyyat nümunəsi:*\n"
+                              "```c\n"
+                              "int a = 10, b = 3;\n"
+                              "int sum = a + b;       // 13\n"
+                              "int diff = a - b;      // 7\n"
+                              "int product = a * b;   // 30\n"
+                              "int quotient = a / b;  // 3\n"
+                              "int remainder = a % b; // 1\n"
+                              "```\n\n"
+                              "🔹 *Müqayisə və məntiq nümunəsi:*\n"
+                              "```c\n"
+                              "int x = 5, y = 10;\n"
+                              "if (x < y && y > 0) {\n"
+                              "    printf(\"x y-dən kiçikdir və y müsbətdir\\n\");\n"
+                              "}\n"
+                              "```\n\n"
+                              "✅ *Tapşırıq:* müxtəlif operatorlarla ifadələr yazın və nəticələri ekrana çıxarın!\n",
+                              parse_mode="Markdown", reply_markup=reply_markup
+                              )
 
-    elif query.data == "az_067":)
+
     elif query.data == "az_066":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_063")],
-                    [InlineKeyboardButton("Son bolum ", callback_data="az_064")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum ", callback_data="az_064")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("📦 *C dilində dəyişənlər və məlumat tipləri*\n\n"
-"🔹 *Dəyişən nədir?*\n"
-"— Yaddaşda məlumat saxlamaq üçün verilən ad.\n"
-"— Hər dəyişənin saxladığı məlumatı müəyyən edən tipi olur.\n\n"
-"🔹 *Əsas məlumat tipləri:*\n"
-"- `int` — tam ədədlər, məsələn: `42`\n"
-"- `float` — onluq kəsrli ədədlər, məsələn: `3.14`\n"
-"- `char` — bir simvol, məsələn: `'A'`\n"
-"- `double` — daha dəqiq onluq kəsrli ədədlər\n\n"
-"============================\n"
-"🔹 *Dəyişənlərin elan edilməsi:*\n"
-"```c\n"
-"int age = 18;\n"
-"float pi = 3.14;\n"
-"char grade = 'A';\n"
-"double largeNum = 123456.789;\n"
-"```\n\n"
-"🔹 *Ekrana çıxarma:*\n"
-"```c\n"
-"#include <stdio.h>\n"
-"int main() {\n"
-"    int age = 18;\n"
-"    printf(\"Yaş: %d\\n\", age);\n"
-"    return 0;\n"
-"}\n"
-"```\n\n"
-"✅ *Tapşırıq:* bir neçə dəyişən elan edin və onların dəyərlərini ekrana çıxarın!\n",parse_mode = "Markdown",reply_markup = reply_markup
-)
+                              "🔹 *Dəyişən nədir?*\n"
+                              "— Yaddaşda məlumat saxlamaq üçün verilən ad.\n"
+                              "— Hər dəyişənin saxladığı məlumatı müəyyən edən tipi olur.\n\n"
+                              "🔹 *Əsas məlumat tipləri:*\n"
+                              "- `int` — tam ədədlər, məsələn: `42`\n"
+                              "- `float` — onluq kəsrli ədədlər, məsələn: `3.14`\n"
+                              "- `char` — bir simvol, məsələn: `'A'`\n"
+                              "- `double` — daha dəqiq onluq kəsrli ədədlər\n\n"
+                              "============================\n"
+                              "🔹 *Dəyişənlərin elan edilməsi:*\n"
+                              "```c\n"
+                              "int age = 18;\n"
+                              "float pi = 3.14;\n"
+                              "char grade = 'A';\n"
+                              "double largeNum = 123456.789;\n"
+                              "```\n\n"
+                              "🔹 *Ekrana çıxarma:*\n"
+                              "```c\n"
+                              "#include <stdio.h>\n"
+                              "int main() {\n"
+                              "    int age = 18;\n"
+                              "    printf(\"Yaş: %d\\n\", age);\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "✅ *Tapşırıq:* bir neçə dəyişən elan edin və onların dəyərlərini ekrana çıxarın!\n",
+                              parse_mode="Markdown", reply_markup=reply_markup
+                              )
 
     elif query.data == "az_065":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_067")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_068")],
-                   [InlineKeyboardButton("menyuya qayit ", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_068")],
+            [InlineKeyboardButton("menyuya qayit ", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C dilində şərt operatorları: if, else if, else*\n\n"
-"🔹 *Şərt operatoru nədir?*\n"
-"— Şərtdən asılı olaraq müxtəlif kod hissələrini yerinə yetirməyə imkan verir.\n\n"
-"🔹 *if sintaksisi:*\n"
-"```c\n"
-"if (şərt) {\n"
-"    // şərt doğru olduqda yerinə yetirilən kod\n"
-"}\n"
-"```\n\n"
-"🔹 *else if və else istifadəsi:*\n"
-"```c\n"
-"if (x > 0) {\n"
-"    printf(\"Müsbət ədəd\\n\");\n"
-"} else if (x == 0) {\n"
-"    printf(\"Sıfır\\n\");\n"
-"} else {\n"
-"    printf(\"Mənfi ədəd\\n\");\n"
-"}\n"
-"```\n\n"
-"🔹 *Şərtlər üçün məntiqi operatorlar:*\n"
-"- `&&` — VƏ (AND)\n"
-"- `||` — VƏ YA (OR)\n"
-"- `!`  — DEYİL (NOT)\n\n"
-"✅ *Tapşırıq:* verilən ədədin işarəsini yoxlayıb uyğun mesajı ekrana çıxaran proqram yazın!\n",parse_mode = "Markdown",reply_markup = reply_markup
-)
+                              "🔹 *Şərt operatoru nədir?*\n"
+                              "— Şərtdən asılı olaraq müxtəlif kod hissələrini yerinə yetirməyə imkan verir.\n\n"
+                              "🔹 *if sintaksisi:*\n"
+                              "```c\n"
+                              "if (şərt) {\n"
+                              "    // şərt doğru olduqda yerinə yetirilən kod\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *else if və else istifadəsi:*\n"
+                              "```c\n"
+                              "if (x > 0) {\n"
+                              "    printf(\"Müsbət ədəd\\n\");\n"
+                              "} else if (x == 0) {\n"
+                              "    printf(\"Sıfır\\n\");\n"
+                              "} else {\n"
+                              "    printf(\"Mənfi ədəd\\n\");\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Şərtlər üçün məntiqi operatorlar:*\n"
+                              "- `&&` — VƏ (AND)\n"
+                              "- `||` — VƏ YA (OR)\n"
+                              "- `!`  — DEYİL (NOT)\n\n"
+                              "✅ *Tapşırıq:* verilən ədədin işarəsini yoxlayıb uyğun mesajı ekrana çıxaran proqram yazın!\n",
+                              parse_mode="Markdown", reply_markup=reply_markup
+                              )
 
-                                      )
+
     elif query.data == "az_068":
         keyboard = [[InlineKeyboardButton("Следующая глава ➡", callback_data="az_065")],
-                    [InlineKeyboardButton("прошлая глава", callback_data="az_066")],
-                   [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
+            [InlineKeyboardButton("прошлая глава", callback_data="az_066")],
+            [InlineKeyboardButton("вернуться в меню", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("⚙️ *C dilində operatorlar və ifadələr*\n\n"
-"🔹 *Operator nədir?*\n"
-"— Məlumatlar üzərində əməliyyat aparan simvol və ya simvol kombinasiyası.\n\n"
-"🔹 *Operator növləri:*\n"
-"- Aritmetik: `+`, `-`, `*`, `/`, `%`\n"
-"- Mənimsətmə: `=`, `+=`, `-=`, `*=` və s.\n"
-"- Müqayisə: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
-"- Məntiqi: `&&`, `||`, `!`\n\n"
-"============================\n"
-"🔹 *Aritmetik əməliyyat nümunəsi:*\n"
-"```c\n"
-"int a = 10, b = 3;\n"
-"int sum = a + b;       // 13\n"
-"int diff = a - b;      // 7\n"
-"int product = a * b;   // 30\n"
-"int quotient = a / b;  // 3\n"
-"int remainder = a % b; // 1\n"
-"```\n\n"
-"🔹 *Müqayisə və məntiq nümunəsi:*\n"
-"```c\n"
-"int x = 5, y = 10;\n"
-"if (x < y && y > 0) {\n"
-"    printf(\"x y-dən kiçikdir və y müsbətdir\\n\");\n"
-"}\n"
-"```\n\n"
-"✅ *Tapşırıq:* müxtəlif operatorlarla ifadələr yazın və nəticələri ekrana çıxarın!\n",parse_mode = "Markdown",reply_markup = reply_markup
-)
+                              "🔹 *Operator nədir?*\n"
+                              "— Məlumatlar üzərində əməliyyat aparan simvol və ya simvol kombinasiyası.\n\n"
+                              "🔹 *Operator növləri:*\n"
+                              "- Aritmetik: `+`, `-`, `*`, `/`, `%`\n"
+                              "- Mənimsətmə: `=`, `+=`, `-=`, `*=` və s.\n"
+                              "- Müqayisə: `==`, `!=`, `<`, `>`, `<=`, `>=`\n"
+                              "- Məntiqi: `&&`, `||`, `!`\n\n"
+                              "============================\n"
+                              "🔹 *Aritmetik əməliyyat nümunəsi:*\n"
+                              "```c\n"
+                              "int a = 10, b = 3;\n"
+                              "int sum = a + b;       // 13\n"
+                              "int diff = a - b;      // 7\n"
+                              "int product = a * b;   // 30\n"
+                              "int quotient = a / b;  // 3\n"
+                              "int remainder = a % b; // 1\n"
+                              "```\n\n"
+                              "🔹 *Müqayisə və məntiq nümunəsi:*\n"
+                              "```c\n"
+                              "int x = 5, y = 10;\n"
+                              "if (x < y && y > 0) {\n"
+                              "    printf(\"x y-dən kiçikdir və y müsbətdir\\n\");\n"
+                              "}\n"
+                              "```\n\n"
+                              "✅ *Tapşırıq:* müxtəlif operatorlarla ifadələr yazın və nəticələri ekrana çıxarın!\n",
+                              parse_mode="Markdown", reply_markup=reply_markup
+                              )
 
     elif query.data == "az_067":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_069")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_070")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_070")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        await query.edit_message_text(   "🔄 *C-də dövrlər: for, while, do-while*\n\n"
-    "🔹 *Dövr nədir?*\n"
-    "— Kod blokunu bir neçə dəfə təkrarlamağa imkan verir.\n\n"
-    "🔹 *for dövrü:*\n"
-    "```c\n"
-    "for (int i = 0; i < 5; i++) {\n"
-    "    printf(\"İterasiya %d\\n\", i);\n"
-    "}\n"
-    "```\n\n"
-    "🔹 *while dövrü:*\n"
-    "```c\n"
-    "int i = 0;\n"
-    "while (i < 5) {\n"
-    "    printf(\"İterasiya %d\\n\", i);\n"
-    "    i++;\n"
-    "}\n"
-    "```\n\n"
-    "🔹 *do-while dövrü:*\n"
-    "```c\n"
-    "int i = 0;\n"
-    "do {\n"
-    "    printf(\"İterasiya %d\\n\", i);\n"
-    "    i++;\n"
-    "} while (i < 5);\n"
-    "```\n\n"
-    "✅ *Tapşırıq:* 1-dən 10-a qədər olan ədədləri çap edən dövr yazmağa çalışın!\n",
-    parse_mode="Markdown",
-    reply_markup=reply_markup)
+        await query.edit_message_text("🔄 *C-də dövrlər: for, while, do-while*\n\n"
+                              "🔹 *Dövr nədir?*\n"
+                              "— Kod blokunu bir neçə dəfə təkrarlamağa imkan verir.\n\n"
+                              "🔹 *for dövrü:*\n"
+                              "```c\n"
+                              "for (int i = 0; i < 5; i++) {\n"
+                              "    printf(\"İterasiya %d\\n\", i);\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *while dövrü:*\n"
+                              "```c\n"
+                              "int i = 0;\n"
+                              "while (i < 5) {\n"
+                              "    printf(\"İterasiya %d\\n\", i);\n"
+                              "    i++;\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *do-while dövrü:*\n"
+                              "```c\n"
+                              "int i = 0;\n"
+                              "do {\n"
+                              "    printf(\"İterasiya %d\\n\", i);\n"
+                              "    i++;\n"
+                              "} while (i < 5);\n"
+                              "```\n\n"
+                              "✅ *Tapşırıq:* 1-dən 10-a qədər olan ədədləri çap edən dövr yazmağa çalışın!\n",
+                              parse_mode="Markdown",
+                              reply_markup=reply_markup)
     elif query.data == "az_070":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_067")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_068")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_068")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text("🧠 *C dilində şərt operatorları: if, else if, else*\n\n"
-"🔹 *Şərt operatoru nədir?*\n"
-"— Şərtdən asılı olaraq müxtəlif kod hissələrini yerinə yetirməyə imkan verir.\n\n"
-"🔹 *if sintaksisi:*\n"
-"```c\n"
-"if (şərt) {\n"
-"    // şərt doğru olduqda yerinə yetirilən kod\n"
-"}\n"
-"```\n\n"
-"🔹 *else if və else istifadəsi:*\n"
-"```c\n"
-"if (x > 0) {\n"
-"    printf(\"Müsbət ədəd\\n\");\n"
-"} else if (x == 0) {\n"
-"    printf(\"Sıfır\\n\");\n"
-"} else {\n"
-"    printf(\"Mənfi ədəd\\n\");\n"
-"}\n"
-"```\n\n"
-"🔹 *Şərtlər üçün məntiqi operatorlar:*\n"
-"- `&&` — VƏ (AND)\n"
-"- `||` — VƏ YA (OR)\n"
-"- `!`  — DEYİL (NOT)\n\n"
-"✅ *Tapşırıq:* verilən ədədin işarəsini yoxlayıb uyğun mesajı ekrana çıxaran proqram yazın!\n",parse_mode = "Markdown",reply_markup = reply_markup
-)
+                              "🔹 *Şərt operatoru nədir?*\n"
+                              "— Şərtdən asılı olaraq müxtəlif kod hissələrini yerinə yetirməyə imkan verir.\n\n"
+                              "🔹 *if sintaksisi:*\n"
+                              "```c\n"
+                              "if (şərt) {\n"
+                              "    // şərt doğru olduqda yerinə yetirilən kod\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *else if və else istifadəsi:*\n"
+                              "```c\n"
+                              "if (x > 0) {\n"
+                              "    printf(\"Müsbət ədəd\\n\");\n"
+                              "} else if (x == 0) {\n"
+                              "    printf(\"Sıfır\\n\");\n"
+                              "} else {\n"
+                              "    printf(\"Mənfi ədəd\\n\");\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Şərtlər üçün məntiqi operatorlar:*\n"
+                              "- `&&` — VƏ (AND)\n"
+                              "- `||` — VƏ YA (OR)\n"
+                              "- `!`  — DEYİL (NOT)\n\n"
+                              "✅ *Tapşırıq:* verilən ədədin işarəsini yoxlayıb uyğun mesajı ekrana çıxaran proqram yazın!\n",
+                              parse_mode="Markdown", reply_markup=reply_markup
+                              )
 
     elif query.data == "az_069":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_071")],
-                    [InlineKeyboardButton("Son bolum", callback_data="az_072")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("Son bolum", callback_data="az_072")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
-        await query.edit_message_text(   "⚙️ *C-də funksiyalar*\n\n"
-    "🔹 *Funksiya nədir?*\n"
-    "— Müəyyən bir tapşırığı yerinə yetirən kod blokudur.\n"
-    "— Proqramı strukturlaşdırmağa və kodu təkrar istifadə etməyə imkan verir.\n\n"
-    "🔹 *Funksiyanın elan edilməsi və çağırılması:*\n"
-    "```c\n"
-    "void sayHello() {\n"
-    "    printf(\"Salam, dünya!\\n\");\n"
-    "}\n\n"
-    "int main() {\n"
-    "    sayHello(); // funksiyanın çağırılması\n"
-    "    return 0;\n"
-    "}\n"
-    "```\n\n"
-    "🔹 *Parametrləri olan funksiya:*\n"
-    "```c\n"
-    "void greet(char name[]) {\n"
-    "    printf(\"Salam, %s!\\n\", name);\n"
-    "}\n\n"
-    "int main() {\n"
-    "    greet(\"Tom\");\n"
-    "    return 0;\n"
-    "}\n"
-    "```\n\n"
-    "🔹 *Qayıdan dəyəri olan funksiya:*\n"
-    "```c\n"
-    "int square(int x) {\n"
-    "    return x * x;\n"
-    "}\n\n"
-    "int main() {\n"
-    "    int result = square(5);\n"
-    "    printf(\"5-in kvadratı %d-dir\\n\", result);\n"
-    "    return 0;\n"
-    "}\n"
-    "```\n\n"
-    "✅ *İki ədədi toplayıb nəticəni qaytaran bir funksiya yazmağa çalışın!*",
-    parse_mode="Markdown",
-    reply_markup=reply_markup)
+        await query.edit_message_text("⚙️ *C-də funksiyalar*\n\n"
+                              "🔹 *Funksiya nədir?*\n"
+                              "— Müəyyən bir tapşırığı yerinə yetirən kod blokudur.\n"
+                              "— Proqramı strukturlaşdırmağa və kodu təkrar istifadə etməyə imkan verir.\n\n"
+                              "🔹 *Funksiyanın elan edilməsi və çağırılması:*\n"
+                              "```c\n"
+                              "void sayHello() {\n"
+                              "    printf(\"Salam, dünya!\\n\");\n"
+                              "}\n\n"
+                              "int main() {\n"
+                              "    sayHello(); // funksiyanın çağırılması\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Parametrləri olan funksiya:*\n"
+                              "```c\n"
+                              "void greet(char name[]) {\n"
+                              "    printf(\"Salam, %s!\\n\", name);\n"
+                              "}\n\n"
+                              "int main() {\n"
+                              "    greet(\"Tom\");\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "🔹 *Qayıdan dəyəri olan funksiya:*\n"
+                              "```c\n"
+                              "int square(int x) {\n"
+                              "    return x * x;\n"
+                              "}\n\n"
+                              "int main() {\n"
+                              "    int result = square(5);\n"
+                              "    printf(\"5-in kvadratı %d-dir\\n\", result);\n"
+                              "    return 0;\n"
+                              "}\n"
+                              "```\n\n"
+                              "✅ *İki ədədi toplayıb nəticəni qaytaran bir funksiya yazmağa çalışın!*",
+                              parse_mode="Markdown",
+                              reply_markup=reply_markup)
     elif query.data == "az_072":
         keyboard = [[InlineKeyboardButton("Novbeti bolum ➡", callback_data="az_073")],
-                    [InlineKeyboardButton("son bolum", callback_data="az_074")],
-                   [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
+            [InlineKeyboardButton("son bolum", callback_data="az_074")],
+            [InlineKeyboardButton("menyuya qayit", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
     "🔄 *C-də dövrlər: for, while, do-while*\n\n"
@@ -11955,10 +11869,9 @@ await query.edit_message_text(
     reply_markup=reply_markup
 )
 
-
     elif query.data == "az_076":
         keyboard = [[InlineKeyboardButton("son bolum", callback_data="az_075")],
-                   [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
+            [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
     "📌 *C-də göstəricilər (pointer-lər)*\n\n"
@@ -12001,8 +11914,8 @@ await query.edit_message_text(
     reply_markup=reply_markup)
     elif query.data == "az_075":
         keyboard = [[InlineKeyboardButton("Növbəti bolum ➡", callback_data="az_076")],
-                    [InlineKeyboardButton("son bolum", callback_data="az_077")],
-                   [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
+            [InlineKeyboardButton("son bolum", callback_data="az_077")],
+            [InlineKeyboardButton("menyuya qayıt", callback_data="basla_az")]]
         reply_markup = InlineKeyboardMarkup(keyboard)
         await query.edit_message_text(
     "⚙️ *C-də funksiyalar*\n\n"
@@ -12044,6 +11957,7 @@ await query.edit_message_text(
     parse_mode="Markdown",
     reply_markup=reply_markup
 )
+
 
 app = ApplicationBuilder().token(TOKEN).build()
 app.add_handler(CallbackQueryHandler(zero, pattern="^start_learning$"))

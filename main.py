@@ -9716,7 +9716,7 @@ console.log(square(4)); // 16
                                       "✅ *Deneyin:* 1’den 10’a kadar sayıları yazdıran bir döngü yazın!\n",
                                       parse_mode="Markdown",
                                       reply_markup=reply_markup)
-              if query.data == "azeriqaqa":
+    if query.data == "azeriqaqa":
             keyboard = [[InlineKeyboardButton("🔥 Təlimə başlayın", callback_data="az_001")]]
             reply_markup = InlineKeyboardMarkup(keyboard)
             await query.edit_message_text(
